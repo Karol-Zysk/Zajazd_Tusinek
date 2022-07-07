@@ -1,0 +1,69 @@
+.container {
+  width: 100%;
+  height: calc(100vh );
+  position: relative;
+  display: flex;
+}
+
+.card {
+  width: 50%;
+  padding: 8rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.imagesCard {
+  width: 50%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  padding: 2rem;
+  align-self: center;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin: 0;
+}
+
+.brand {
+  color: green;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.button {
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.imageWrapper {
+  box-shadow: 7px 7px 10px black;
+  display: flex;
+  border-radius: 10px;
+  transition: 200ms ease-in-out;
+}
+
+
+.image {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.image:hover {
+  border-radius: 0;
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
+}

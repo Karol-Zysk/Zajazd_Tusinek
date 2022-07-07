@@ -1,0 +1,158 @@
+
+.navbar {
+background: blue;
+border-bottom: 3px solid yellow;
+height: 5rem;
+margin-top: -5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+position: sticky;
+top: 0;
+z-index: 10;
+transition: all 800ms ease-in-out;
+
+}
+
+
+.container{
+display: flex;
+justify-content: space-between;
+height: 4rem;
+z-index: 1;
+width: 100%;
+padding: 0 24px;
+}
+
+.logo_link{
+color: green;
+justify-self: flex-start;
+cursor: pointer;
+font-size: 1.6rem;
+display: flex;
+text-align: center;
+align-items: center;
+font-weight: bold;
+text-decoration: none;
+text-shadow: 2px 0px 2px black;
+transition: all 400ms ease-in-out;
+}
+.active {
+  filter: brightness(1);
+  transform: scale(1.07);
+  transition: all 200ms ease-in-out;
+}
+
+.mobile_icon{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile_icon{
+  display: block;
+  color:yellow;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+}
+
+
+.menu {
+text-shadow: 2px 0px 1px black;
+display: flex;
+align-items: center;
+width: 70%;
+font-weight: bold;
+list-style: none;
+text-align: center;
+}
+@media (max-width: 1480px) {
+  .menu{
+  justify-content: space-around;
+  padding-right: 20%;
+  width: 70%;}
+}
+
+@media screen and (max-width: 768px) {
+  .menu{
+  display: none;
+}}
+
+
+.item{
+height: 80px;
+margin-right: 3vw;
+}
+
+@media screen and (max-width: 1480px) {
+  .item{
+
+    margin-right: 1vw;
+  }
+}
+
+.link{color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  height: 100%;
+  transition: all 200ms ease-in-out;
+  border-bottom: 3px solid transparent;}
+
+.active_link {
+  filter: brightness(1);
+  transform: scale(1.07);
+  transition: all 200ms ease-in-out;
+}
+.link:hover {
+  transform: scale(1.05);
+  transition: all 200ms ease-in-out;
+}
+@media (max-width: 1480px) {
+  .link{
+  font-size: 1rem;}
+}
+
+
+.navBtn{
+
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .navBtn{
+
+    display: none;
+  }
+}
+
+
+.btnLink{
+border-radius: 50px;
+background-color: blue;
+white-space: nowrap;
+padding: 10px 22px;
+color: yellow;
+font-size: 16px;
+outline: none;
+border: 3px solid yellow;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+font-weight: bold;
+}
+.btnLink:hover {
+  transition: all 0.2s ease-in-out;
+  color: blue;
+  background-color: yellow;
+  border: 3px solid blue;
+}
