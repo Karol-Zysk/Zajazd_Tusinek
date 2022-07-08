@@ -11,7 +11,6 @@ type BtnProps = {
 };
 
 const BtnSlider: React.FC<BtnProps> = ({ direction, moveSlide }) => {
-  console.log(direction, moveSlide);
   return (
     <>
       <button

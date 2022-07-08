@@ -15,10 +15,10 @@ const Intro = () => {
       <Circle backgroundColor="#01c686" top="-45vh" left="-45vh" />
       <div className={styles.card}>
         <h1 className={styles.title}>
-          Informacje o<span className={styles.brand}> Tusinku</span>
+          Zajazd w<span className={styles.brand}> Tusinku</span>
         </h1>
         <p className={styles.description}>
-          Zajazd Tusinek jest położony przy drodze na Mazury w miejscowości
+          Tusinek jest położony przy drodze na Mazury w miejscowości
           Rozogi. Przy wjeździe znajduje się restauracja, w której serwowane są
           wyśmienite <b>regionalne potrawy</b>. W głębi <i>Alei Lipowej</i>, za
           restauracją znajduje się część hotelowa oraz <b>gospodarstwo</b>.

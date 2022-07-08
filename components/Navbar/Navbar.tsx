@@ -26,11 +26,21 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
     <>
       <div
         className={styles.navbar}
-        style={{ background: scrollNav ? "#059b05b2" : "rgba(255,255,255,0.5)" }}
+        style={{
+          background: scrollNav ? "#059b05b2" : "rgba(255,255,255,0.6)",
+        }}
       >
         <div className={styles.container}>
           <Link href="intro">
-            <a style={{ fontSize: scrollNav ? "1.7rem" : "4rem" }} className={styles.logo_link}>Tusinek</a>
+            <a
+              style={{
+                fontSize: scrollNav ? "1.7rem" : "3.7rem",
+                color: scrollNav ? "white" : "green ",
+              }}
+              className={styles.logo_link}
+            >
+              Zajazd Tusinek
+            </a>
           </Link>
 
           <div className={styles.mobile_icon} onClick={toggle}>
@@ -39,25 +49,51 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <ul className={styles.menu}>
             <li className={styles.item}>
               <Link href="info">
-                <a className={styles.link}>Informacje</a>
+                <a
+                  className={styles.link}
+                  style={{
+                    opacity: scrollNav ? "1" : "0",
+                    fontSize: scrollNav ? "1.1rem" : "0.5rem",
+                  }}
+                >
+                  Informacje
+                </a>
               </Link>
             </li>
 
             <li className={styles.item}>
               <Link href="info">
-                <a className={styles.link}>Nagrody</a>
+                <a
+                  style={{
+                    opacity: scrollNav ? "1" : "0",
+                    fontSize: scrollNav ? "1.1rem" : "0.5rem",
+                  }}
+                  className={styles.link}
+                >
+                  Nagrody
+                </a>
               </Link>
             </li>
             <li className={styles.item}>
               <Link href="info">
-                <a className={styles.link}>Produkty</a>
+                <a
+                  style={{
+                    opacity: scrollNav ? "1" : "0",
+                    fontSize: scrollNav ? "1.1rem" : "0.5rem",
+                  }}
+                  className={styles.link}
+                >
+                  Produkty
+                </a>
               </Link>
             </li>
           </ul>
           <nav className={styles.navBtn}>
-            <Link href="contact">
-              <a className={styles.btnLink}>Kontakt</a>
-            </Link>
+            {scrollNav && (
+              <Link href="contact">
+                <a className={styles.btnLink}>Kontakt</a>
+              </Link>
+            )}
           </nav>
         </div>
       </div>
