@@ -5,6 +5,7 @@ import Intro from "../components/Intro/Intro";
 import Services from "../components/Services/Services";
 import { data } from "../data";
 import { dataType } from "../type";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 
 
@@ -16,9 +17,10 @@ const Home: NextPage<dataType> = ({ services }) => {
         <title>Tusinek Strona Główna</title>
         <meta name="description" content="Strona Główna Restauracji Tusinek" />
       </Head>
-      <Hero />
+      {/* <Hero /> */}
       <Intro />
       <Services services={services} />
+      <Testimonials/>
     </div>
   );
 };

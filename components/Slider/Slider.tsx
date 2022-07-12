@@ -43,7 +43,7 @@ export default function Slider() {
           >
             <Image
               layout="fill"
-              src={`/../public/images/slider${[index + 1]}.jpg`}
+              src={`/images/slider${[index + 1]}.jpg`}
               alt={`slider${[index + 1]}`} style={{filter: "blur(1rem)"}}
             />
           </div>
