@@ -10,9 +10,10 @@ const Testimonials = () => {
       <Circle backgroundColor="green" top="-70vh" />
       <h1 className={styles.title}>Opinie</h1>
       <div className={styles.wrapper}>
-        {users.map((user) => {
+        {users.map((user, index) => {
           return (
             <div key={user.id} className={styles.card}>
+              
               <div className={styles.header}>
                 <div className={styles.header_user}>
                   {" "}
@@ -30,8 +31,8 @@ const Testimonials = () => {
                   <Image
                     src={`/images/logos/${user.logo}`}
                     alt="logo"
-                    width="30"
-                    height="30"
+                    width="25"
+                    height="25"
                     objectFit="contain"
                   />
                 </div>
@@ -44,7 +45,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <p className={styles.comment}>{user.comment}</p>
+              <p className={styles.comment}> {user.comment}</p>
               <div className={styles.person}></div>
             </div>
           );

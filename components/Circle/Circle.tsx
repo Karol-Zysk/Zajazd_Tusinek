@@ -4,6 +4,8 @@ type CircleProps = {
   bottom?: string;
   right?: string;
   backgroundColor?: string;
+  width?: string,
+  height?: string
 };
 
 const Circle: React.FC<CircleProps> = ({
@@ -12,10 +14,12 @@ const Circle: React.FC<CircleProps> = ({
   bottom,
   right,
   backgroundColor,
+  width,
+  height
 }) => {
   return (
     <div
-      style={{ top, left, bottom, right, backgroundColor }}
+      style={{ top, left, bottom, right, backgroundColor, width, height }}
       className="circle"
     />
   );

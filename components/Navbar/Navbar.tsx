@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
       <div
         className={styles.navbar}
         style={{
-          background: scrollNav ? "#059b05b2" : "rgba(255,255,255,0.6)",
+          background: scrollNav ? "#059b05d0" : "rgba(255,255,255,0.6)",
         }}
       >
         <div className={styles.container}>
