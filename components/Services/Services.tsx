@@ -5,8 +5,7 @@ import HoverVideoPlayer from "react-hover-video-player";
 import { dataType } from "../../type";
 import styles from "./Services.module.css";
 import tusinek from "../../public/images/tusinek.jpg";
-
-
+import logo from "../../public/images/tusinek.jpg";
 
 const Services: React.FC<dataType> = ({ services }) => {
   return (
@@ -31,7 +30,19 @@ const Services: React.FC<dataType> = ({ services }) => {
                               width: "120%",
                               // height: "100%",
                             }}
-                            videoSrc={`/images/${service.video}`}
+                            videoSrc={`/video/${service.video}`}
+                            // pausedOverlay={
+                            //   <Image
+                            //     src={logo}
+                            //     alt="miniaturka"
+                            //     style={{
+                            //       width: "100%",
+                            //       height: "100%",
+                            //       objectFit: "cover",
+                                  
+                            //     }}
+                            //   />
+                            // }
                             loadingOverlay={
                               <div className="loading-overlay">
                                 <div className="loading-spinner" />

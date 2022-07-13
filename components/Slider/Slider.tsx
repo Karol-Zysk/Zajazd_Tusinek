@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./Slider.module.css";
-import BtnSlider from "./BtnSlider";
 import dataSlider from "./sliderData";
 import Image from "next/image";
 import SliderInside from "./Sliderinside";
@@ -30,7 +29,7 @@ export default function Slider() {
 
   return (
     <div className={styles.container_slider}>
-      <SliderInside slideIndex={slideIndex}  setSlideIndex={setSlideIndex} />
+      <SliderInside slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
       {dataSlider.map((obj, index) => {
         return (
           <div
@@ -43,14 +42,13 @@ export default function Slider() {
           >
             <Image
               layout="fill"
-              src={`/images/slider${[index + 1]}.jpg`}
-              alt={`slider${[index + 1]}`} style={{filter: "blur(1rem)"}}
+              src={`/images/slider/slider${[index + 1]}.jpg`}
+              alt={`slider${[index + 1]}`}
+              style={{ filter: "blur(1rem)" }}
             />
           </div>
         );
       })}
-
-     
     </div>
   );
 }

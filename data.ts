@@ -216,29 +216,32 @@ export const data = [
 export const users = [
   {
     id: 1,
-    logo: "yahoo.png",
+    logo: "google.png",
     avatar: "user1.jpeg",
+    note: "9.5",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Utconsectetur veniam fugiat labore quaerat possimus laudantium.",
+      "Bardzo ładnie urządzony teren. Mnóstwo kwiatów. Zadbana trawa. Duży plac zabaw dla dzieci. Fajne miejsca na gotowanie pod dachem w piecu i na ogniska (chociaż nie korzystaliśmy). Nawet dosyć kiepsko udokumentowane zdjęciami na Booking - a jest co fotografować.",
     name: "Harold Brown",
-    title: "Executive Manager",
+    date: "10 Czerwiec 2021 ",
   },
   {
     id: 2,
     logo: "google.png",
     avatar: "user2.jpeg",
+    note: "8.5",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Utconsectetur veniam fugiat labore quaerat possimus laudantium.",
+      "Dziękujemy  za cudowny  pobyt,   bardzo pomocny  i mily właściciel,  polecamy serdecznie,  bardzo smaczna  kuchnia, na pewno wrócimy. Dziękujemy 😍",
     name: "Anna Taylor",
-    title: "HR Manager",
+    date: "14 Listopad 2021",
   },
   {
     id: 3,
     logo: "facebook.png",
     avatar: "user3.jpeg",
+    note: "9",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Utconsectetur veniam fugiat labore quaerat possimus laudantium.",
+      "Wyjątkowe miejsce, gdzie można odpocząć, uciec myślami od pędzącego świata. Przepyszne jedzenie (śniadanie i obiad w restauracji obok)! Bardzo miły Pan Właściciel. Czystość i przestrzeń. Miejsce, w którym wyczuwalna jest przyjazna atmosfera i sielski spokój.",
     name: "James Garry",
-    title: "UI Designer",
+    date: "15 Maj 2022",
   },
 ];

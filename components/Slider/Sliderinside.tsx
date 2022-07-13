@@ -46,7 +46,7 @@ const SliderInside: React.FC<InsideSliderProps> = ({
           >
             <Image
               layout="fill"
-              src={`/images/slider${[index + 1]}.jpg`}
+              src={`/images/slider/slider${[index + 1]}.jpg`}
               alt={`slider${[index + 1]}`}
             />
           </div>
