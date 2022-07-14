@@ -1,8 +1,8 @@
 import styles from "./Footer.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import { BiMailSend, BiMap, BiPhoneCall } from "react-icons/bi";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { GiBriefcase, GiKnifeFork } from "react-icons/gi";
 import logo from "../../public/images/logo.png";
 
 const Footer = () => {
@@ -10,8 +10,6 @@ const Footer = () => {
     <div className={styles.container_white}>
       <div className={styles.container}>
         <div className={styles.card_large}>
-          <Image src={logo} width="300" height="90" alt="logo" />
-
           <div className={styles.link_container}>
             <span className={styles.link_text}>
               Napisz
@@ -29,43 +27,75 @@ const Footer = () => {
         </div>
         <div className={styles.card_small}>
           <div className={styles.card_item}>
-            Kolonia, 12-114 Rozogi,
-            <br /> Warmińsko-Mazurskie, Polska
+            <p className={styles.card_item_title}>Informacje:</p>
+            <p className={styles.card_item_info}>Kolonia, 12-114 Rozogi,</p>
+            <p className={styles.card_item_info}>
+              {" "}
+              Warmińsko-Mazurskie, Polska
+            </p>
           </div>
           <div className={styles.card_item}>
-            tusinek@tusinek.com.pl
-            <br /> 89 722 60 39
+            <p className={styles.card_item_info}>tusinek@tusinek.com.pl</p>
+            <p className={styles.card_item_info}> 89 722 60 39</p>
           </div>
         </div>
         <div className={styles.card_small}>
           <div className={styles.card_item}>
             <p className={styles.card_item_title}>Polub nas:</p>
-            <a></a>
+
             <p
               onClick={() => {
                 window.open("http://facebook.com/tusinek");
               }}
               className={styles.card_item_content}
             >
-              facebook.com/tusinek
-              <BsFacebook color="white" />
+              Facebook
+              <BsFacebook className={styles.icon_small} />
+            </p>
+            <p
+              onClick={() => {
+                window.open("http://instagram.com/zajazd_tusinek/");
+              }}
+              className={styles.card_item_content}
+            >
+              Instagram
+              <BsInstagram className={styles.icon_small} />
             </p>
           </div>
           <div className={styles.card_item}>
-            © 2022 LAMA INTERACTIVE,
-            <br />
-            ALL RIGHTS RESERVED
+            <p className={styles.card_item_title}>Pisali o nas:</p>
+
+            <p
+              onClick={() => {
+                window.open(
+                  "https://krytykakulinarna.com/zajazd-tusinek-rozogi/"
+                );
+              }}
+              className={styles.card_item_content}
+            >
+              Krytyka kulinarna
+              <GiKnifeFork className={styles.icon_small} />
+            </p>
+            <p
+              onClick={() => {
+                window.open(
+                  "https://www.szalonewalizki.pl/zajazd-tusinek-wypoczynek-i-kuchnia-w-zgodzie-z-natura/"
+                );
+              }}
+              className={styles.card_item_content}
+            >
+              Szalone walizki
+              <GiBriefcase className={styles.icon_small} />
+            </p>
           </div>
         </div>
         <div className={styles.card_small}>
           <div className={styles.card_item}>
-            FOLLOW US:
-            <br /> __FB __IN __BE __TW
+            <Image src={logo} width="290" height="95" alt="logo" />
           </div>
           <div className={styles.card_item}>
-            © 2022 LAMA INTERACTIVE,
-            <br />
-            ALL RIGHTS RESERVED
+            <p className={styles.card_item_info}>© 2022 TUSINEK,</p>
+            <p className={styles.card_item_info}> WSZELKIE PRAWA ZASTRZEŻONE</p>
           </div>
         </div>
       </div>

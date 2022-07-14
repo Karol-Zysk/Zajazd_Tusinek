@@ -7,8 +7,8 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <div className={styles.container}>
-      <Circle backgroundColor="green" top="-70vh" />
-      <h1 className={styles.title}>Opinie</h1>
+      <Circle backgroundColor="green" top="-65vh" />
+      <h1 className={styles.title}>Opinie z Booking.com</h1>
       <div className={styles.wrapper}>
         {users.map((user, index) => {
           return (

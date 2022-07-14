@@ -16,6 +16,7 @@ const Home: NextPage<dataType> = ({ services }) => {
       <Head>
         <title>Tusinek Strona Główna</title>
         <meta name="description" content="Strona Główna Restauracji Tusinek" />
+       
       </Head>
       {/* <Hero /> */}
       <Intro />

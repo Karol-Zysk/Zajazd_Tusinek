@@ -10,7 +10,7 @@ import logo from "../../public/images/tusinek.jpg";
 const Services: React.FC<dataType> = ({ services }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.subtitle}>Co nas wyróżnia</h1>
+      <h1 className={styles.subtitle}>Nasza Oferta</h1>
 
       <div className={styles.content_wrapper}>
         <div className={styles.content}>

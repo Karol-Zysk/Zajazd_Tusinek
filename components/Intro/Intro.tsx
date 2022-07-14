@@ -12,24 +12,30 @@ const images = [introImage1, introImage2, introImage3, introImage4];
 const Intro = () => {
   return (
     <div className={styles.container}>
-      <Circle backgroundColor="#01c686" top="-45vh" left="-45vh" />
+      <Circle backgroundColor="#01c686" top="-45vh" left="-35vh" />
       <div className={styles.card}>
         <h1 className={styles.title}>
-          Zajazd w<span className={styles.brand}> Tusinku</span>
+          Witajcie<span className={styles.brand}> Tusinku</span>
         </h1>
         <p className={styles.description}>
-          Tusinek jest położony przy drodze na Mazury w miejscowości
-          Rozogi. Przy wjeździe znajduje się restauracja, w której serwowane są
-          wyśmienite <b>regionalne potrawy</b>. W głębi <i>Alei Lipowej</i>, za
-          restauracją znajduje się część hotelowa oraz <b>gospodarstwo</b>.
+          <b style={{fontSize: "1.8rem", color: "darkgreen"}}>Tusinek</b> jest położony przy drodze na Mazury w
+          miejscowości Rozogi. Przy wjeździe znajduje się restauracja, w której
+          serwowane są wyśmienite <b>regionalne potrawy</b>. W głębi{" "}
+          <i>Alei Lipowej</i>, za restauracją znajduje się część hotelowa oraz{" "}
+          <b>gospodarstwo</b>.
         </p>
-        <button className={styles.button}>Sprawdź Dojazd</button>
+        <button className={styles.button}>Sprawdź Ofertę</button>
       </div>
       <div className={styles.imagesCard}>
         {images.map((img, index) => {
           return (
             <div key={index} className={styles.imageWrapper}>
-              <Image alt="Tusinek" src={img} className={styles.image} />
+              <Image
+                alt="Tusinek"
+                objectFit="fill"
+                src={img}
+                className={styles.image}
+              />
             </div>
           );
         })}

@@ -216,7 +216,7 @@ export const data = [
 export const users = [
   {
     id: 1,
-    logo: "google.png",
+    logo: "booking.jpg",
     avatar: "user1.jpeg",
     note: "9.5",
     comment:
@@ -236,7 +236,7 @@ export const users = [
   },
   {
     id: 3,
-    logo: "facebook.png",
+    logo: "booking.jpg",
     avatar: "user3.jpeg",
     note: "9.0",
     comment:
