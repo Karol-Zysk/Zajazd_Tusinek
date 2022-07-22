@@ -8,12 +8,18 @@ const Testimonials = () => {
   return (
     <div className={styles.container}>
       <Circle backgroundColor="green" top="-65vh" />
-      <h1 className={styles.title}>Opinie z Booking.com</h1>
+     <div className={styles.opinions}><h1 className={styles.title}>Opinie z </h1>
+      <Image
+        alt=""
+        objectFit="contain"
+        height="100"
+        width="240"
+        src="/images/logos/booking.png"
+      /></div> 
       <div className={styles.wrapper}>
         {users.map((user, index) => {
           return (
             <div key={user.id} className={styles.card}>
-              
               <div className={styles.header}>
                 <div className={styles.header_user}>
                   {" "}

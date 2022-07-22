@@ -1,6 +1,5 @@
 .container_white {
   height: 14rem;
-  background-color: transparent;
   width: 100%;
 }
 .container {
@@ -11,7 +10,7 @@
   box-shadow: 0px -10px 50px rgba(4, 223, 22, 0.55);
   font-size: 1rem;
   padding: 2rem 3rem 1rem;
-  background-color: #059b05;
+  background-color: #028802;
 }
 
 .title {
@@ -23,6 +22,23 @@
   transition: all 1s ease;
 }
 
+.title2 {
+  font-weight: 400;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.774);
+  width: max-content;
+  padding: 0.5rem;
+  transition: all 1s ease;
+}
+
+.box_title{
+  font-weight: 400;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.774);
+  width: max-content;
+  padding: 0.5rem;
+  transition: all 1s ease;
+}
 .title:hover {
   background-color: white;
   color: rgba(0, 128, 0, 0.774);

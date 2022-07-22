@@ -27,15 +27,21 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
       <div
         className={styles.navbar}
         style={{
-          background: scrollNav ? "#059b05d0" : "rgba(255,255,255,0.6)",
+          background: scrollNav ? "rgba(0, 155, 0, 0.86)" : "transparent",
+          borderBottom: scrollNav
+            ? "5px solid rgb(255, 255, 255)"
+            : "5px solid transparent",
         }}
       >
         <div className={styles.container}>
           <Link href="intro">
             <a
               style={{
-                fontSize: scrollNav ? "1.7rem" : "3.7rem",
-                color: scrollNav ? "white" : "green ",
+                fontSize: scrollNav ? "1.7rem" : "2.5rem",
+                color: scrollNav ? "white" : "white ",
+                textShadow: scrollNav
+                  ? "2px 4px 4px black"
+                  : "3px -4px 7px black",
               }}
               className={styles.logo_link}
             >

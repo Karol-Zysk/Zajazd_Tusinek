@@ -1,8 +1,6 @@
 .navbar {
-  background: blue;
-  border-bottom: 5px solid rgba(0, 128, 0, 0.492);
-  height: 6rem;
-  margin-top: -6rem;
+  height: 5rem;
+  margin-top: -5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +21,7 @@
 }
 
 .logo_link {
-  color: green;
+  
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
