@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: calc(100vh );
+  height: calc(100vh);
   position: relative;
   display: flex;
 }
@@ -14,14 +14,15 @@
   justify-content: space-around;
   position: relative;
 }
-.imagesCard {
+.images_card {
   width: 50%;
-  height: min-content;
-  display: grid;
+  height: 80%;
+  position: relative;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
   padding: 2rem;
   align-self: center;
+  margin-right: 5%;
 }
 
 .title {
@@ -50,26 +51,28 @@
   width: max-content;
 }
 
-.imageWrapper {
+.image_wrapper {
   box-shadow: 7px 7px 10px black;
   display: flex;
   border-radius: 10px;
-  transition: 300ms ease-in-out;
   border: 2px solid white;
   overflow: hidden;
+  position: absolute;
+  width: 55%;
+
+}
+.image_wrapper:hover {
+  transform: scale(1.05);
   
+  transition: 300ms ease-in-out;
+  z-index: 199;
 }
-.imageWrapper:hover{
-  transform: scale(1.01);
-}
-
-
 
 .image {
   border-radius: 10px;
+  position: absolute;
   cursor: pointer;
   transition: 300ms ease-in-out;
-  
 }
 .image:hover {
   border-radius: 0;
