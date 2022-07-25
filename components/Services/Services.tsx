@@ -3,24 +3,52 @@ import Image from "next/image";
 import React from "react";
 import HoverVideoPlayer from "react-hover-video-player";
 import { dataType } from "../../type";
+import { motion } from "framer-motion";
 import styles from "./Services.module.css";
 import tusinek from "../../public/images/tusinek.jpg";
-import logo from "../../public/images/tusinek.jpg";
+
+const serviceAnimate = {
+  offscreen: { x: 0, y: 90, opacity: 0 },
+  onscreen: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+
+    transition: { type: "spring", duration: 0.7 },
+  },
+};
+const imageAnimate = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+
+    transition: { type: "spring" },
+  },
+};
 
 const Services: React.FC<dataType> = ({ services }) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.subtitle}>Nasza Oferta</h1>
 
-      <div className={styles.content_wrapper}>
+      <motion.div
+        className={styles.content_wrapper}
+        transition={{ staggerChildren: 0.2 }}
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{ once: true, amount: 0.4 }}
+      >
         <div className={styles.content}>
           {" "}
           <div className={styles.info}>
-            <div className={styles.services}>
+            <motion.div className={styles.services}>
               {services.map((service, index) => {
                 return (
                   <Link key={service.id} href={`/products${service.name}`}>
-                    <div className={styles.service}>
+                    <motion.div
+                      className={styles.service}
+                      variants={serviceAnimate}
+                    >
                       <span className={styles.cat}>{service.title}</span>
                       <div className={styles.media}>
                         {service.video ? (
@@ -39,7 +67,7 @@ const Services: React.FC<dataType> = ({ services }) => {
                             //       width: "100%",
                             //       height: "100%",
                             //       objectFit: "cover",
-                                  
+
                             //     }}
                             //   />
                             // }
@@ -50,33 +78,37 @@ const Services: React.FC<dataType> = ({ services }) => {
                             }
                           />
                         ) : (
-                          <div style={{ width: "100%" }}>
+                          <motion.div
+                            variants={imageAnimate}
+                            style={{ width: "100%" }}
+                          >
                             <Image
                               alt={service.name}
                               src={`/images/${service.photo}`}
                               width={100}
                               height={100}
                             />
-                          </div>
+                          </motion.div>
                         )}
                       </div>
                       <button className="btnLink">Więcej</button>
-                    </div>
+                    </motion.div>
                   </Link>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
-        <div className={styles.photo}>
+
+        <motion.div variants={imageAnimate} className={styles.photo}>
           <Image
             alt="Tusinek"
             src={tusinek}
             objectFit="fill"
             className={styles.img}
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

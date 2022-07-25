@@ -2,22 +2,19 @@ import React from "react";
 import styles from "./Intro.module.css";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-import introImage1 from "../../public/images/intro/introImage1.jpg";
-import introImage2 from "../../public/images/intro/introImage2.jpg";
-import introImage3 from "../../public/images/intro/introImage3.jpg";
-import introImage4 from "../../public/images/intro/introImage4.jpg";
+import { IntroData } from "../../data";
 import Circle from "../Circle/Circle";
 
-const images = [introImage1, introImage2, introImage3, introImage4];
+
 
 const imageAnimate = {
-  offscreen: { x: 0, y: 200, opacity: 0 },
+  offscreen: { x: 0, y: 150, opacity: 0 },
   onscreen: {
     x: 0,
     y: 0,
     opacity: 1,
 
-    transition: { type: "spring",  duration: 1.2 },
+    transition: { type: "spring", duration: 2 },
   },
 };
 
@@ -40,47 +37,34 @@ const Intro = () => {
       </div>
       <motion.div
         className={styles.images_card}
-        transition={{ staggerChildren: 0.4 }}
+        transition={{ staggerChildren: 0.3 }}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.4 }}
       >
-        <motion.div
-          variants={imageAnimate}
-          className={styles.image_wrapper}
-          style={{ left: `5%`, top: ` 5%` }}
-        >
-          <Image
-            alt="Tusinek"
-            objectFit="fill"
-            src={introImage1}
-            className={styles.image}
-          />
-        </motion.div>
-        <motion.div
-          variants={imageAnimate}
-          className={styles.image_wrapper}
-          style={{ left: `45%`, top: `5% ` }}
-        >
-          <Image
-            alt="Tusinek"
-            objectFit="fill"
-            src={introImage2}
-            className={styles.image}
-          />
-        </motion.div>
-        <motion.div
-          variants={imageAnimate}
-          className={styles.image_wrapper}
-          style={{ left: `25%`, top: ` 45%` }}
-        >
-          <Image
-            alt="Tusinek"
-            objectFit="fill"
-            src={introImage3}
-            className={styles.image}
-          />
-        </motion.div>
+        {IntroData.map((intro, index) => {
+          return (
+            <motion.div
+              key={index}
+              variants={imageAnimate}
+              className={styles.image_wrapper}
+              style={intro.position}
+              whileHover={{
+                scale: 1.1,
+                transition: {
+                  duration: 0.5,
+                },
+              }}
+            >
+              <Image
+                alt="Tusinek"
+                objectFit="fill"
+                src={intro.img}
+                className={styles.image}
+              />
+            </motion.div>
+          );
+        })}
       </motion.div>
     </div>
   );

@@ -1,3 +1,8 @@
+import introImage1 from "/public/images/intro/introImage1.jpg";
+import introImage2 from "/public/images/intro/introImage2.jpg";
+import introImage3 from "/public/images/intro/introImage3.jpg";
+import introImage4 from "/public/images/intro/introImage4.jpg";
+
 export const data = [
   {
     id: 1,
@@ -10,27 +15,27 @@ export const data = [
     images: [
       {
         id: 1,
-        url: "https://images.pexels.com/photos/962000/pexels-photo-962000.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: "introImage1.jpg"
       },
       {
         id: 2,
-        url: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: "introImage1.jpg"
       },
       {
         id: 3,
-        url: "https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: "introImage2.jpg"
       },
       {
         id: 4,
-        url: "https://images.pexels.com/photos/4065906/pexels-photo-4065906.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: "introImage3.jpg"
       },
       {
         id: 5,
-        url: "https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: "introImage4.jpg"
       },
       {
         id: 6,
-        url: "https://images.pexels.com/photos/4197693/pexels-photo-4197693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: "introImage1.jpg"
       },
     ],
   },
@@ -43,32 +48,32 @@ export const data = [
     video: "smaki.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: "https://images.pexels.com/photos/9965121/pexels-photo-9965121.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 2,
-        url: "https://images.pexels.com/photos/9716799/pexels-photo-9716799.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 3,
-        url: "https://images.pexels.com/photos/9395308/pexels-photo-9395308.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 4,
-        url: "https://images.pexels.com/photos/10067102/pexels-photo-10067102.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 5,
-        url: "https://images.pexels.com/photos/5262378/pexels-photo-5262378.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 6,
-        url: "https://images.pexels.com/photos/9796405/pexels-photo-9796405.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-    ],
+      images: [
+        {
+          id: 1,
+          url: introImage1
+        },
+        {
+          id: 2,
+          url: introImage1
+        },
+        {
+          id: 3,
+          url: introImage2
+        },
+        {
+          id: 4,
+          url: introImage3
+        },
+        {
+          id: 5,
+          url: introImage4
+        },
+        {
+          id: 6,
+          url: introImage1
+        },
+      ],
   },
   {
     id: 3,
@@ -79,32 +84,32 @@ export const data = [
     video: "sery.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: "https://images.pexels.com/photos/9299384/pexels-photo-9299384.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 2,
-        url: "https://images.pexels.com/photos/9100089/pexels-photo-9100089.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 3,
-        url: "https://images.pexels.com/photos/9714732/pexels-photo-9714732.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 4,
-        url: "https://images.pexels.com/photos/9651391/pexels-photo-9651391.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 5,
-        url: "https://images.pexels.com/photos/10008935/pexels-photo-10008935.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 6,
-        url: "https://images.pexels.com/photos/7459072/pexels-photo-7459072.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-    ],
+      images: [
+        {
+          id: 1,
+          url: introImage1
+        },
+        {
+          id: 2,
+          url: introImage1
+        },
+        {
+          id: 3,
+          url: introImage2
+        },
+        {
+          id: 4,
+          url: introImage3
+        },
+        {
+          id: 5,
+          url: introImage4
+        },
+        {
+          id: 6,
+          url: introImage1
+        },
+      ],
   },
   {
     id: 4,
@@ -114,32 +119,32 @@ export const data = [
     video: "place.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: "https://images.pexels.com/photos/962000/pexels-photo-962000.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 2,
-        url: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 3,
-        url: "https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 4,
-        url: "https://images.pexels.com/photos/4065906/pexels-photo-4065906.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 5,
-        url: "https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 6,
-        url: "https://images.pexels.com/photos/4197693/pexels-photo-4197693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-    ],
+      images: [
+        {
+          id: 1,
+          url: introImage1
+        },
+        {
+          id: 2,
+          url: introImage1
+        },
+        {
+          id: 3,
+          url: introImage2
+        },
+        {
+          id: 4,
+          url: introImage3
+        },
+        {
+          id: 5,
+          url: introImage4
+        },
+        {
+          id: 6,
+          url: introImage1
+        },
+      ],
   },
   {
     id: 5,
@@ -152,27 +157,27 @@ export const data = [
     images: [
       {
         id: 1,
-        url: "https://images.pexels.com/photos/962000/pexels-photo-962000.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: introImage1
       },
       {
         id: 2,
-        url: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: introImage1
       },
       {
         id: 3,
-        url: "https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: introImage2
       },
       {
         id: 4,
-        url: "https://images.pexels.com/photos/4065906/pexels-photo-4065906.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: introImage3
       },
       {
         id: 5,
-        url: "https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: introImage4
       },
       {
         id: 6,
-        url: "https://images.pexels.com/photos/4197693/pexels-photo-4197693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        url: introImage1
       },
     ],
   },
@@ -244,4 +249,14 @@ export const users = [
     name: "James Garry",
     date: "15 Maj 2022",
   },
+];
+
+export const IntroData = [
+  { img: introImage1, position: { left: "5%", top: " 5%" } },
+  {
+    img: introImage2,
+
+    position: { left: "50%", top: "10% " },
+  },
+  { img: introImage3, position: { left: "25%", top: " 45%" } },
 ];
