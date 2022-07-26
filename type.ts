@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export type dataType = {
   services: (
     | {
@@ -41,3 +43,31 @@ export type productType = {
     }[];
   };
 };
+
+export type AllProdusts = { buyProducts:
+  ({
+    id: number;
+    name: string;
+    title: string;
+    opis: string;
+    dlugiOpis: string;
+    cennik: ({
+        id: number;
+        name: string;
+        price: string;
+        qty: string;
+    } | {
+        id: number;
+        name: string;
+        qty: string;
+        price?: undefined;
+    })[];
+    images: {
+        
+    }[];
+} | {
+   
+} | {
+    
+})[]
+}

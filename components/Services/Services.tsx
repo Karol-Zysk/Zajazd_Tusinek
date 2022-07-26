@@ -36,7 +36,7 @@ const Services: React.FC<dataType> = ({ services }) => {
         transition={{ staggerChildren: 0.2 }}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className={styles.content}>
           {" "}

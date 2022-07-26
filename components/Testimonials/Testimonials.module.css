@@ -31,14 +31,15 @@
 }
 
 .wrapper {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-around;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .card {
-  width: 30%;
+  min-width: 35vw;
+  margin-left: 2vw;
 position: relative;
   border-right: 3px solid rgba(170, 170, 170, 0.357);
   border-bottom: 3px solid rgba(170, 170, 170, 0.358);

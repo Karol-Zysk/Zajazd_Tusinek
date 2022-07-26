@@ -1,6 +1,9 @@
 .container {
+  width: 100%;
+  height: calc(100vh);
+  position: relative;
   display: flex;
-  padding: 120px 50px;
+  padding: 4rem;
 }
 
 .cardL {

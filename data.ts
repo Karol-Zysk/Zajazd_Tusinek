@@ -15,27 +15,27 @@ export const data = [
     images: [
       {
         id: 1,
-        url: "introImage1.jpg"
+        url: "introImage1.jpg",
       },
       {
         id: 2,
-        url: "introImage1.jpg"
+        url: "introImage1.jpg",
       },
       {
         id: 3,
-        url: "introImage2.jpg"
+        url: "introImage2.jpg",
       },
       {
         id: 4,
-        url: "introImage3.jpg"
+        url: "introImage3.jpg",
       },
       {
         id: 5,
-        url: "introImage4.jpg"
+        url: "introImage4.jpg",
       },
       {
         id: 6,
-        url: "introImage1.jpg"
+        url: "introImage1.jpg",
       },
     ],
   },
@@ -48,32 +48,32 @@ export const data = [
     video: "smaki.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-      images: [
-        {
-          id: 1,
-          url: introImage1
-        },
-        {
-          id: 2,
-          url: introImage1
-        },
-        {
-          id: 3,
-          url: introImage2
-        },
-        {
-          id: 4,
-          url: introImage3
-        },
-        {
-          id: 5,
-          url: introImage4
-        },
-        {
-          id: 6,
-          url: introImage1
-        },
-      ],
+    images: [
+      {
+        id: 1,
+        url: introImage1,
+      },
+      {
+        id: 2,
+        url: introImage1,
+      },
+      {
+        id: 3,
+        url: introImage2,
+      },
+      {
+        id: 4,
+        url: introImage3,
+      },
+      {
+        id: 5,
+        url: introImage4,
+      },
+      {
+        id: 6,
+        url: introImage1,
+      },
+    ],
   },
   {
     id: 3,
@@ -84,32 +84,32 @@ export const data = [
     video: "sery.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-      images: [
-        {
-          id: 1,
-          url: introImage1
-        },
-        {
-          id: 2,
-          url: introImage1
-        },
-        {
-          id: 3,
-          url: introImage2
-        },
-        {
-          id: 4,
-          url: introImage3
-        },
-        {
-          id: 5,
-          url: introImage4
-        },
-        {
-          id: 6,
-          url: introImage1
-        },
-      ],
+    images: [
+      {
+        id: 1,
+        url: introImage1,
+      },
+      {
+        id: 2,
+        url: introImage1,
+      },
+      {
+        id: 3,
+        url: introImage2,
+      },
+      {
+        id: 4,
+        url: introImage3,
+      },
+      {
+        id: 5,
+        url: introImage4,
+      },
+      {
+        id: 6,
+        url: introImage1,
+      },
+    ],
   },
   {
     id: 4,
@@ -119,32 +119,32 @@ export const data = [
     video: "place.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-      images: [
-        {
-          id: 1,
-          url: introImage1
-        },
-        {
-          id: 2,
-          url: introImage1
-        },
-        {
-          id: 3,
-          url: introImage2
-        },
-        {
-          id: 4,
-          url: introImage3
-        },
-        {
-          id: 5,
-          url: introImage4
-        },
-        {
-          id: 6,
-          url: introImage1
-        },
-      ],
+    images: [
+      {
+        id: 1,
+        url: introImage1,
+      },
+      {
+        id: 2,
+        url: introImage1,
+      },
+      {
+        id: 3,
+        url: introImage2,
+      },
+      {
+        id: 4,
+        url: introImage3,
+      },
+      {
+        id: 5,
+        url: introImage4,
+      },
+      {
+        id: 6,
+        url: introImage1,
+      },
+    ],
   },
   {
     id: 5,
@@ -157,27 +157,27 @@ export const data = [
     images: [
       {
         id: 1,
-        url: introImage1
+        url: introImage1,
       },
       {
         id: 2,
-        url: introImage1
+        url: introImage1,
       },
       {
         id: 3,
-        url: introImage2
+        url: introImage2,
       },
       {
         id: 4,
-        url: introImage3
+        url: introImage3,
       },
       {
         id: 5,
-        url: introImage4
+        url: introImage4,
       },
       {
         id: 6,
-        url: introImage1
+        url: introImage1,
       },
     ],
   },
@@ -218,6 +218,438 @@ export const data = [
   },
 ];
 
+export const allProducts = [
+  {
+    id: 1,
+    name: "sery",
+    title: "Oferta Serów",
+    opis: "Sery Farmerskie z Przetwórni Tusinek",
+
+    dlugiOpis: "Krowie i Kozie z naszej hodowli",
+    cennik: [
+      {
+        id: 1,
+        name: "Ser krowi Grąd dojrzały",
+        price: "80",
+        qty: "zł/kg",
+      },
+      {
+        id: 2,
+        name: "Ser krowi Grąd świeży",
+        price: "80",
+        qty: "zł/kg",
+      },
+      {
+        id: 3,
+        name: "Ser krowi Mały Tusinek ",
+        price: "50",
+        qty: "zł/kg",
+      },
+      {
+        id: 3,
+        name: "Ser krowi  Klinik",
+        price: "38",
+        qty: "zł/kg",
+      },
+      {
+        id: 4,
+        name: "Twaróg krowi",
+        price: "30",
+        qty: "zł/kg",
+      },
+      {
+        id: 5,
+        name: "Ser kozi Dziadek",
+        price: "115",
+        qty: "zł/kg",
+      },
+      {
+        id: 6,
+        name: "Ser kozi Koszałek dojrzały",
+        price: "98",
+        qty: "zł/kg",
+      },
+
+      {
+        id: 7,
+        name: "Ser kozi Opałek",
+        price: "95",
+        qty: "zł/kg",
+      },
+      {
+        id: 8,
+        name: "Ser kozi solankowy",
+        price: "90",
+        qty: "zł/kg",
+      },
+      {
+        id: 9,
+        name: "Ser kozi  ciaciorikotta",
+        price: "80",
+        qty: "zł/kg",
+      },
+      {
+        id: 10,
+        name: "Twaróg kozi",
+        price: "18",
+        qty: "zł/kg",
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        url: "ser1.jpg",
+      },
+      {
+        id: 2,
+        url: "ser2.jpg",
+      },
+      {
+        id: 3,
+        url: "miód.jpg",
+      },
+      {
+        id: 4,
+        url: "inne2.jpg",
+      },
+      {
+        id: 5,
+        url: "warzywa.jpg",
+      },
+      {
+        id: 6,
+        url: "inne.jpg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "wedliny",
+    title: "Oferta Wędlin",
+    opis: "Kurpiowskie Wędliny Tradycyjne",
+
+    dlugiOpis: "Takiej jeszcze żech ni jod",
+    cennik: [
+      {
+        id: 1,
+        name: "Boczek wędzony",
+        price: "45",
+        qty: "zł/kg",
+      },
+      {
+        id: 2,
+        name: "Szynka wędzona",
+        price: "59",
+        qty: "zł/kg",
+      },
+      {
+        id: 3,
+        name: "Szynka wędzona z tłuszczem",
+        price: "59",
+        qty: "zł/kg",
+      },
+      {
+        id: 4,
+        name: "Polędwica wędzona",
+        qty: "zł/kg",
+      },
+      {
+        id: 5,
+        name: "Baleron wędzony",
+        price: "58",
+        qty: "zł/kg",
+      },
+      {
+        id: 6,
+        name: "Kiełbasa swojska",
+        price: "45",
+        qty: "zł/kg",
+      },
+      {
+        id: 7,
+        name: "Kiełbasa czosnkowa ",
+        price: "57",
+        qty: "zł/kg",
+      },
+      {
+        id: 8,
+        name: "Kabanosy z gęsi",
+        price: "125",
+        qty: "zł/kg",
+      },
+      {
+        id: 9,
+        name: "Kiełbasa z gęsi",
+        price: "110",
+        qty: "zł/kg",
+      },
+      {
+        id: 10,
+        name: "Półgęsek",
+        price: "145",
+        qty: "zł",
+      },
+      {
+        id: 11,
+        name: "Kaszanka",
+        price: "258",
+        qty: "zł/kg",
+      },
+      {
+        id: 11,
+        name: "Salceson ",
+        price: "38",
+        qty: "zł/kg",
+      },
+      {
+        id: 11,
+        name: "Pasztet",
+        price: "75",
+        qty: "zł/kg",
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        url: "sery1.jpg",
+      },
+      {
+        id: 2,
+        url: "sery2.jpg",
+      },
+      {
+        id: 3,
+        url: "sery3.jpg",
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: "wyroby",
+    title: "Wyroby własne",
+    opis: "Coś smacznego dla każdego",
+
+    dlugiOpis: "Kaczka, kopytka, smalec i inne",
+    cennik: [
+      {
+        id: 1,
+        name: "Kaczka",
+        price: "85",
+      },
+      {
+        id: 2,
+        name: "Mielony",
+        price: "28",
+        qty: "zł/kg",
+      },
+      {
+        id: 3,
+        name: "Pyzy z mięsem",
+        price: "30",
+        qty: "zł/ opak",
+      },
+      {
+        id: 4,
+        name: "Pierogi leniwe",
+        price: "25",
+        qty: " zł/ opak",
+      },
+      {
+        id: 5,
+        name: "Kopytka",
+        price: "15",
+        qty: " zł/ opak",
+      },
+      {
+        id: 6,
+        name: "Kluski kładzione",
+        price: "45",
+        qty: " zł/kg",
+      },
+      {
+        id: 7,
+        name: "Naleśniki z twarogiem na słodko",
+        price: "25",
+        qty: " zł/ opak",
+      },
+      {
+        id: 8,
+        name: "Krokiety z farszem grzybowym",
+        price: "25",
+        qty: " zł/ opak",
+      },
+      {
+        id: 9,
+        name: "Słonina smakowa",
+        price: "36",
+        qty: " zł/ kg",
+      },
+      {
+        id: 10,
+        name: "Smalec ",
+        price: "19",
+        qty: " zł/ opak (0,5 kg)",
+      },
+      {
+        id: 11,
+        name: "Bigos",
+        price: "35",
+        qty: " zł/ słoik (1,20kg)",
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        url: "ser1.jpg",
+      },
+      {
+        id: 2,
+        url: "ser2.jpg",
+      },
+      {
+        id: 3,
+        url: "miód.jpg",
+      },
+      {
+        id: 4,
+        url: "inne2.jpg",
+      },
+      {
+        id: 5,
+        url: "warzywa.jpg",
+      },
+      {
+        id: 6,
+        url: "inne.jpg",
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: "warzywa",
+    title: "Nasze Warzywa",
+    opis: "Warzywa z uprawy naturalnej Gospodarstwo Tusinek",
+
+    dlugiOpis:
+      "Przepyszne warzywa z ziemi kurpiowskiej w tradycyjnym kurpiowskim  wydaniu ",
+    cennik: [
+      {
+        id: 1,
+        name: "Kapusta kiszona",
+      },
+      {
+        id: 2,
+        name: "Ogórki kiszone",
+      },
+      {
+        id: 3,
+        name: "Mieszanka Warzyw do zup",
+      },
+      {
+        id: 4,
+        name: "Buraki ugotowane",
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        url: "ser1.jpg",
+      },
+      {
+        id: 2,
+        url: "ser2.jpg",
+      },
+      {
+        id: 3,
+        url: "miód.jpg",
+      },
+      {
+        id: 4,
+        url: "inne2.jpg",
+      },
+      {
+        id: 5,
+        url: "warzywa.jpg",
+      },
+      {
+        id: 6,
+        url: "inne.jpg",
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: "miody",
+    title: "Miody i inne",
+    opis: "Miody, żurawina, gryby, ryby",
+
+    dlugiOpis:
+      "Przepyszne warzywa z ziemi kurpiowskiej w tradycyjnym kurpiowskim  wydaniu ",
+    cennik: [
+      {
+        id: 1,
+        name: "Miody małe 330g",
+        info: "akacjowy, chaber-blawatek, faceliowy, gryczany, leśny, nawłociowy, rzepakowy, wielokwiatowy",
+      },
+      {
+        id: 2,
+        name: "Miody duże 1300g",
+        info: "akacjowy, faceliowy, gryczany, leśny, nawlociowy, rzepakowy, wielokwiatowy",
+      },
+      {
+        id: 3,
+        name: "Żurawina",
+      },
+      {
+        id: 4,
+        name: "Grzyby",
+      },
+      {
+        id: 5,
+        name: "Ryby",
+      },
+      {
+        id: 6,
+        name: "Ciasto drożdżowe",
+      },
+      {
+        id: 7,
+        name: "Sernik",
+      },
+      {
+        id: 8,
+        name: "Wina Macedońskie",
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        url: "ser1.jpg",
+      },
+      {
+        id: 2,
+        url: "ser2.jpg",
+      },
+      {
+        id: 3,
+        url: "miód.jpg",
+      },
+      {
+        id: 4,
+        url: "inne2.jpg",
+      },
+      {
+        id: 5,
+        url: "warzywa.jpg",
+      },
+      {
+        id: 6,
+        url: "inne.jpg",
+      },
+    ],
+  },
+];
+
 export const users = [
   {
     id: 1,
@@ -245,8 +677,37 @@ export const users = [
     avatar: "user3.jpeg",
     note: "9.0",
     comment:
+      "Pyszne jedzenie, fajni gospodarze, wspaniałe zwierzęta, cudownie można odpocząć od zgiełku wielkiego mista",
+    date: "15 Maj 2022",
+  },
+  {
+    id: 4,
+    logo: "booking.jpg",
+    avatar: "user3.jpeg",
+    note: "9.0",
+    comment:
       "Wyjątkowe miejsce, gdzie można odpocząć, uciec myślami od pędzącego świata. Przepyszne jedzenie (śniadanie i obiad w restauracji obok)! Bardzo miły Pan Właściciel. Czystość i przestrzeń. Miejsce, w którym wyczuwalna jest przyjazna atmosfera i sielski spokój.",
     name: "James Garry",
+    date: "15 Maj 2022",
+  },
+  {
+    id: 5,
+    logo: "booking.jpg",
+    avatar: "user2.jpeg",
+    note: "9.0",
+    comment:
+      "Bardzo ładnie urządzony teren. Mnóstwo kwiatów. Zadbana trawa. Duży plac zabaw dla dzieci. Fajne miejsca na gotowanie pod dachem w piecu i na ogniska (chociaż nie korzystaliśmy). Nawet dosyć kiepsko udokumentowane zdjęciami na Booking - a jest co fotografować.W pokoju porządnie szerokie łóżko 2+1 bez kłopotu.",
+    name: "Magdalena",
+    date: "18 Czerwiec 2022",
+  },
+  {
+    id: 6,
+    logo: "booking.jpg",
+    avatar: "user1.jpeg",
+    note: "9.0",
+    comment:
+      "„Piękne malownicze miejsce z klimatem. Wyjatkowe śniadanie na świeżych produktach. Można było najejść się do syta.”",
+    name: "Paweł",
     date: "15 Maj 2022",
   },
 ];
