@@ -37,11 +37,11 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <Link href="intro">
             <a
               style={{
-                fontSize: scrollNav ? "1.7rem" : "2.5rem",
-                color: scrollNav ? "white" : "white ",
+                fontSize: scrollNav ? "1.7rem" : "2.9rem",
+                color: scrollNav ? "white" : "green ",
                 textShadow: scrollNav
                   ? "2px 4px 4px black"
-                  : "3px -4px 7px black",
+                  : "2px 2px 3px black",
               }}
               className={styles.logo_link}
             >
@@ -83,7 +83,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               </Link>
             </li>
             <li className={styles.item}>
-              <Link href="info">
+              <Link href="/products">
                 <a
                   style={{
                     visibility: scrollNav ? "visible" : "hidden",

@@ -734,3 +734,83 @@ export const IntroData = [
   },
   { img: introImage3, position: { left: "25%", top: " 45%" } },
 ];
+
+export const noclegi = [
+  { nr: "1", info: "1 łóżko podwójne + 2 pojedyncze" },
+
+  { nr: "2", info: "1 łóżko podwójne + kanapa dla 2 osób" },
+
+  { nr: "3", info: "2 łóżka pojedyncze + kanapa dla 2 osób" },
+
+  { nr: "4", info: "1 łóżka pojedyncza + kanapa 1 osobowa" },
+
+  { nr: "5", info: " 1 łóżka pojedyncza + kanapa 1 osobowa" },
+
+  { nr: "6", info: "3 łóżka pojedyncze" },
+
+  { nr: "7", info: "1 łóżko podwójne" },
+
+  { nr: "8", info: "2 łóżka pojedyncze" },
+
+  { nr: "9", info: " 2 łóżka pojedyncze + rozkładana kanapa" },
+
+  { nr: "10", info: "2 łóżka pojedyncze + łóżko dziecięce" },
+
+  { nr: "11", info: "2 łóżka pojedyncze" },
+
+  { nr: "12", info: "2 łóżka pojedyncze" },
+
+  { nr: "13", info: "1 łóżko podwójne + rozkładana kanapa" },
+
+  { nr: "14", info: "3 łóżka pojedyncze" },
+
+  { nr: "15", info: "2 łóżka pojedyncze" },
+
+  { nr: "16", info: "2 łóżka pojedyncze" },
+
+  { nr: "17", info: "1 łóżko podwójne + 1 łóżko pojedyncze" },
+  {
+    nr: "18",
+    info: ` studio/"apartament pod lasem" - 2 sypialnie z 2 pojedynczymi łóżkami w każdej z sypialni, salon z aneksem kuchennym
+ (Rezerwacja - min. 3 noclegi)`,
+  },
+];
+
+export const accomodationImages = [
+  {
+    id: 1,
+    url: "ser3.jpg",
+  },
+  {
+    id: 2,
+    url: "ser2.jpg",
+  },
+  {
+    id: 3,
+    url: "miod.jpg",
+  },
+  {
+    id: 4,
+    url: "inne2.jpg",
+  },
+  {
+    id: 5,
+    url: "warzywa.jpg",
+  },
+  {
+    id: 6,
+    url: "inne.jpg",
+  },
+  {
+    id: 7,
+    url: "inne4.jpg",
+  },
+  {
+    id: 8,
+    url: "inne2.jpg",
+  },
+  {
+    id: 9,
+    url: "inne.jpg",
+  },
+];

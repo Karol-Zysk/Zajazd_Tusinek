@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React, { useState } from "react";
 import { AllProdusts } from "../../type";
@@ -5,6 +6,9 @@ import Circle from "../Circle/Circle";
 import styles from "./Products.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import ProductInfo from "./ProductInfo";
+import ProductsContact from "./ProductsContact";
+import CircleCut1 from "../Circle/CircleCut1";
+import CircleCut2 from "../Circle/CircleCut2";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -29,13 +33,20 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
   const productName = buyProducts.map((category, index) => {
     return (
       <>
-        <Circle
-          backgroundColor="green"
-          width="65vw"
-          height="65vw"
-          top="-70vh"
-          left="-35vh"
-        />
+      
+        <CircleCut1
+        width="35vw"
+        height="35vw"
+        top="-5%"
+        right="-5%"
+      />
+     
+      <CircleCut2
+        width="30vw"
+        height="30vw"
+        bottom="-2%"
+        left="72%"
+      />
         <h1
           className={styles.header}
           style={{
@@ -58,7 +69,7 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
 
   return (
     <>
-        <div className={styles.header_wrapper}> {productName}</div>
+      <div className={styles.header_wrapper}> {productName}</div>
       <div className={styles.wrapper}>
         {buyProducts.map((category, index) => {
           return (
@@ -102,7 +113,8 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
             </>
           );
         })}
-      </div>
+      </div>{" "}
+      <ProductsContact/>
     </>
   );
 };

@@ -44,43 +44,53 @@ export type productType = {
   };
 };
 
-export type AllProdusts = { buyProducts:
-  {
+export type AllProdusts = {
+  buyProducts: {
     [x: string]: any;
     id: number;
     name: string;
     title: string;
     opis: string;
     dlugiOpis: string;
-    cennik: ({
-        id: number;
-        name: string;
-        price?: string;
-        qty?: string;
-        info?:string
-    } )[]
-    images: {
-        id:number,
-        url:string
-    }[];
-
-  }[]}
-
-  export type CategoryType = {
-    category: {
-      [x: string]: any;
+    cennik: {
       id: number;
       name: string;
-      title: string;
-      opis: string;
-      dlugiOpis: string;
-      cennik: {
-        id: number;
-        name: string;
-        price?: string | undefined;
-        qty?: string | undefined;
-        info?: string | undefined;
-      }[];
-      images: {}[];
-    };
+      price?: string;
+      qty?: string;
+      info?: string;
+    }[];
+    images: {
+      id: number;
+      url: string;
+    }[];
+  }[];
+};
+
+export type CategoryType = {
+  category: {
+    [x: string]: any;
+    id: number;
+    name: string;
+    title: string;
+    opis: string;
+    dlugiOpis: string;
+    cennik: {
+      id: number;
+      name: string;
+      price?: string | undefined;
+      qty?: string | undefined;
+      info?: string | undefined;
+    }[];
+    images: {}[];
   };
+};
+export type AccomodationsType = {
+  accomodations: {
+    nr: string;
+    info: string;
+  }[],
+  images?: {
+    id: number;
+    url: string;
+}[]
+};

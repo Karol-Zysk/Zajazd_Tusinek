@@ -32,6 +32,7 @@
   text-shadow: 2px 0px 2px black;
   transition: all 700ms ease-in-out;
   width: 33%;
+  transform: translateX(4rem);
 }
 .active {
   filter: brightness(1);
