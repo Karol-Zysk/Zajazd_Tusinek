@@ -221,7 +221,7 @@ export const data = [
 export const allProducts = [
   {
     id: 1,
-    name: "sery",
+    name: "Sery",
     title: "Oferta Serów",
     opis: "Sery Farmerskie z Przetwórni Tusinek",
 
@@ -298,7 +298,7 @@ export const allProducts = [
     images: [
       {
         id: 1,
-        url: "ser1.jpg",
+        url: "ser3.jpg",
       },
       {
         id: 2,
@@ -306,7 +306,7 @@ export const allProducts = [
       },
       {
         id: 3,
-        url: "miód.jpg",
+        url: "miod.jpg",
       },
       {
         id: 4,
@@ -324,7 +324,7 @@ export const allProducts = [
   },
   {
     id: 2,
-    name: "wedliny",
+    name: "Wędliny",
     title: "Oferta Wędlin",
     opis: "Kurpiowskie Wędliny Tradycyjne",
 
@@ -411,21 +411,33 @@ export const allProducts = [
     images: [
       {
         id: 1,
-        url: "sery1.jpg",
+        url: "ser3.jpg",
       },
       {
         id: 2,
-        url: "sery2.jpg",
+        url: "ser2.jpg",
       },
       {
         id: 3,
-        url: "sery3.jpg",
+        url: "inne.jpg",
+      },
+      {
+        id: 4,
+        url: "inne2.jpg",
+      },
+      {
+        id: 5,
+        url: "warzywa.jpg",
+      },
+      {
+        id: 6,
+        url: "inne.jpg",
       },
     ],
   },
   {
-    id: 1,
-    name: "wyroby",
+    id: 3,
+    name: "Wyroby",
     title: "Wyroby własne",
     opis: "Coś smacznego dla każdego",
 
@@ -435,6 +447,7 @@ export const allProducts = [
         id: 1,
         name: "Kaczka",
         price: "85",
+        qty: "zł/kg",
       },
       {
         id: 2,
@@ -500,7 +513,7 @@ export const allProducts = [
     images: [
       {
         id: 1,
-        url: "ser1.jpg",
+        url: "ser3.jpg",
       },
       {
         id: 2,
@@ -508,7 +521,7 @@ export const allProducts = [
       },
       {
         id: 3,
-        url: "miód.jpg",
+        url: "miod.jpg",
       },
       {
         id: 4,
@@ -525,8 +538,8 @@ export const allProducts = [
     ],
   },
   {
-    id: 1,
-    name: "warzywa",
+    id: 4,
+    name: "Warzywa",
     title: "Nasze Warzywa",
     opis: "Warzywa z uprawy naturalnej Gospodarstwo Tusinek",
 
@@ -553,7 +566,7 @@ export const allProducts = [
     images: [
       {
         id: 1,
-        url: "ser1.jpg",
+        url: "ser3.jpg",
       },
       {
         id: 2,
@@ -561,7 +574,7 @@ export const allProducts = [
       },
       {
         id: 3,
-        url: "miód.jpg",
+        url: "miod.jpg",
       },
       {
         id: 4,
@@ -578,8 +591,8 @@ export const allProducts = [
     ],
   },
   {
-    id: 1,
-    name: "miody",
+    id: 5,
+    name: "Miody",
     title: "Miody i inne",
     opis: "Miody, żurawina, gryby, ryby",
 
@@ -624,7 +637,7 @@ export const allProducts = [
     images: [
       {
         id: 1,
-        url: "ser1.jpg",
+        url: "ser3.jpg",
       },
       {
         id: 2,
@@ -632,7 +645,7 @@ export const allProducts = [
       },
       {
         id: 3,
-        url: "miód.jpg",
+        url: "miod.jpg",
       },
       {
         id: 4,

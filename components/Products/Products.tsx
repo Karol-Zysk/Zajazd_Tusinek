@@ -1,0 +1,110 @@
+import Image from "next/image";
+import React, { useState } from "react";
+import { AllProdusts } from "../../type";
+import Circle from "../Circle/Circle";
+import styles from "./Products.module.css";
+import { AnimatePresence, motion } from "framer-motion";
+import ProductInfo from "./ProductInfo";
+
+const imageAnimate = {
+  offscreen: { x: -15, y: 15, opacity: 0 },
+  onscreen: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+
+    transition: { type: "spring", duration: 0.6 },
+  },
+};
+
+const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
+  const [show, setShow] = useState(false);
+  const [number, setNumber] = useState(1);
+
+  const showProducts = (index: number) => {
+    setShow(!show);
+    setNumber(index + 1);
+  };
+
+  const productName = buyProducts.map((category, index) => {
+    return (
+      <>
+        <Circle
+          backgroundColor="green"
+          width="65vw"
+          height="65vw"
+          top="-70vh"
+          left="-35vh"
+        />
+        <h1
+          className={styles.header}
+          style={{
+            filter: number === index + 1 ? "brightness(1.2)" : undefined,
+            transform: number === index + 1 ? "scale(1.2)" : undefined,
+          }}
+          onClick={() => showProducts(index)}
+          key={category.id}
+        >
+          {
+            <>
+              <span className={styles.first_letter}>{category.name[0]}</span>{" "}
+              {category.name.slice(1, category.name.length)}
+            </>
+          }
+        </h1>
+      </>
+    );
+  });
+
+  return (
+    <>
+        <div className={styles.header_wrapper}> {productName}</div>
+      <div className={styles.wrapper}>
+        {buyProducts.map((category, index) => {
+          return (
+            <>
+              {number === category.id ? (
+                <>
+                  {" "}
+                  <motion.div
+                    transition={{ staggerChildren: 0.1 }}
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    className={styles.photos}
+                  >
+                    {category.images.map((img) => {
+                      return (
+                        <motion.div
+                          key={img.id}
+                          variants={imageAnimate}
+                          className={styles.img_container}
+                          whileHover={{
+                            scale: 1.1,
+                            transition: {
+                              duration: 0.5,
+                            },
+                          }}
+                        >
+                          <Image
+                            style={{ borderRadius: "10px" }}
+                            src={`/images/products/${img.url}`}
+                            objectFit="cover"
+                            layout="fill"
+                            alt=""
+                          />
+                        </motion.div>
+                      );
+                    })}
+                  </motion.div>
+                  <ProductInfo category={category} />
+                </>
+              ) : null}
+            </>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+export default Products;

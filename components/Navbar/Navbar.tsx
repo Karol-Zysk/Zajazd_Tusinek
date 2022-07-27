@@ -58,6 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                 <a
                   className={styles.link}
                   style={{
+                    visibility: scrollNav ? "visible" : "hidden",
                     opacity: scrollNav ? "1" : "0",
                     fontSize: scrollNav ? "1.1rem" : "0.5rem",
                   }}
@@ -71,6 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               <Link href="info">
                 <a
                   style={{
+                    visibility: scrollNav ? "visible" : "hidden",
                     opacity: scrollNav ? "1" : "0",
                     fontSize: scrollNav ? "1.1rem" : "0.5rem",
                   }}
@@ -84,6 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               <Link href="info">
                 <a
                   style={{
+                    visibility: scrollNav ? "visible" : "hidden",
                     opacity: scrollNav ? "1" : "0",
                     fontSize: scrollNav ? "1.1rem" : "0.5rem",
                   }}

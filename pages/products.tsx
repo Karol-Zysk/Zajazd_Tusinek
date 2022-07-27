@@ -3,14 +3,13 @@ import Head from "next/head";
 import React from "react";
 import { allProducts } from "../data";
 import { AllProdusts } from "../type";
-import styles from "./products/Product.module.css";
+import styles from "../components/Products/Products.module.css";
+import Products from "../components/Products/Products";
 
-const products:NextPage<AllProdusts> = ({buyProducts}) => {
+const products: NextPage<AllProdusts> = ({ buyProducts }) => {
 
-  console.log(buyProducts);
-  
   return (
-    <div className='container'>
+    <div className={styles.container}>
       <Head>
         <title>Tusinek Strona Główna</title>
         <meta
@@ -18,6 +17,7 @@ const products:NextPage<AllProdusts> = ({buyProducts}) => {
           content="Tusinkowe Smaki Wędliny Sery Miody i inne"
         />
       </Head>
+      <Products buyProducts={buyProducts}/>
     </div>
   );
 };
