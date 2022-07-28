@@ -9,11 +9,12 @@ import { accomodationImages, noclegi } from "../data";
 const accomodation: NextPage<AccomodationsType> = ({ accomodations, images }) => {
   return (
     <div className={styles.container}>
+      
       <Head>
         <title>Tusinek Noclegi</title>
         <meta
           name="description"
-          content="Tusinkowe Smaki Wędliny Sery Miody i inne"
+          content="Tusinek Noclegi Atrakcje"
         />
       </Head>
 

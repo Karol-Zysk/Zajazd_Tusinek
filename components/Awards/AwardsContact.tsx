@@ -3,7 +3,7 @@ import React from "react";
 import { BsCalendar2Month } from "react-icons/bs";
 import { FaDog } from "react-icons/fa";
 import { GiBed, GiHotMeal } from "react-icons/gi";
-import styles from "./Accomodations.module.css";
+import styles from "./Awards.module.css";
 import { motion } from "framer-motion";
 
 const titleAnimate = {

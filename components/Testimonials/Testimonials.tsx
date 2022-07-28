@@ -10,7 +10,7 @@ import CircleCut2 from "../Circle/CircleCut2";
 const Testimonials = () => {
   return (
     <div className={styles.container}>
-      <CircleCut2 width="30vw" height="30vw" bottom="-5.5%" left="72%" />
+      <CircleCut2 width="40vw" height="40vw" bottom="0" left="65%" />
       <Circle backgroundColor="green" top="-65vh" />
       <div className={styles.opinions}>
         <h1 className={styles.title}>Opinie z </h1>

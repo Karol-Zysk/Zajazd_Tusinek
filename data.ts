@@ -814,3 +814,132 @@ export const accomodationImages = [
     url: "nocleg8.jpg",
   },
 ];
+
+export const nagrody = [
+  { id: 1, rok: 2002, nagroda: `„Cztery widelce” – dziennik Rzeczpospolita,` },
+
+  { id: 2, rok: 2002, nagroda: `Statuetka „Jurand”` },
+
+  {
+    id: 3,
+    rok: 2005,
+    nagroda: `„Top Warmii i Mazur” w kategorii Firma Rodzinna`,
+  },
+
+  { id: 4, rok: 2005, nagroda: `Godło „Zielone Płuca Polski”` },
+  { id: 5, rok: 2006, nagroda: "Dziedzictwo Kulinarne Warmii Mazur i Powiśla" },
+
+  {
+    id: 6,
+    rok: 2007,
+    nagroda: `Restauracja wyróżniona przez Piotra Bikonta i Roberta Makłowicza - Newsweek Polska`,
+  },
+
+  {
+    id: 7,
+    rok: 2007,
+    nagroda: ` „Najlepszy Produkt i Usługa Warmii i Mazur” w kategorii Usługa Gastronomiczna`,
+  },
+
+  {
+    id: 8,
+    rok: 2008,
+    nagroda:
+      "Kulinarne Dziedzictwo Smaki Regionu „Perła 2008” Produkt Regionalny",
+  },
+
+  {
+    id: 9,
+    rok: 2008,
+    nagroda:
+      "Tygodnik Polityka (trzy gwiazdki) za jakość potraw i kulturę obsługi",
+  },
+
+  {
+    id: 10,
+    rok: 2009,
+    nagroda: `"Najlepszy z Najlepszych" przyznawane przez Marszałka Województwa Warmińsko-Mazurskiego`,
+  },
+
+  {
+    id: 11,
+    rok: 2014,
+    nagroda: `Firma dostaje certyfikat "Produkt Warmii i Mazur" w kategorii usługa`,
+  },
+
+  {
+    id: 12,
+    rok: 2015,
+    nagroda: `Wytwarzany w naszej przetwórni mleka krowiego i koziego ser kozi "Dziadek" zostaje laureatem IV Festiwalu "Czas na ser" w Lidzbarku Warmińskim, a ser krowi dojrzewający "Grąd" otrzymuje wyróżnienie.`,
+  },
+
+  {
+    id: 13,
+    rok: 2015,
+    nagroda: `przystąpienie do sieci "Zagród Edukacyjnych"`,
+  },
+
+  {
+    id: 14,
+    rok: 2015,
+    nagroda:
+      "laureat konkursu Agro-Eko-Turystycznego Zielone Lato w kategorii Zagrody Edukacyjne Warmii i Mazur.",
+  },
+
+  {
+    id: 15,
+    rok: 2016,
+    nagroda: "wpis do przewodnika kulinarnego Gault & Millau",
+  },
+
+  {
+    id: 16,
+    rok: 2017,
+    nagroda: `laureat konkursu "Sposób na sukces" w kategorii "Firma rodzinna"`,
+  },
+
+  {
+    id: 17,
+    rok: 2020,
+    nagroda: `laureat konkursu AgroLiga 2020 w kategorii "FIRMA".`,
+  },
+];
+
+export const awardIcons = [
+  {
+    id: 1,
+    url: "nocleg9.jpg",
+  },
+  {
+    id: 2,
+    url: "nocleg1.jpg",
+  },
+  {
+    id: 3,
+    url: "nocleg2.jpg",
+  },
+  {
+    id: 4,
+    url: "nocleg3.jpg",
+  },
+  {
+    id: 5,
+    url: "nocleg4.jpg",
+  },
+  {
+    id: 6,
+    url: "nocleg5.jpg",
+  },
+  {
+    id: 7,
+    url: "nocleg6.jpg",
+  },
+  {
+    id: 8,
+    url: "nocleg7.jpg",
+  },
+  {
+    id: 9,
+    url: "nocleg8.jpg",
+  },
+];

@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         }}
       >
         <div className={styles.container}>
-          <Link href="intro">
+          <Link href="/">
             <a
               style={{
                 fontSize: scrollNav ? "1.7rem" : "2.9rem",
@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           </div>
           <ul className={styles.menu}>
             <li className={styles.item}>
-              <Link href="info">
+              <Link href="/accomodation">
                 <a
                   className={styles.link}
                   style={{
@@ -63,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                     fontSize: scrollNav ? "1.1rem" : "0.5rem",
                   }}
                 >
-                  Informacje
+                  Noclegi
                 </a>
               </Link>
             </li>

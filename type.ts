@@ -88,9 +88,20 @@ export type AccomodationsType = {
   accomodations: {
     nr: string;
     info: string;
-  }[],
+  }[];
   images?: {
     id: number;
     url: string;
-}[]
+  }[];
+};
+export type AwardsType = {
+  awardsList: {
+    id: number;
+    rok: number;
+    nagroda: string;
+  }[];
+  images?: {
+    id: number;
+    url: string;
+  }[];
 };

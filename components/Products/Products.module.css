@@ -1,10 +1,11 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 6rem 4rem;
+  padding: 7rem 4rem 6rem 4rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background-size: contain;
   position: relative;
 }
 
