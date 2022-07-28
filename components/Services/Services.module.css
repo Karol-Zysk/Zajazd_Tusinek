@@ -1,5 +1,5 @@
 .container {
-  padding: 0px 7rem;
+  padding: 2rem 7rem;
   max-height: auto;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,7 @@
 .content_wrapper {
   display: flex;
   justify-content: space-between;
+  
   width: 100%;
 }
 
@@ -26,7 +27,22 @@
 
 .subtitle {
   font-size: 3rem;
-  color: rgb(2, 71, 2);
+  color: rgb(0, 126, 0);
+}
+
+.line {
+  width: 5%;
+  height: 0;
+  border: 1px solid green;
+  margin: 0 1rem;
+  display: flex;
+}
+
+.flex_wrapper {
+  display: flex;
+  max-height: 5rem;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
 .services {
@@ -145,6 +161,8 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5rem;
+  transform:  scale(1.1);
+  /* transform: scale(1.2); */
 }
 
 .img {

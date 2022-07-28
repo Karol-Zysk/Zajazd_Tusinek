@@ -19,25 +19,25 @@ const AccomodationsInfo: React.FC<AccomodationsType> = ({ accomodations }) => {
   const [number, setNumber] = useState(0);
   const [rotate, setRotate] = useState(false);
 
-  const handleSetRotate = (index:number) => {
-    setNumber(index + 1)
-    setRotate(!rotate);}
-  
+  const handleSetRotate = (index: number) => {
+    setNumber(index + 1);
+    setRotate(!rotate);
+  };
 
   return (
     <motion.div
       transition={{ staggerChildren: 0.1 }}
       initial={"offscreen"}
       whileInView={"onscreen"}
+      viewport={{ once: true, amount: 0.4 }}
       variants={infoAnimate}
       className={styles.info}
     >
-      <div className={styles.flex_wrapper}>
-        <div className={styles.line} />
-        <h1 className={styles.title}>Noclegi</h1>
-        <div className={styles.line} />
+      <div className={styles.flex_wrapper_info}>
+        <div className={styles.line_info} />
+        <h1 className={styles.title}>Lista Pokoi</h1>
+        <div className={styles.line_info} />
       </div>
-      <h2 className={styles.long_desc}>Dostępne u nas pokoje</h2>
       {accomodations.map((list, index) => {
         return (
           <div
@@ -51,7 +51,8 @@ const AccomodationsInfo: React.FC<AccomodationsType> = ({ accomodations }) => {
                 style={{
                   color: "black",
                   transition: "300ms",
-                  transform: number === index+1 ? "rotate(40deg)" : "rotate(15deg)",
+                  transform:
+                    number === index + 1 ? "rotate(40deg)" : "rotate(15deg)",
                 }}
                 size="30"
               />

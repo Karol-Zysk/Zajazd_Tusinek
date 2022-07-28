@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BiMailSend, BiMap, BiPhoneCall } from "react-icons/bi";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { GiBriefcase, GiKnifeFork } from "react-icons/gi";
-import logo from "../../public/images/logo.png";
+import logo from "../../public/images/svg/logo.svg";
 
 const Footer = () => {
   return (

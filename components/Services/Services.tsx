@@ -29,8 +29,15 @@ const imageAnimate = {
 const Services: React.FC<dataType> = ({ services }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.subtitle}>Nasza Oferta</h1>
-
+      <div className={styles.flex_wrapper}>
+        <div className={styles.line} />
+        <h1 className={styles.subtitle}>
+          {" "}
+          Nasza
+          <span style={{ color: "black" }}> Oferta</span>{" "}
+        </h1>
+        <div className={styles.line} />
+      </div>
       <motion.div
         className={styles.content_wrapper}
         transition={{ staggerChildren: 0.2 }}

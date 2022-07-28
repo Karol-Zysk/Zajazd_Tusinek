@@ -10,7 +10,7 @@ const accomodation: NextPage<AccomodationsType> = ({ accomodations, images }) =>
   return (
     <div className={styles.container}>
       <Head>
-        <title>Tusinek Strona Główna</title>
+        <title>Tusinek Noclegi</title>
         <meta
           name="description"
           content="Tusinkowe Smaki Wędliny Sery Miody i inne"

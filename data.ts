@@ -779,38 +779,38 @@ export const noclegi = [
 export const accomodationImages = [
   {
     id: 1,
-    url: "ser3.jpg",
+    url: "nocleg9.jpg",
   },
   {
     id: 2,
-    url: "ser2.jpg",
+    url: "nocleg1.jpg",
   },
   {
     id: 3,
-    url: "miod.jpg",
+    url: "nocleg2.jpg",
   },
   {
     id: 4,
-    url: "inne2.jpg",
+    url: "nocleg3.jpg",
   },
   {
     id: 5,
-    url: "warzywa.jpg",
+    url: "nocleg4.jpg",
   },
   {
     id: 6,
-    url: "inne.jpg",
+    url: "nocleg5.jpg",
   },
   {
     id: 7,
-    url: "inne4.jpg",
+    url: "nocleg6.jpg",
   },
   {
     id: 8,
-    url: "inne2.jpg",
+    url: "nocleg7.jpg",
   },
   {
     id: 9,
-    url: "inne.jpg",
+    url: "nocleg8.jpg",
   },
 ];

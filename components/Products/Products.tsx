@@ -33,20 +33,9 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
   const productName = buyProducts.map((category, index) => {
     return (
       <>
-      
-        <CircleCut1
-        width="35vw"
-        height="35vw"
-        top="-5%"
-        right="-5%"
-      />
-     
-      <CircleCut2
-        width="30vw"
-        height="30vw"
-        bottom="-2%"
-        left="72%"
-      />
+        <CircleCut1 width="35vw" height="35vw" top="-5%" right="-5%" />
+
+        <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
         <h1
           className={styles.header}
           style={{
@@ -81,6 +70,7 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
                     transition={{ staggerChildren: 0.1 }}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
+                    viewport={{ once: true, amount: 0.4 }}
                     className={styles.photos}
                   >
                     {category.images.map((img) => {
@@ -114,7 +104,7 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
           );
         })}
       </div>{" "}
-      <ProductsContact/>
+      <ProductsContact />
     </>
   );
 };

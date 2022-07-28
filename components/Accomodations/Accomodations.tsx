@@ -22,43 +22,34 @@ const imageAnimate = {
 
 console.log(accomodationImages);
 
-const Accomodations: React.FC<AccomodationsType> = ({ accomodations , images}) => {
+const Accomodations: React.FC<AccomodationsType> = ({
+  accomodations,
+  images,
+}) => {
   return (
     <>
-      <CircleCut1
-        width="35vw"
-        height="35vw"
-        top="-5%"
-        right="-5%"
-      />
-      <CircleCut1
-        width="35vw"
-        height="35vw"
-        top="40%"
-        left="10%"
-      />
-      <CircleCut2
-        width="30vw"
-        height="30vw"
-        bottom="-2%"
-        left="72%"
-      />
+      <CircleCut1 width="35vw" height="35vw" top="-5%" right="-5%" />
+      <CircleCut1 width="35vw" height="35vw" top="30%" left="10%" />
+      <CircleCut2 width="45vw" height="45vw" bottom="0%" left="52%" />
       <div className={styles.header_wrapper}>
-        <h1 className={styles.header}>
-          <span className={styles.first_letter}>N</span> oclegi
-        </h1>
+        <div className={styles.flex_wrapper}>
+          <h1 className={styles.header}>
+          <div className={styles.line_link} />
+            <span className={styles.first_letter}>N</span> oclegi
+          <div className={styles.line_link} />
+          </h1>
+        </div>
       </div>
       <div className={styles.wrapper}>
         <>
-         
           <motion.div
             transition={{ staggerChildren: 0.1 }}
             initial={"offscreen"}
             whileInView={"onscreen"}
+            viewport={{ once: true, amount: 0.4 }}
             className={styles.photos}
           >
             {accomodationImages.map((img) => {
-
               return (
                 <motion.div
                   key={img.url}
@@ -73,7 +64,7 @@ const Accomodations: React.FC<AccomodationsType> = ({ accomodations , images}) =
                 >
                   <Image
                     style={{ borderRadius: "10px" }}
-                    src={`/images/products/${img.url}`}
+                    src={`/images/nocleg/${img.url}`}
                     objectFit="cover"
                     layout="fill"
                     alt=""

@@ -7,10 +7,9 @@
   border-top: 4px solid green;
   display: flex;
   justify-content: space-around;
-  box-shadow: 0px -10px 50px rgba(4, 223, 22, 0.55);
   font-size: 1rem;
   padding: 2rem 3rem 1rem;
-  background-color: #028802;
+  background-color: #008000;
 }
 
 .title {

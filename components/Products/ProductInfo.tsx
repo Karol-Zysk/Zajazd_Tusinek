@@ -20,6 +20,7 @@ const ProductInfo: React.FC<CategoryType> = ({ category }) => {
       transition={{ staggerChildren: 0.1 }}
       initial={"offscreen"}
       whileInView={"onscreen"}
+      viewport={{ once: true, amount: 0.4 }}
       variants={infoAnimate}
       className={styles.info}
     >
