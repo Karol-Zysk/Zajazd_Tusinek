@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { AccomodationsType, AwardsType } from "../../type";
+import {  AwardsType } from "../../type";
 import styles from "./Awards.module.css";
 import { motion } from "framer-motion";
-import { GiKey, GiKeyLock } from "react-icons/gi";
+import { FaAward } from "react-icons/fa";
 
 const infoAnimate = {
   offscreen: { x: 0, y: -25, opacity: 0 },
@@ -35,7 +35,7 @@ const AccomodationsInfo: React.FC<AwardsType> = ({ awardsList }) => {
     >
       <div className={styles.flex_wrapper_info}>
         <div className={styles.line_info} />
-        <h1 className={styles.title}>Lista Pokoi</h1>
+        <h1 className={styles.title}>Docenili Nas <FaAward className={styles.award_icon} /></h1>
         <div className={styles.line_info} />
       </div>
       {awardsList.map((list, index) => {
@@ -47,18 +47,9 @@ const AccomodationsInfo: React.FC<AwardsType> = ({ awardsList }) => {
             key={list.id}
           >
             <p className={styles.list_item}>
-              <GiKey
-                style={{
-                  color: "black",
-                  transition: "300ms",
-                  transform:
-                    number === index + 1 ? "rotate(40deg)" : "rotate(15deg)",
-                }}
-                size="30"
-              />
-              <span className={styles.room_number}>{list.id}</span>
+              
+              <span className={styles.room_number}>{list.rok}</span>
               <span className={styles.room_info}> {list.nagroda}</span>
-              <span className={styles.room_info}> {list.rok}</span>
               <span> </span>
             </p>
           </div>

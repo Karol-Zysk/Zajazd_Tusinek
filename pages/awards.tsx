@@ -1,9 +1,8 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-import { AccomodationsType, AwardsType } from "../type";
-import styles from "../components/Accomodations/Accomodations.module.css";
-import Accomodations from "../components/Accomodations/Accomodations";
+import {  AwardsType } from "../type";
+import styles from "../components/Awards/Awards.module.css";
 import { awardIcons, nagrody } from "../data";
 import Awards from "../components/Awards/Awards";
 

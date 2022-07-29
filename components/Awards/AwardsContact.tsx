@@ -5,6 +5,7 @@ import { FaDog } from "react-icons/fa";
 import { GiBed, GiHotMeal } from "react-icons/gi";
 import styles from "./Awards.module.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const titleAnimate = {
   offscreen: { x: 0, y: 0, opacity: 0 },
@@ -33,7 +34,7 @@ const AccomodationsContact = () => {
       <div className={styles.flex_wrapper} style={{ marginBottom: "2rem" }}>
         <div className={styles.line} style={{ border: " 1px solid green" }} />
         <h1 className={styles.contact_h1}>
-          <span style={{ color: "green", fontSize: "2.3rem" }}>C</span>ennik{" "}
+          <span style={{ color: "green", fontSize: "2.3rem" }}>O</span>pinie{" "}
         </h1>{" "}
         <div className={styles.line} />
       </div>
@@ -45,45 +46,8 @@ const AccomodationsContact = () => {
           viewport={{ once: true, amount: 0.45 }}
         >
           <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Kameralna i domowa atmosfera oraz tradycyjny charakter.
-          </motion.p>
-          <motion.p variants={titleAnimate} className={styles.contact_text}>
-            W <b>Naszym Zajeździe</b> mamy do dyspozycji 17 pokoi
-            umożliwiających przenocowanie 45 osób.
-          </motion.p>{" "}
-          <motion.p variants={titleAnimate} className={styles.contact_text}>
-            Posiadamy łóżeczka dla dzieci, które można dostawić do niektórych
-            pokoi.
-          </motion.p>{" "}
-        </motion.div>
-        <motion.div
-          transition={{ staggerChildren: 0.2 }}
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.45}}
-        >
-          <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Cena za dobę{" "}
-            <GiBed
-              style={{
-                fontSize: "2.5rem",
-                transform: "translateY(10px)",
-                color: "green",
-                marginLeft: "0.3rem",
-              }}
-            />
-          </motion.p>
-          <motion.p variants={itemAnimate} className={styles.contact_text}>
-            Nocleg w pokoju 2,3,4 - osobowym: <b>100zł/osoba.</b>
-          </motion.p>
-          <motion.p variants={itemAnimate} className={styles.contact_text}>
-            Nocleg w pokoju 1 - osobowym: <b>110zł/osoba.</b>
-          </motion.p>
-          <motion.p variants={itemAnimate} className={styles.contact_text}>
-            dziecko w wieku 1-7 lat <b>75zł.</b>{" "}
-          </motion.p>
-          <motion.p variants={itemAnimate} className={styles.contact_text}>
-            Dzieci do 1 roku życia: <b>bezpłatnie.</b>{" "}
+            Bardzo nas cieszą nagrody i wyróżnienia jednak najbardziej cieszą
+            nas wasze pozytywne oceny.
           </motion.p>
         </motion.div>
         <motion.div
@@ -91,74 +55,56 @@ const AccomodationsContact = () => {
           initial={"offscreen"}
           whileInView={"onscreen"}
           viewport={{ once: true, amount: 0.45 }}
+          className={styles.flex_text}
         >
-          <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Śniadania{" "}
-            <GiHotMeal
-              style={{
-                fontSize: "2.5rem",
-                transform: "translateY(5px)",
-                color: "green",
-                marginLeft: "0.3rem",
-              }}
-            />
-          </motion.p>
-
-          <motion.p variants={itemAnimate} className={styles.contact_text}>
-            Osoba dorosła: <b>35zł</b>
-          </motion.p>
-          <motion.p variants={itemAnimate} className={styles.contact_text}>
-            Dzieci w wieku 1-7 lat: <b>25zł</b>
-          </motion.p>
-          <motion.p variants={itemAnimate} className={styles.contact_text}>
-            Śniadanie w formie bufetu: <b>40zł/osoba</b>
-          </motion.p>
-        </motion.div>
-        <motion.div
-          transition={{ staggerChildren: 0.2 }}
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.45 }}
-        >
-          <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Dodatkowe opłaty{" "}
-            <FaDog
-              style={{
-                fontSize: "2.5rem",
-                transform: "translateY(5px) ",
-                color: "green",
-                marginLeft: "0.3rem",
-              }}
-            />
-          </motion.p>
-
-          <motion.p
-            variants={itemAnimate}
-            className={styles.contact_text_animal}
-          >
-            Zwierzęta w hotelu za dopłatą: <b> 20zł/doba *</b>{" "}
-          </motion.p>
-          <motion.span
-            variants={itemAnimate}
-            className={styles.contact_subtext_animal}
-          >
-            *(własciciel zobowiązany jest do zapewnienia legowiska - zwierzęta
-            nie mogą spać na meblach oraz w pełni odpowiada za szkody wynikłe
-            zarówno w pomieszczeniach jak i na terenie.)
+          <Image
+            src={`/images/full_logo/facebook.png`}
+            alt="logo"
+            width="145"
+            height="40"
+            objectFit="contain"
+          />{" "}
+          <motion.span className={styles.note} variants={titleAnimate} >
+            4.7/5
           </motion.span>
         </motion.div>
-
-        <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-          Ceny nie dotyczą okresów świątecznych i długich weekendów
-          <BsCalendar2Month
-            style={{
-              fontSize: "2.1rem",
-              transform: "translateY(5px)",
-              color: "green",
-              marginLeft: "0.5rem",
-            }}
+        <motion.div
+          transition={{ staggerChildren: 0.2 }}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.45 }}
+          className={styles.flex_text}
+        >
+          <Image
+            src={`/images/full_logo/booking.png`}
+            alt="logo"
+            width="195"
+            height="40"
+            objectFit="contain"
+          />{" "}
+          <motion.span className={styles.note} variants={titleAnimate} >
+            8.7/10
+          </motion.span>
+        </motion.div>
+        <motion.div
+          transition={{ staggerChildren: 0.2 }}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.45 }}
+          className={styles.flex_text}
+        >
+          <Image
+            src={`/images/full_logo/google.png`}
+            alt="logo"
+            width="130"
+            height="40"
+            objectFit="contain"
           />
-        </motion.p>
+          <motion.span variants={titleAnimate} className={styles.note}>
+            4.7/5
+          </motion.span>
+        </motion.div>
+        
         <motion.div
           transition={{ staggerChildren: 0.2 }}
           initial={"offscreen"}
@@ -166,7 +112,7 @@ const AccomodationsContact = () => {
           viewport={{ once: true, amount: 0.45 }}
         >
           <motion.h2 variants={titleAnimate} className={styles.contact_h2}>
-            Serdecznie zapraszamy!
+            Sprawdź nas i Ty!
           </motion.h2>
         </motion.div>
       </div>

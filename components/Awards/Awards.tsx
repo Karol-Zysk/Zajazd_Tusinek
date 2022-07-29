@@ -1,13 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { AccomodationsType, AwardsType } from "../../type";
-import { accomodationImages } from "../../data";
+import { AwardsType } from "../../type";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
 import styles from "./Awards.module.css";
 import { motion } from "framer-motion";
-import AccomodationsContact from "./AwardsContact";
-import AccomodationsInfo from "./AwardsInfo";
+import AwardsContact from "./AwardsContact";
+import AwardsInfo from "./AwardsInfo";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -34,7 +33,8 @@ const Awards: React.FC<AwardsType> = ({
         <div className={styles.flex_wrapper}>
           <h1 className={styles.header}>
           <div className={styles.line_link} />
-            <span className={styles.first_letter}>N</span> oclegi
+            <span className={styles.first_letter}>N</span>agrody i 
+            <span className={styles.first_letter}>W</span> yróżnienia
           <div className={styles.line_link} />
           </h1>
         </div>
@@ -48,7 +48,7 @@ const Awards: React.FC<AwardsType> = ({
             viewport={{ once: true, amount: 0.4 }}
             className={styles.photos}
           >
-            {accomodationImages.map((img) => {
+            {images.map((img) => {
               return (
                 <motion.div
                   key={img.url}
@@ -62,9 +62,8 @@ const Awards: React.FC<AwardsType> = ({
                   }}
                 >
                   <Image
-                    style={{ borderRadius: "10px" }}
-                    src={`/images/nocleg/${img.url}`}
-                    objectFit="cover"
+                    src={`/images/nagrody/${img.url}`}
+                    objectFit="contain"
                     layout="fill"
                     alt=""
                   />
@@ -72,10 +71,10 @@ const Awards: React.FC<AwardsType> = ({
               );
             })}
           </motion.div>
-          <AccomodationsInfo awardsList={awardsList} />
+          <AwardsInfo images={images} awardsList={awardsList} />
         </>
       </div>{" "}
-      <AccomodationsContact />
+      <AwardsContact />
     </>
   );
 };

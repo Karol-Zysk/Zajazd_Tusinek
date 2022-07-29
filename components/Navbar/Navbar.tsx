@@ -69,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             </li>
 
             <li className={styles.item}>
-              <Link href="info">
+              <Link href="awards">
                 <a
                   style={{
                     visibility: scrollNav ? "visible" : "hidden",

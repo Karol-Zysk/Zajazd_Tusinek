@@ -31,7 +31,7 @@
 
 .header_wrapper {
   margin-left: 1.5rem;
-  width: 50%;
+  width: 40%;
   display: flex;
   border: 2px solid white;
   box-shadow: 4px 4px 8px black;
@@ -48,23 +48,28 @@
   color: rgb(0, 220, 0);
   z-index: -1;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .photos {
   height: 85vh;
   display: flex;
-  width: 55%;
+  width: 50%;
+  padding: 2rem 0rem 2rem 3rem;
   flex-wrap: wrap;
+  box-shadow: 3px 4px 6px #000000;
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.905);
+  border-radius: 10px; 
 }
 
 .img_container {
-  width: 31%;
+  width: 28%;
   margin: 7px;
   position: relative;
-  box-shadow: 3px 4px 6px #000000;
+  /* box-shadow: 3px 4px 6px #000000;
   border: 3px solid rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 10px; */
   /* transition: all 500ms; */
 }
 
@@ -79,7 +84,7 @@
 
 .header {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   font-weight: 700;
@@ -162,8 +167,14 @@
   margin-bottom: 2rem;
 }
 
+.award_icon{
+  color: gold;
+  font-size: 2.5rem;
+  transform: translateY(7px);
+}
+
 .room_info {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   font-weight: 500;
 }
@@ -175,6 +186,13 @@
 
 .price {
   font-weight: 500;
+}
+
+.flex_text{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
 }
 
 .list_item_wrapper {
@@ -260,11 +278,22 @@
   box-shadow: 2px 4px 4px rgba(158, 157, 157, 0.548);
   width: 2rem;
 }
+.note {
+  font-size: 1.2rem;
+  background: green;
+  padding: 0.3rem ;
+  border: 2px solid rgba(107, 10, 10, 0.578);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-left: 0.5rem;
+  box-shadow: 2px 4px 4px rgba(158, 157, 157, 0.548);
+}
 
 .contact_subtitle {
   font-weight: 500;
   font-size: 1.8rem;
-  margin: 0.7rem 0;
+  margin-bottom: 2.5rem ;
 }
 
 .prices_wrapper {

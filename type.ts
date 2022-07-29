@@ -100,7 +100,7 @@ export type AwardsType = {
     rok: number;
     nagroda: string;
   }[];
-  images?: {
+  images: {
     id: number;
     url: string;
   }[];

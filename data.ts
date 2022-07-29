@@ -908,38 +908,38 @@ export const nagrody = [
 export const awardIcons = [
   {
     id: 1,
-    url: "nocleg9.jpg",
+    url: "nagroda9.jpg",
   },
   {
     id: 2,
-    url: "nocleg1.jpg",
+    url: "nagroda1.jpg",
   },
   {
     id: 3,
-    url: "nocleg2.jpg",
+    url: "nagroda2.jpg",
   },
   {
     id: 4,
-    url: "nocleg3.jpg",
+    url: "nagroda3.jpg",
   },
   {
     id: 5,
-    url: "nocleg4.jpg",
+    url: "nagroda4.jpg",
   },
   {
     id: 6,
-    url: "nocleg5.jpg",
+    url: "nagroda5.jpg",
   },
   {
     id: 7,
-    url: "nocleg6.jpg",
+    url: "nagroda6.jpg",
   },
   {
     id: 8,
-    url: "nocleg7.jpg",
+    url: "nagroda7.jpg",
   },
   {
     id: 9,
-    url: "nocleg8.jpg",
+    url: "nagroda8.jpg",
   },
 ];
