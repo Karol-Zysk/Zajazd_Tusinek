@@ -1,12 +1,12 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-import { allProducts } from "../data";
-import { AllProdusts } from "../type";
-import styles from "../components/Products/Products.module.css";
-import Products from "../components/Products/Products";
+import { restauracja } from "../data";
+import { RestaurantDataType } from "../type";
+import styles from "../components/Restaurant/Restaurant.module.css";
+import Restaurant from "../components/Restaurant/Restaurant";
 
-const products: NextPage<AllProdusts> = ({ buyProducts }) => {
+const products: NextPage<RestaurantDataType> = ({ restaurantData }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +16,7 @@ const products: NextPage<AllProdusts> = ({ buyProducts }) => {
           content="Tusinkowe Smaki Wędliny Sery Miody i inne"
         />
       </Head>
-      <Products buyProducts={buyProducts} />
+      <Restaurant restaurantData={restaurantData} />
     </div>
   );
 };
@@ -24,8 +24,8 @@ const products: NextPage<AllProdusts> = ({ buyProducts }) => {
 export default products;
 
 export const getStaticProps = async () => {
-  const buyProducts = allProducts;
+  const restaurantData = restauracja;
   return {
-    props: { buyProducts },
+    props: { restaurantData },
   };
 };

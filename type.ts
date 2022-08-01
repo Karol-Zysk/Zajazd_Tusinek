@@ -105,3 +105,35 @@ export type AwardsType = {
     url: string;
   }[];
 };
+
+export type RestaurantDataType = {
+  restaurantData: {
+    id: number;
+    name: string;
+    photos: {
+      id: number;
+      img: string;
+      title: string;
+      subtitle: string;
+      comment: string;
+      text?: string;
+      cena?: string;
+    }[];
+  }[];
+  menuIndex?:number;
+  imgIndex:number;
+};
+
+export type MenuCategoryType ={ menuCategory: {
+  id: number;
+  name: string;
+  photos: {
+      id: number;
+      img: string;
+      title: string;
+      subtitle: string;
+      comment: string;
+      text?: string | undefined;
+      cena?: string | undefined;
+  }[];
+}}
