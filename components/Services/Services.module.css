@@ -3,13 +3,15 @@
   max-height: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
+  height: 100vh;
 }
 
 .content_wrapper {
   display: flex;
   justify-content: space-between;
-  
+
   width: 100%;
 }
 
@@ -45,16 +47,16 @@
   margin-bottom: 4rem;
 }
 
-.services {
+.services {height: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .service {
-  width: 30%;
-  height: auto;
-  background-color: rgb(255, 255, 255);
+  width: 48%;
+  background-color: rgba(255, 255, 255, 0.891);
   padding: 1rem;
   display: flex;
   border: 3px solid green;
@@ -63,28 +65,16 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   transition: all 300ms ease;
+  border-radius: 25px;
 }
 
 .service:hover {
   transition: all 300ms ease;
   transform: scale(1.05);
   box-shadow: 5px 10px 10px rgb(78, 78, 78);
-}
-
-.service:first-child {
-  border-top-left-radius: 45px;
-}
-.service:nth-child(3) {
-  border-top-right-radius: 45px;
-}
-.service:nth-child(4) {
-  border-bottom-left-radius: 55px;
-}
-.service:nth-child(6) {
-  border-bottom-right-radius: 55px;
 }
 
 .cat_info {
@@ -100,7 +90,7 @@
   border-radius: 10px;
   z-index: 9;
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 400 ease;
 }
 
 .cat {
@@ -110,16 +100,15 @@
   top: 0.7rem;
   z-index: 999;
   text-transform: uppercase;
-  color: gray;
+  color: green;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 500;
   transition: all 400ms ease;
 }
 .logo {
   position: absolute;
   top: 10rem;
   height: auto;
-
   z-index: 999;
   bottom: 10%;
   transition: all 400ms ease;
@@ -133,7 +122,6 @@
   margin-bottom: 1rem;
   width: 12rem;
   height: 12rem;
-  box-shadow: 4px -6px 5px rgb(255, 255, 255);
   justify-content: center;
   border: 3px solid rgba(255, 255, 255, 0.597);
   align-items: center;
@@ -148,12 +136,18 @@
   transition: 400ms ease;
 }
 
+.media:hover {
+  border: green 3px solid;
+}
+
 .service:hover .cat {
   font-weight: bold;
+  transition: 200ms ease-in-out;
 }
 
 .service:hover .catInfo {
   opacity: 1;
+  transition: 200ms ease-in-out;
 }
 .photo {
   display: flex;
@@ -161,7 +155,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5rem;
-  transform:  scale(1.1);
+  transform: scale(1.1);
   /* transform: scale(1.2); */
 }
 

@@ -74,10 +74,7 @@
   /* transition: all 500ms; */
 }
 
-.img_container:nth-child(3) {
-  border-top-right-radius: 50%;
-  overflow: hidden;
-}
+
 
 .img_container:hover {
   cursor: pointer;

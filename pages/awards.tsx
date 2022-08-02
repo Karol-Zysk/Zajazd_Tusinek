@@ -1,31 +1,36 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-import { allProducts } from "../data";
-import { AllProdusts } from "../type";
-import styles from "../components/Products/Products.module.css";
-import Products from "../components/Products/Products";
+import {  AwardsType } from "../type";
+import styles from "../components/Accomodations/Accomodations.module.css";
+import { awardIcons, nagrody } from "../data";
+import Awards from "../components/Awards/Awards";
 
-const products: NextPage<AllProdusts> = ({ buyProducts }) => {
+const awards: NextPage<AwardsType> = ({ awardsList, images }) => {
   return (
     <div className={styles.container}>
+
       <Head>
-        <title>Tusinkowe Smaki</title>
+        <title>Tusinek Nagrody</title>
         <meta
           name="description"
-          content="Tusinkowe Smaki Wędliny Sery Miody i inne"
+          content="Tusinek Nagrody i Wyróżnienia"
         />
       </Head>
-      <Products buyProducts={buyProducts} />
+
+      <Awards awardsList={awardsList} images={images} />
     </div>
   );
 };
 
-export default products;
+
+export default awards;
 
 export const getStaticProps = async () => {
-  const buyProducts = allProducts;
+  const awardsList = nagrody;
+  const images = awardIcons;
+
   return {
-    props: { buyProducts },
+    props: { awardsList, images },
   };
 };

@@ -20,7 +20,7 @@ const imageAnimate = {
   },
 };
 
-console.log(accomodationImages);
+
 
 const Accomodations: React.FC<AccomodationsType> = ({
   accomodations,
@@ -28,7 +28,7 @@ const Accomodations: React.FC<AccomodationsType> = ({
 }) => {
   return (
     <>
-      <CircleCut1 width="35vw" height="35vw" top="-5%" right="-5%" />
+      <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
       <CircleCut1 width="35vw" height="35vw" top="30%" left="10%" />
       <CircleCut2 width="45vw" height="45vw" bottom="0%" left="52%" />
       <div className={styles.header_wrapper}>

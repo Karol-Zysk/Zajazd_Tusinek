@@ -121,7 +121,7 @@ export type RestaurantDataType = {
     }[];
   }[];
   menuIndex?:number;
-  imgIndex:number;
+  imgIndex?:number;
 };
 
 export type MenuCategoryType ={ menuCategory: {

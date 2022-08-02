@@ -2,6 +2,9 @@ import introImage1 from "/public/images/intro/introImage1.jpg";
 import introImage2 from "/public/images/intro/introImage2.jpg";
 import introImage3 from "/public/images/intro/introImage3.jpg";
 import introImage4 from "/public/images/intro/introImage4.jpg";
+import { TbSoup } from "react-icons/tb";
+import { GiHotMeal } from "react-icons/gi";
+import { IoRestaurantSharp } from "react-icons/io5";
 
 export const data = [
   {
@@ -143,76 +146,6 @@ export const data = [
       {
         id: 6,
         url: introImage1,
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "położenie",
-    title: "Położenie",
-    desc: "Zajazd Tusinek  położony przy wjeździe na Mazury . W głębi alei lipowej, za restauracją znajduje się część hotelowa oraz gospodarstwo.",
-    video: "place.mp4",
-    longDesc:
-      "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: introImage1,
-      },
-      {
-        id: 2,
-        url: introImage1,
-      },
-      {
-        id: 3,
-        url: introImage2,
-      },
-      {
-        id: 4,
-        url: introImage3,
-      },
-      {
-        id: 5,
-        url: introImage4,
-      },
-      {
-        id: 6,
-        url: introImage1,
-      },
-    ],
-  },
-  {
-    id: 6,
-    name: "położenie",
-    title: "Położenie",
-    desc: "Zajazd Tusinek  położony przy wjeździe na Mazury . W głębi alei lipowej, za restauracją znajduje się część hotelowa oraz gospodarstwo.",
-    video: "place.mp4",
-    longDesc:
-      "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: "https://images.pexels.com/photos/962000/pexels-photo-962000.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 2,
-        url: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 3,
-        url: "https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 4,
-        url: "https://images.pexels.com/photos/4065906/pexels-photo-4065906.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 5,
-        url: "https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      },
-      {
-        id: 6,
-        url: "https://images.pexels.com/photos/4197693/pexels-photo-4197693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       },
     ],
   },
@@ -908,61 +841,64 @@ export const nagrody = [
 export const awardIcons = [
   {
     id: 1,
-    url: "nagroda9.jpg",
+    url: "nagroda9.png",
   },
   {
     id: 2,
-    url: "nagroda1.jpg",
+    url: "nagroda1.png",
   },
   {
     id: 3,
-    url: "nagroda2.jpg",
+    url: "nagroda2.png",
   },
   {
     id: 4,
-    url: "nagroda3.jpg",
+    url: "nagroda3.png",
   },
   {
     id: 5,
-    url: "nagroda4.jpg",
+    url: "nagroda4.png",
   },
   {
     id: 6,
-    url: "nagroda5.jpg",
+    url: "nagroda5.png",
   },
   {
     id: 7,
-    url: "nagroda6.jpg",
+    url: "nagroda6.png",
   },
   {
     id: 8,
-    url: "nagroda7.jpg",
+    url: "nagroda7.png",
   },
   {
     id: 9,
-    url: "nagroda8.jpg",
+    url: "nagroda8.png",
   },
 ];
 
 export const restauracja = [
   {
     id: 1,
-    name: "Menu",
+    name: "Restauracja",
     photos: [
       {
         id: 1,
         img: "menu.jpg",
         title: "Sala Kominkowa",
         subtitle: "W Sali kominkowej można posiedzieć",
-        comment: "Kominek kominek",
+        comment:
+          "Coś o miejscu, które pokazuje zdjęcie, lub o piecu lub ile ludzi mieści czy co się w tym miejscu odbywa",
         text: "Zapraszamy",
       },
       {
         id: 2,
         img: "sala.jpg",
         title: "Sala Inna",
-        subtitle: "W Sali kominkowej można posiedzieć a tu można zjeść",
-        comment: "Kominek kominek",
+        subtitle:
+          "W Sali kominkowej można posiedzieć, odpocząć a tu można zjeść",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         text: "Zapraszamy",
       },
       {
@@ -970,7 +906,35 @@ export const restauracja = [
         img: "bankiety.jpg",
         title: "Sala Bankietowa",
         subtitle: "Może tu być 70 osób",
-        comment: "Kominek kominek bankiet",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
+        text: "Zapraszamy",
+      },
+      {
+        id: 4,
+        img: "piec.jpg",
+        title: "Sala Bankietowa",
+        subtitle: "Może tu być 70 osób",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
+        text: "Zapraszamy",
+      },
+      {
+        id: 5,
+        img: "widok.jpg",
+        title: "Sala Bankietowa",
+        subtitle: "Może tu być 70 osób",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
+        text: "Zapraszamy",
+      },
+      {
+        id: 6,
+        img: "piec2.jpg",
+        title: "Sala Bankietowa",
+        subtitle: "Może tu być 70 osób",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji ",
         text: "Zapraszamy",
       },
     ],
@@ -984,7 +948,8 @@ export const restauracja = [
         img: "smalec.jpg",
         title: "Chleb ze smalcem",
         subtitle: "Naturalny smalec na prawdziwym chlebie, mniam mniam",
-        comment: "Kominek kominek",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "15zł",
       },
       {
@@ -992,15 +957,17 @@ export const restauracja = [
         img: "placek.png",
         title: "Placek Drożdżowy",
         subtitle: "Pyszny Tradycyjny placek",
-        comment: "Kominek kominek",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "15zł",
       },
       {
         id: 3,
         img: "podplomyk.png",
-        title: "Podpłomyki",
-        subtitle: "Nasza specjalność to podpłomyk z serem kozim i spyrką.",
-        comment: "Takiego czegoś jeszcze nie jadłeś",
+        title: "Podpłomyk",
+        subtitle: "Tradycyjne Podpłomyki",
+        comment:
+          "Nasza specjalność to podpłomyk z serem kozim i spyrką. Takiego czegoś jeszcze nie jadłeś",
         cena: "20zł",
       },
     ],
@@ -1014,7 +981,8 @@ export const restauracja = [
         img: "rosol.png",
         title: "Rosół z kury",
         subtitle: "Naturalny smalec na prawdziwym chlebie, mniam mniam",
-        comment: "Kominek kominek",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "15zł",
       },
       {
@@ -1022,7 +990,8 @@ export const restauracja = [
         img: "krupnik.png",
         title: "Krupnik",
         subtitle: "Pyszny Krupnik",
-        comment: "Krupnik mniam mniam",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "20zł",
       },
       {
@@ -1030,15 +999,17 @@ export const restauracja = [
         img: "pomidorowa.png",
         title: "Pomidorowa",
         subtitle: "Pomidorowa to nasza specjalność.",
-        comment: "Kominek kominek bankiet",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
         cena: "20zł",
       },
       {
         id: 4,
-        img: "rosol.png",
-        title: "Rosół z kury",
+        img: "zurek.jpg",
+        title: "Żurek w chlebie",
         subtitle: "Naturalny smalec na prawdziwym chlebie, mniam mniam",
-        comment: "Kominek kominek",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "15zł",
       },
       {
@@ -1046,7 +1017,8 @@ export const restauracja = [
         img: "krupnik.png",
         title: "Krupnik",
         subtitle: "Pyszny Krupnik",
-        comment: "Krupnik mniam mniam",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "20zł",
       },
       {
@@ -1054,7 +1026,8 @@ export const restauracja = [
         img: "pomidorowa.png",
         title: "Pomidorowa",
         subtitle: "Pomidorowa to nasza specjalność.",
-        comment: "Kominek kominek bankiet",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "20zł",
       },
     ],
@@ -1065,10 +1038,11 @@ export const restauracja = [
     photos: [
       {
         id: 1,
-        img: "schabowy.jpg",
-        title: "Schabowy z ziemniakami",
-        subtitle: "Pyszny kotlet schabowy z ziemniakami i surówką",
-        comment: "Kominek kominek",
+        img: "ziemniaki.png",
+        title: "Ziemniaki ze zsiadłym mlekiem",
+        subtitle: "Zsiadłe Mleko z Ziemniakami wpisane jako produkt tradycyjny",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "35zł",
       },
       {
@@ -1077,15 +1051,55 @@ export const restauracja = [
         title: "Rejbak Kurpiowski",
         subtitle:
           "Tradycyjny Prrzepis, naturalne składniki z naszej hodowli. Rejbak inaczej zwany kartoflakiem lub kuglem to pozycja obowiązkowa!",
-        comment: "Kominek kominek",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "25zł",
       },
       {
         id: 3,
-        img: "rolada.png",
-        title: "Rolada Szpinakowa",
+        img: "pierogi.jpg",
+        title: "Pierogi",
+        subtitle:
+          "Wyśmienite pierogi wykonywane na miejscu z różnymi farszem w zależności od pory roku,",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji ",
+        cena: "20zł",
+      },
+      {
+        id: 4,
+        img: "pyzy.jpg",
+        title: "Pyzy z mięsem",
         subtitle: "Rolada super pyszna.",
-        comment: "Kominek kominek bankiet",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
+        cena: "20zł",
+      },
+      {
+        id: 5,
+        img: "rejbak.png",
+        title: "Rejbak Kurpiowski",
+        subtitle:
+          "Tradycyjny Prrzepis, naturalne składniki z naszej hodowli. Rejbak inaczej zwany kartoflakiem lub kuglem to pozycja obowiązkowa!",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
+        cena: "25zł",
+      },
+      {
+        id: 6,
+        img: "pyzy.jpg",
+        title: "Pyzy z mięsem",
+        subtitle: "Rolada super pyszna.",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
+        cena: "20zł",
+      },
+      {
+        id: 7,
+        img: "pyzy.jpg",
+        title: "Pyzy z mięsem",
+        subtitle: "Rolada super pyszna.",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
         cena: "20zł",
       },
     ],
@@ -1098,8 +1112,7 @@ export const restauracja = [
         id: 1,
         img: "woda.jpg",
         title: "Woda",
-        subtitle: "Naturalny smalec na prawdziwym chlebie, mniam mniam",
-        comment: "Kominek kominek",
+
         cena: "5zł",
       },
       {
@@ -1107,16 +1120,18 @@ export const restauracja = [
         img: "kompot.jpg",
         title: "Kompot",
         subtitle:
-          "Kompot z owoców z naturalnej uprawy <b>Wiśnia</b> , Rabarbar",
-        comment: "Kominek kominek",
+          "Kompot z owoców z naturalnej uprawy <b>Wiśnia</b> ,<b> Rabarbar</b>",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "5zł",
       },
       {
         id: 3,
-        img: "wina.png",
-        title: "Wina Macedońskie",
-        subtitle: "Wysokiej jakości macedońskie wina",
-        comment: "Kominek kominek bankiet",
+        img: "wina.jpg",
+        title: "Wino",
+        subtitle: "Wina Macedońskie",
+        comment:
+          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "40zł",
       },
     ],

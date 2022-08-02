@@ -45,15 +45,20 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
         onClick={() => showProducts(index)}
         key={menuCategory.id}
       >
-        {menuCategory.name}
+        <>
+          <span className={index === 0 ? undefined : `${styles.first_letter}`}>
+            {menuCategory.name[0]}
+          </span>{" "}
+          {menuCategory.name.slice(1, menuCategory.name.length)}
+        </>
       </motion.h1>
     );
   });
 
   return (
     <>
-      <CircleCut1 width="35vw" height="35vw" top="-5%" right="-5%" />
-      <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
+      <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
+      <CircleCut2 width="38vw" height="38vw" bottom="0" left="65%" />
       <div className={styles.header_wrapper}>
         {" "}
         <div className={styles.flex_header}>

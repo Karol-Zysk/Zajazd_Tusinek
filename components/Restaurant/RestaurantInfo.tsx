@@ -13,6 +13,26 @@ const infoAnimate = {
     transition: { type: "spring", duration: 1 },
   },
 };
+const infoAnimate2 = {
+  offscreen: { x: 0, y: -25, opacity: 0 },
+  onscreen: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+
+    transition: { type: "spring", duration: 1 },
+  },
+};
+const dishAnimate = {
+  offscreen: { x: 0, y: 20, opacity: 0 },
+  onscreen: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+
+    transition: { type: "spring", duration: 0.7 },
+  },
+};
 
 const RestaurantInfo: React.FC<RestaurantDataType> = ({
   restaurantData,
@@ -32,23 +52,57 @@ const RestaurantInfo: React.FC<RestaurantDataType> = ({
         return (
           <div key={restaurantCategory.id}>
             {menuIndex === index && (
-              <h1>
+              <div>
                 {restaurantCategory.photos.map((dish, index) => {
                   return (
-                    <div key={dish.id}>
+                    <motion.div variants={infoAnimate2} key={dish.id}>
                       {imgIndex === index && (
                         <>
-                          {" "}
-                          <h1>{dish.title}</h1>
-                          <h2>{dish.subtitle}</h2>
-                          <p>{dish.comment}</p>
-                          <p>Cena : {dish.cena}</p>
+                          <motion.div
+                            variants={dishAnimate}
+                            initial={"offscreen"}
+                            whileInView={"onscreen"}
+                            viewport={{ once: true, amount: 0.4 }}
+                            className={styles.flex_wrapper_restaurant}
+                          >
+                            <div className={styles.line_restaurant} />
+                            <motion.h1
+                            variants={dishAnimate}
+                            initial={"offscreen"}
+                            whileInView={"onscreen"}
+                            viewport={{ once: true, amount: 0.4 }} className={styles.title}>{dish.title}</motion.h1>
+                            <div className={styles.line_restaurant} />
+                          </motion.div>
+
+                          <motion.p
+                            variants={dishAnimate}
+                            initial={"offscreen"}
+                            whileInView={"onscreen"}
+                            viewport={{ once: true, amount: 0.4 }}
+                            dangerouslySetInnerHTML={{ __html: dish.subtitle }}
+                            className={styles.long_desc}
+                          />
+                          <motion.p
+                            variants={dishAnimate}
+                            initial={"offscreen"}
+                            whileInView={"onscreen"}
+                            viewport={{ once: true, amount: 0.4 }} className={styles.dish_info}>{dish.comment}</motion.p>
+                          {dish.cena && (
+                            <motion.p
+                            variants={dishAnimate}
+                            initial={"offscreen"}
+                            whileInView={"onscreen"}
+                            viewport={{ once: true, amount: 0.4 }} className={styles.price}>
+                              Cena:{" "}
+                              <b style={{ color: "green" }}>{dish.cena}</b>
+                            </motion.p>
+                          )}
                         </>
                       )}
-                    </div>
+                    </motion.div>
                   );
                 })}
-              </h1>
+              </div>
             )}
           </div>
         );

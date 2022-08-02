@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <Link href="/">
             <a
               style={{
-                fontSize: scrollNav ? "1.7rem" : "2.9rem",
+                fontSize: scrollNav ? "1.7rem" : "2.5rem",
                 color: scrollNav ? "white" : "green ",
                 textShadow: scrollNav
                   ? "2px 4px 4px black"
@@ -58,9 +58,11 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                 <a
                   className={styles.link}
                   style={{
-                    visibility: scrollNav ? "visible" : "hidden",
-                    opacity: scrollNav ? "1" : "0",
-                    fontSize: scrollNav ? "1.1rem" : "0.5rem",
+                    color: scrollNav ? "white" : "green",
+                    textShadow: scrollNav
+                      ? "2px 0px 2px black"
+                      : "1px 1px 0.5px black",
+                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
                   }}
                 >
                   Noclegi
@@ -72,9 +74,11 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               <Link href="awards">
                 <a
                   style={{
-                    visibility: scrollNav ? "visible" : "hidden",
-                    opacity: scrollNav ? "1" : "0",
-                    fontSize: scrollNav ? "1.1rem" : "0.5rem",
+                    color: scrollNav ? "white" : "green",
+                    textShadow: scrollNav
+                      ? "2px 0px 2px black"
+                      : "1px 1px 0.5px black",
+                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
                   }}
                   className={styles.link}
                 >
@@ -83,12 +87,30 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               </Link>
             </li>
             <li className={styles.item}>
+              <Link href="restaurant">
+                <a
+                  style={{
+                    color: scrollNav ? "white" : "green",
+                    textShadow: scrollNav
+                      ? "2px 0px 2px black"
+                      : "1px 1px 0.5px black",
+                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
+                  }}
+                  className={styles.link}
+                >
+                  Restauracja
+                </a>
+              </Link>
+            </li>
+            <li className={styles.item}>
               <Link href="/products">
                 <a
                   style={{
-                    visibility: scrollNav ? "visible" : "hidden",
-                    opacity: scrollNav ? "1" : "0",
-                    fontSize: scrollNav ? "1.1rem" : "0.5rem",
+                    color: scrollNav ? "white" : "green",
+                    textShadow: scrollNav
+                      ? "2px 0px 2px black"
+                      : "1px 1px 0.5px black",
+                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
                   }}
                   className={styles.link}
                 >

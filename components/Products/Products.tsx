@@ -33,7 +33,7 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
   const productName = buyProducts.map((category, index) => {
     return (
       <>
-        <CircleCut1 width="35vw" height="35vw" top="-5%" right="-5%" />
+        <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
 
         <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
         <h1
