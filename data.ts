@@ -1074,18 +1074,9 @@ export const restauracja = [
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "20zł",
       },
+      
       {
         id: 5,
-        img: "rejbak.png",
-        title: "Rejbak Kurpiowski",
-        subtitle:
-          "Tradycyjny Prrzepis, naturalne składniki z naszej hodowli. Rejbak inaczej zwany kartoflakiem lub kuglem to pozycja obowiązkowa!",
-        comment:
-          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
-        cena: "25zł",
-      },
-      {
-        id: 6,
         img: "pyzy.jpg",
         title: "Pyzy z mięsem",
         subtitle: "Rolada super pyszna.",
@@ -1093,15 +1084,7 @@ export const restauracja = [
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
         cena: "20zł",
       },
-      {
-        id: 7,
-        img: "pyzy.jpg",
-        title: "Pyzy z mięsem",
-        subtitle: "Rolada super pyszna.",
-        comment:
-          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
-        cena: "20zł",
-      },
+      
     ],
   },
   {
@@ -1127,6 +1110,15 @@ export const restauracja = [
       },
       {
         id: 3,
+        img: "mleko.jpg",
+        title: "Mleko",
+        subtitle: "Świeże Mleko",
+        comment:
+          "Mleko Krowie pochodzące z naszego gospodarstwa od krów rasy Polska Czerwona i Jersey. Mleko to z pewnością ma inny smak i zapach od kupowanych w „kartonikach” – warto spróbować. ",
+        cena: "40zł",
+      },
+      {
+        id: 4,
         img: "wina.jpg",
         title: "Wino",
         subtitle: "Wina Macedońskie",

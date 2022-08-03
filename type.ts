@@ -106,6 +106,14 @@ export type AwardsType = {
   }[];
 };
 
+export type SidebarProps = {
+  isOpen: boolean;
+  toggle: () => void;
+};
+export type NavbarProps = {
+  toggle: () => void;
+};
+
 export type RestaurantDataType = {
   restaurantData: {
     id: number;
@@ -120,14 +128,15 @@ export type RestaurantDataType = {
       cena?: string;
     }[];
   }[];
-  menuIndex?:number;
-  imgIndex?:number;
+  menuIndex?: number;
+  imgIndex?: number;
 };
 
-export type MenuCategoryType ={ menuCategory: {
-  id: number;
-  name: string;
-  photos: {
+export type MenuCategoryType = {
+  menuCategory: {
+    id: number;
+    name: string;
+    photos: {
       id: number;
       img: string;
       title: string;
@@ -135,5 +144,6 @@ export type MenuCategoryType ={ menuCategory: {
       comment: string;
       text?: string | undefined;
       cena?: string | undefined;
-  }[];
-}}
+    }[];
+  };
+};
