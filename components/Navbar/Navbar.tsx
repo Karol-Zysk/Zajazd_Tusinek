@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
+import LogoSvg from "./LogoSvg";
 
 type NavbarProps = {
   toggle: () => void;
@@ -9,12 +10,17 @@ type NavbarProps = {
 
 const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [color, setColor] = useState('green')
+
+
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);
+      setColor('white')
     } else {
       setScrollNav(false);
+      setColor('green')
     }
   };
 
@@ -27,17 +33,16 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
       <div
         className={styles.navbar}
         style={{
-          background: scrollNav ? "rgba(0, 155, 0, 0.86)" : "transparent",
-          borderBottom: scrollNav
-            ? "5px solid rgb(255, 255, 255)"
-            : "5px solid transparent",
+          backgroundColor: scrollNav ? "rgba(0, 155, 0, 0.86)" : "rgba(255, 255, 255, 0.831)",
+          
         }}
       >
         <div className={styles.container}>
+          <LogoSvg color={color} />
           <Link href="/">
             <a
               style={{
-                fontSize: scrollNav ? "1.7rem" : "2.5rem",
+                transform: scrollNav ? "scale(1)" : "scale(1.2)",
                 color: scrollNav ? "white" : "green ",
                 textShadow: scrollNav
                   ? "2px 4px 4px black"
@@ -50,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           </Link>
 
           <div className={styles.mobile_icon} onClick={toggle}>
-            <FaBars />
+            <FaBars color={color} />
           </div>
           <ul className={styles.menu}>
             <li className={styles.item}>

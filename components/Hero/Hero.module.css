@@ -1,8 +1,23 @@
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
+  overflow: hidden;
+
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    /* display: none; */
+  }
+}
+
+
+
+.image_wrapper{
+  height: 100vh;
+  display: flex;
 }
 
 .wrapper {

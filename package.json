@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@types/bootstrap": "^5.1.12",
     "@types/react-bootstrap": "^0.32.30",
     "@types/react-icons": "^3.0.0",

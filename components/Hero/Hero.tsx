@@ -18,7 +18,15 @@ const Hero = () => {
         }}
         className={styles.container}
       >
-        <Image src={hero_image}  objectFit="-moz-initial" alt="hero" />
+        <div className={styles.image_wrapper}>
+          <Image
+            src={hero_image}
+            layout="fill"
+            objectFit="cover"
+            alt="hero"
+          />
+        </div>
+
         <motion.div
           initial={{ x: 300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
