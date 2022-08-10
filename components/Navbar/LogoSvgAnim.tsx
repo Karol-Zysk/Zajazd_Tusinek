@@ -15,7 +15,26 @@ const mainPathVariant: AnimationProps = {
     visible: {
       pathLength: 1,
       fillOpacity: [0,0,0,1],
-      background: ["white", "red", "green"]
+      fill: "green"
+    },
+    hidden: {
+      pathLength: 0,
+      fillOpacity: 0,
+
+    },
+  },
+};
+const secondPathVariant: AnimationProps = {
+  transition: {
+    delay:2,
+    duration: 3,
+    ease: "linear",
+  },
+  variants: {
+    visible: {
+      pathLength: 1,
+      fillOpacity: [0,0,0,1],
+      fill: "green"
     },
     hidden: {
       pathLength: 0,
@@ -70,8 +89,7 @@ const LogoSvgAnim = () => {
             {...mainPathVariant}
             animate="visible"
             initial="hidden"
-            id="Path_1"
-            data-name="Path 1"
+            
             fill={shapeColor}
             stroke={pathColor}
             strokeWidth="70"
@@ -381,10 +399,10 @@ c0 1621 -3 2450 -10 2455 -12 10 -449 10 -458 1z"
             stroke-miterlimit="10"
             strokeWidth="70"
             fill={shapeColor}
-            {...mainPathVariant}
+            {...secondPathVariant}
             animate="visible"
             initial="hidden"
-            d="M32301 6729 c-91 -29 -161 -100 -190 -193 -42 -136 -105 -563 -135
+            d="M32301 679 c-91 -29 -161 -100 -190 -193 -42 -136 -105 -563 -135
 -926 -14 -155 -26 -431 -40 -860 -6 -197 -7 -198 -189 -455 -151 -212 -310
 -401 -371 -443 -76 -51 -142 -66 -283 -65 -148 1 -185 15 -278 107 -75 73
 -135 188 -135 256 0 41 4 47 99 139 54 53 120 128 147 166 27 39 77 106 113

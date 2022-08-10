@@ -12,13 +12,25 @@
   transition: all 400ms ease-in-out;
 }
 
-.svg_logo_anim{
+.svg_logo {
+  padding: 0 4rem;
+  background: rgba(255, 255, 255, 0.875);
+  border-radius: 3em;
+  box-shadow: 1em 1em 3em rgba(0, 85, 0, 0.491);
+  width: 600px;
+  height: 550px;
+}
+
+.svg_logo_anim {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 400;
   padding: 2rem;
+  background: rgba(255, 255, 255, 0.916);
 }
 
 @media screen and (max-width: 768px) {
@@ -57,7 +69,7 @@
 @media screen and (max-width: 768px) {
   .svg_logo {
     width: 100%;
-   
+
     transition: 300ms ease;
   }
 }

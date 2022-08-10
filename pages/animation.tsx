@@ -1,9 +1,9 @@
 import React from 'react'
-import LogoSvgAnim from '../components/Navbar/LogoSvgAnim'
+import LogoSvgAnim2 from '../components/Navbar/LogoSvgAnim2'
 
 const animation = () => {
   return (
-    <><LogoSvgAnim/></>
+    <><LogoSvgAnim2/></>
   )
 }
 
