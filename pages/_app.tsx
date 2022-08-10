@@ -16,6 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (router.pathname === "/") {
       setAnimation(true);
+      setTimeout(() => {
+        setAnimation(false);
+      }, 7000);
     }
   }, [router, setAnimation]);
 
@@ -23,37 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <LogoSvgAnim2 />
   ) : (
     <Layout>
-      <AnimatePresence>
-        <motion.div
-          style={{ overflowX: "hidden" }}
-          key={router.route}
-          initial="pageInitial"
-          animate="pageAnimate"
-          exit="pageExit"
-          variants={{
-            pageInitial: {
-              x: 0,
-              opacity: 0,
-            },
-            pageAnimate: {
-              transition: {
-                duration: 1,
-              },
-              opacity: 1,
-              x: 0,
-            },
-            pageExit: {
-              transition: {
-                duration: 0.5,
-              },
-              x: 1200,
-              opacity: 0,
-            },
-          }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
+      <Component {...pageProps} />
     </Layout>
   );
 }
