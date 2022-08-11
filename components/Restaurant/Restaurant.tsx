@@ -71,7 +71,7 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
       <div className={styles.wrapper}>
         {restaurantData.map((menuCategory, index) => {
           return (
-            <>
+            <React.Fragment key={index}>
               {number === menuCategory.id ? (
                 <>
                   {" "}
@@ -114,7 +114,7 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
                   />
                 </>
               ) : null}
-            </>
+            </React.Fragment>
           );
         })}
       </div>{" "}

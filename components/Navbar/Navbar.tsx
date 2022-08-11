@@ -10,17 +10,15 @@ type NavbarProps = {
 
 const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
-  const [color, setColor] = useState('green')
-
-
+  const [color, setColor] = useState("green");
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);
-      setColor('white')
+      setColor("white");
     } else {
       setScrollNav(false);
-      setColor('green')
+      setColor("green");
     }
   };
 
@@ -33,12 +31,17 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
       <div
         className={styles.navbar}
         style={{
-          backgroundColor: scrollNav ? "rgba(0, 155, 0, 0.86)" : "rgba(255, 255, 255, 0.831)",
-          
+          backgroundColor: scrollNav
+            ? "rgba(0, 155, 0, 0.86)"
+            : "rgba(255, 255, 255, 0.831)",
         }}
       >
         <div className={styles.container}>
-          <LogoSvg color={color} />
+          <Link href="/">
+            <a>
+              <LogoSvg color={color} />
+            </a>
+          </Link>
           <Link href="/">
             <a
               style={{

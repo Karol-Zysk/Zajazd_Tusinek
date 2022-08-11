@@ -1,6 +1,7 @@
 import { type } from "os";
 
 export type dataType = {
+  animation?: boolean;
   services: (
     | {
         id: number;

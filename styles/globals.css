@@ -2,8 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgba(0, 0, 0, 0.895);
+}
+
+html {
+  overflow-y: scroll;
 }
 
 a {
@@ -40,10 +44,10 @@ a {
   }
 }
 
-.tab1{
+.tab1 {
   tab-size: 1;
 }
-.tab2{
+.tab2 {
   tab-size: 2;
 }
 

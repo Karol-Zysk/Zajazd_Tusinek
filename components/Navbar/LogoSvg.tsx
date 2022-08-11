@@ -12,7 +12,7 @@ const LogoSvg: React.FC<Props> = ({ color }) => {
   return (
     <div className={styles.svg_wrapper}>
       <svg
-      className={styles.svg_logo}
+      className={styles.svg_nav_logo}
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
         

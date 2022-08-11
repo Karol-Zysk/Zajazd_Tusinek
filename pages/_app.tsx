@@ -22,12 +22,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [router, setAnimation]);
 
-  return animation ? (
-    <LogoSvgAnim2 />
-  ) : (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+  return (
+    <>
+      <LogoSvgAnim2 animation={animation} />
+      <AnimatePresence>
+        <Layout>
+          <Component {...pageProps} animation={animation} />
+        </Layout>
+      </AnimatePresence>
+    </>
   );
 }
 

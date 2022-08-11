@@ -32,37 +32,34 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
 
   const productName = buyProducts.map((category, index) => {
     return (
-      <>
-        <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
-
-        <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
-        <h1
-          className={styles.header}
-          style={{
-            filter: number === index + 1 ? "brightness(1.2)" : undefined,
-            transform: number === index + 1 ? "scale(1.2)" : undefined,
-          }}
-          onClick={() => showProducts(index)}
-          key={category.id}
-        >
-          {
-            <>
-              <span className={styles.first_letter}>{category.name[0]}</span>{" "}
-              {category.name.slice(1, category.name.length)}
-            </>
-          }
-        </h1>
-      </>
+      <h1
+        key={index}
+        className={styles.header}
+        style={{
+          filter: number === index + 1 ? "brightness(1.2)" : undefined,
+          transform: number === index + 1 ? "scale(1.2)" : undefined,
+        }}
+        onClick={() => showProducts(index)}
+      >
+        {
+          <>
+            <span className={styles.first_letter}>{category.name[0]}</span>{" "}
+            {category.name.slice(1, category.name.length)}
+          </>
+        }
+      </h1>
     );
   });
 
   return (
     <>
+      <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
+      <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
       <div className={styles.header_wrapper}> {productName}</div>
       <div className={styles.wrapper}>
         {buyProducts.map((category, index) => {
           return (
-            <>
+            <React.Fragment key={index}>
               {number === category.id ? (
                 <>
                   {" "}
@@ -97,10 +94,10 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
                       );
                     })}
                   </motion.div>
-                  <ProductInfo category={category} />
+                  <ProductInfo category={category} key={category.name} />
                 </>
               ) : null}
-            </>
+            </React.Fragment>
           );
         })}
       </div>{" "}

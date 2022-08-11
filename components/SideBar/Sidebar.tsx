@@ -25,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
             </a>
           </Link>
 
-          <Link href="/accomodations">
+          <Link href="/accomodation">
             <a className={styles.sidebar_link} onClick={toggle}>
               Noclegi
             </a>

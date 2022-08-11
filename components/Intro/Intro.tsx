@@ -5,8 +5,6 @@ import Image from "next/image";
 import { IntroData } from "../../data";
 import Circle from "../Circle/Circle";
 
-
-
 const imageAnimate = {
   offscreen: { x: 0, y: 150, opacity: 0 },
   onscreen: {
@@ -24,12 +22,12 @@ const Intro = () => {
       <Circle backgroundColor="#01c686" top="-45vh" left="-35vh" />
       <div className={styles.card}>
         <h1 className={styles.title}>
-          Witajcie<span className={styles.brand}> Tusinku</span>
+          Witajcie<span className={styles.brand}> w Tusinku</span>
         </h1>
         <p className={styles.description}>
-          <b style={{ fontSize: "1.8rem", color: "darkgreen" }}>Tusinek</b> jest
-          położony przy drodze na Mazury w miejscowości Rozogi. Przy wjeździe
-          znajduje się restauracja, w której serwowane są wyśmienite{" "}
+          <b className={styles.bold_text}>Tusinek</b> jest położony przy drodze
+          na Mazury w miejscowości Rozogi. Przy wjeździe znajduje się
+          restauracja, w której serwowane są wyśmienite{" "}
           <b>regionalne potrawy</b>. W głębi <i>Alei Lipowej</i>, za restauracją
           znajduje się część hotelowa oraz <b>gospodarstwo</b>.
         </p>

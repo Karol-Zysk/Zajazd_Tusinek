@@ -33,7 +33,7 @@ const Services: React.FC<dataType> = ({ services }) => {
       <CircleCut1 width="40vw" height="40vw" top="20%" left="10%" />
       <div className={styles.flex_wrapper}>
         <div className={styles.line} />
-        <h1 className={styles.subtitle}>
+        <h1 className={styles.title}>
           {" "}
           Nasza
           <span style={{ color: "black" }}> Oferta</span>{" "}
