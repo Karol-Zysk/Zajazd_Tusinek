@@ -8,6 +8,7 @@ import styles from "./Accomodations.module.css";
 import { motion } from "framer-motion";
 import AccomodationsContact from "./AccomodationsContact";
 import AccomodationsInfo from "./AccomodationsInfo";
+import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -44,7 +45,7 @@ const Accomodations: React.FC<AccomodationsType> = ({
             transition={{ staggerChildren: 0.1 }}
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true, amount: 0.2 }}
             className={styles.photos}
           >
             {accomodationImages.map((img) => {
@@ -53,20 +54,18 @@ const Accomodations: React.FC<AccomodationsType> = ({
                   key={img.url}
                   variants={imageAnimate}
                   className={styles.img_container}
-                  
                   whileTap={{
                     scale: 1.8,
                     zIndex: 15,
                     transition: {
-                      duration: 0.7,
+                      duration: 0.5,
                     },
-                  }
-                }
+                  }}
                   whileHover={{
-                    scale: 1.3,
+                    scale: 1.1,
                     zIndex: 15,
                     transition: {
-                      duration: 0.7,
+                      duration: 0.2,
                     },
                   }}
                 >

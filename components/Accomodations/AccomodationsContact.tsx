@@ -42,7 +42,7 @@ const AccomodationsContact = () => {
           transition={{ staggerChildren: 0.2 }}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.45 }}
+          viewport={{ once: true, amount: 0.25 }}
         >
           <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
             Kameralna i domowa atmosfera oraz tradycyjny charakter.

@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import styles from "./Navbar.module.css";
 
-const pathColor = "#000000";
 const shapeColor = "black";
 
 const mainPathVariant: AnimationProps = {
@@ -45,38 +44,18 @@ const cookPathVariant: AnimationProps = {
 };
 const secondPathVariant: AnimationProps = {
   transition: {
-    duration: 1.5,
+    duration: 2,
     ease: "linear",
   },
   variants: {
     visible: {
       pathLength: 1,
-      fillOpacity: [0, 0, 0, 1],
+      fillOpacity: [0, 0, 1],
       fill: "#4b4b4b",
     },
     hidden: {
       pathLength: 0,
       fillOpacity: 0,
-    },
-  },
-};
-
-const dotPathVariant: AnimationProps = {
-  transition: {
-    delay: 0,
-    duration: 3,
-    ease: "easeIn",
-  },
-  variants: {
-    visible: {
-      opacity: [0, 0, 1],
-      x: -30,
-      y: 200,
-    },
-    hidden: {
-      opacity: 0,
-      x: 0,
-      y: 0,
     },
   },
 };
