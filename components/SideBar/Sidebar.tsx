@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
       }}
     >
       <div className={styles.icon} onClick={toggle}>
-        <FaTimes />
+        <FaTimes  />
       </div>
       <div className={styles.wrapper}>
         <div className={styles.menu}>
@@ -44,7 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
         </div>
         <div className={styles.btn_wrapper}>
           <Link href="/contact">
-            <a className={styles.sidebar_link} onClick={toggle}>
+            <a className={styles.btn_link} onClick={toggle}>
               Kontakt
             </a>
           </Link>

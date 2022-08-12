@@ -604,8 +604,8 @@ export const users = [
     note: "9.5",
     comment:
       "Bardzo ładnie urządzony teren. Mnóstwo kwiatów. Zadbana trawa. Duży plac zabaw dla dzieci. Fajne miejsca na gotowanie pod dachem w piecu i na ogniska (chociaż nie korzystaliśmy). Nawet dosyć kiepsko udokumentowane zdjęciami na Booking - a jest co fotografować.",
-    name: "Anna Domagała",
-    date: "10 Czerwiec 2021 ",
+    name: "Anna",
+    date: "10.06 2021 ",
   },
   {
     id: 2,
@@ -614,8 +614,8 @@ export const users = [
     note: "8.5",
     comment:
       "Dziękujemy  za cudowny  pobyt,   bardzo pomocny  i mily właściciel,  polecamy serdecznie,  bardzo smaczna  kuchnia, na pewno wrócimy. Dziękujemy 😍",
-    name: "Bohdan  Smoleń",
-    date: "14 Listopad 2021",
+    name: "Andrzej",
+    date: "14.11 2021",
   },
   {
     id: 3,
@@ -624,7 +624,8 @@ export const users = [
     note: "9.0",
     comment:
       "Pyszne jedzenie, fajni gospodarze, wspaniałe zwierzęta, cudownie można odpocząć od zgiełku wielkiego mista",
-    date: "15 Maj 2022",
+    name: "Agnieszka",
+    date: "17.05 2021",
   },
   {
     id: 4,
@@ -633,8 +634,8 @@ export const users = [
     note: "9.0",
     comment:
       "Wyjątkowe miejsce, gdzie można odpocząć, uciec myślami od pędzącego świata. Przepyszne jedzenie (śniadanie i obiad w restauracji obok)! Bardzo miły Pan Właściciel. Czystość i przestrzeń. Miejsce, w którym wyczuwalna jest przyjazna atmosfera i sielski spokój.",
-    name: "James Garry",
-    date: "15 Maj 2022",
+    name: "Jacek",
+    date: "15.05 2022",
   },
   {
     id: 5,
@@ -644,7 +645,7 @@ export const users = [
     comment:
       "Bardzo ładnie urządzony teren. Mnóstwo kwiatów. Zadbana trawa. Duży plac zabaw dla dzieci. Fajne miejsca na gotowanie pod dachem w piecu i na ogniska (chociaż nie korzystaliśmy). Nawet dosyć kiepsko udokumentowane zdjęciami na Booking - a jest co fotografować.W pokoju porządnie szerokie łóżko 2+1 bez kłopotu.",
     name: "Magdalena",
-    date: "18 Czerwiec 2022",
+    date: "18.06 2022",
   },
   {
     id: 6,
@@ -654,7 +655,7 @@ export const users = [
     comment:
       "„Piękne malownicze miejsce z klimatem. Wyjatkowe śniadanie na świeżych produktach. Można było najejść się do syta.”",
     name: "Paweł",
-    date: "15 Maj 2022",
+    date: "15.05 2022",
   },
 ];
 
@@ -1074,7 +1075,7 @@ export const restauracja = [
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "20zł",
       },
-      
+
       {
         id: 5,
         img: "pyzy.jpg",
@@ -1084,7 +1085,6 @@ export const restauracja = [
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
         cena: "20zł",
       },
-      
     ],
   },
   {

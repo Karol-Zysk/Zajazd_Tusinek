@@ -29,7 +29,7 @@ const AccomodationsInfo: React.FC<AccomodationsType> = ({ accomodations }) => {
       transition={{ staggerChildren: 0.1 }}
       initial={"offscreen"}
       whileInView={"onscreen"}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={infoAnimate}
       className={styles.info}
     >
@@ -47,14 +47,13 @@ const AccomodationsInfo: React.FC<AccomodationsType> = ({ accomodations }) => {
             key={list.nr}
           >
             <p className={styles.list_item}>
-              <GiKey
+              <GiKey className={styles.key_icon}
                 style={{
                   color: "black",
                   transition: "300ms",
                   transform:
                     number === index + 1 ? "rotate(40deg)" : "rotate(15deg)",
                 }}
-                size="30"
               />
               <span className={styles.room_number}>{list.nr}</span>
               <span className={styles.room_info}> {list.info}</span>

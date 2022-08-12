@@ -30,7 +30,7 @@ const itemAnimate = {
 const AccomodationsContact = () => {
   return (
     <div className={styles.welcome_content}>
-      <div className={styles.flex_wrapper} style={{ marginBottom: "2rem" }}>
+      <div className={styles.flex_wrapper}>
         <div className={styles.line} style={{ border: " 1px solid green" }} />
         <h1 className={styles.contact_h1}>
           <span style={{ color: "green", fontSize: "2.3rem" }}>C</span>ennik{" "}
@@ -60,18 +60,10 @@ const AccomodationsContact = () => {
           transition={{ staggerChildren: 0.2 }}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.45}}
+          viewport={{ once: true, amount: 0.45 }}
         >
           <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Cena za dobę{" "}
-            <GiBed
-              style={{
-                fontSize: "2.5rem",
-                transform: "translateY(10px)",
-                color: "green",
-                marginLeft: "0.3rem",
-              }}
-            />
+            Cena za dobę <GiBed className={styles.icon} />
           </motion.p>
           <motion.p variants={itemAnimate} className={styles.contact_text}>
             Nocleg w pokoju 2,3,4 - osobowym: <b>100zł/osoba.</b>
@@ -93,15 +85,7 @@ const AccomodationsContact = () => {
           viewport={{ once: true, amount: 0.45 }}
         >
           <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Śniadania{" "}
-            <GiHotMeal
-              style={{
-                fontSize: "2.5rem",
-                transform: "translateY(5px)",
-                color: "green",
-                marginLeft: "0.3rem",
-              }}
-            />
+            Śniadania <GiHotMeal className={styles.icon} />
           </motion.p>
 
           <motion.p variants={itemAnimate} className={styles.contact_text}>
@@ -121,15 +105,7 @@ const AccomodationsContact = () => {
           viewport={{ once: true, amount: 0.45 }}
         >
           <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Dodatkowe opłaty{" "}
-            <FaDog
-              style={{
-                fontSize: "2.5rem",
-                transform: "translateY(5px) ",
-                color: "green",
-                marginLeft: "0.3rem",
-              }}
-            />
+            Dodatkowe opłaty <FaDog className={styles.icon} />
           </motion.p>
 
           <motion.p
@@ -150,14 +126,7 @@ const AccomodationsContact = () => {
 
         <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
           Ceny nie dotyczą okresów świątecznych i długich weekendów
-          <BsCalendar2Month
-            style={{
-              fontSize: "2.1rem",
-              transform: "translateY(5px)",
-              color: "green",
-              marginLeft: "0.5rem",
-            }}
-          />
+          <BsCalendar2Month className={styles.icon} />
         </motion.p>
         <motion.div
           transition={{ staggerChildren: 0.2 }}

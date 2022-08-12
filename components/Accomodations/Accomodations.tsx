@@ -20,8 +20,6 @@ const imageAnimate = {
   },
 };
 
-
-
 const Accomodations: React.FC<AccomodationsType> = ({
   accomodations,
   images,
@@ -34,9 +32,9 @@ const Accomodations: React.FC<AccomodationsType> = ({
       <div className={styles.header_wrapper}>
         <div className={styles.flex_wrapper}>
           <h1 className={styles.header}>
-          <div className={styles.line_link} />
+            <div className={styles.line_link} />
             <span className={styles.first_letter}>N</span> oclegi
-          <div className={styles.line_link} />
+            <div className={styles.line_link} />
           </h1>
         </div>
       </div>
@@ -55,19 +53,29 @@ const Accomodations: React.FC<AccomodationsType> = ({
                   key={img.url}
                   variants={imageAnimate}
                   className={styles.img_container}
-                  whileHover={{
-                    scale: 1.1,
+                  
+                  whileTap={{
+                    scale: 1.8,
+                    zIndex: 15,
                     transition: {
-                      duration: 0.5,
+                      duration: 0.7,
+                    },
+                  }
+                }
+                  whileHover={{
+                    scale: 1.3,
+                    zIndex: 15,
+                    transition: {
+                      duration: 0.7,
                     },
                   }}
                 >
                   <Image
-                    style={{ borderRadius: "10px" }}
                     src={`/images/nocleg/${img.url}`}
                     objectFit="cover"
                     layout="fill"
                     alt=""
+                    className={styles.image}
                   />
                 </motion.div>
               );
