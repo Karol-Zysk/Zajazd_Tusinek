@@ -52,32 +52,33 @@
 }
 
 .photos {
-  height: 85vh;
-  display: flex;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   width: 50%;
-  padding: 2rem 0rem 2rem 3rem;
-  flex-wrap: wrap;
-  box-shadow: 8px 2px 12px  #000000;
-  border: 3px solid rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.905);
-  border-radius: 10px; 
+  background-color: rgba(255, 255, 255, 0.553);
+  border-radius: 30px;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.55);
+  padding: 2rem 1rem 2rem 2rem;
+  gap: 1rem;
+  border-radius: 10px;
   margin-top: 3rem;
 }
 
 .img_container {
-  width: 28%;
-  margin: 7px;
   position: relative;
-  /* box-shadow: 3px 4px 6px #000000;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 10px; */
-  /* transition: all 500ms; */
+  width: 100%;
+  aspect-ratio:1.2 ;
 }
-
-
 
 .img_container:hover {
   cursor: pointer;
+}
+
+.image {
+  filter: drop-shadow(1px 2px 3px GREY);
+  height: 90%;
 }
 
 .header {
@@ -136,7 +137,7 @@
   display: flex;
 }
 .line_link {
-  width: 5rem;
+  width: 3.5vw;
   height: 0;
   border: 1.5px solid #ffffff;
   margin: 0 1rem;
@@ -165,7 +166,7 @@
   margin-bottom: 2rem;
 }
 
-.award_icon{
+.award_icon {
   color: gold;
   font-size: 2.5rem;
   transform: translateY(7px);
@@ -186,7 +187,7 @@
   font-weight: 500;
 }
 
-.flex_text{
+.flex_text {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -279,7 +280,7 @@
 .note {
   font-size: 1.2rem;
   background: green;
-  padding: 0.3rem ;
+  padding: 0.3rem;
   border: 2px solid rgba(107, 10, 10, 0.578);
   border-radius: 8px;
   color: rgb(255, 255, 255);
@@ -292,11 +293,205 @@
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.8rem;
-  margin-bottom: 3rem ;
+  margin-bottom: 3rem;
 }
 
 .prices_wrapper {
   display: flex;
   flex-direction: column;
   width: 60%;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 7rem 2rem 6rem 2rem;
+  }
+  .photos {
+    width: 65%;
+  }
+  .info {
+    width: 30%;
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .room_info {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+  .room_number {
+    font-size: 0.8rem;
+  }
+  .key_icon {
+    font-size: 1.1rem;
+  }
+  .header {
+    font-size: 1.3rem;
+  }
+  .first_letter {
+    font-size: 1.8rem;
+  }
+  .header_wrapper {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    align-items: center;
+  }
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_wrapper {
+    margin-left: 0rem;
+    width: 60%;
+    border: 2px solid white;
+  }
+  .photos {
+    width: 90%;
+  }
+  .img_container {
+    width: 100%;
+    border: 2px solid white;
+  }
+  .info {
+    width: 90%;
+    margin-top: 7rem;
+  }
+  .prices_wrapper {
+    width: 80%;
+  }
+  .contact_text {
+    font-size: 1rem;
+  }
+  .contact_subtitle {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+  .room_info {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+  }
+  .room_number {
+    font-size: 1rem;
+  }
+  .key_icon {
+    font-size: 1.3rem;
+  }
+  .first_letter {
+    font-size: 2rem;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prices_wrapper {
+    width: 90%;
+    padding: 1rem;
+  }
+  .header_wrapper {
+    margin-top: 2rem;
+    width: 80%;
+  }
+  .prices_wrapper {
+    margin-top: 0;
+  }
+  .contact_text {
+    font-size: 1rem;
+  }
+  .contact_subtitle {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .room_info {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+  }
+  .room_number {
+    font-size: 0.8rem;
+  }
+  .key_icon {
+    font-size: 1rem;
+  }
+  .info {
+    width: 90%;
+    padding: 1rem;
+  }
+  .wrapper {
+    margin-top: 0;
+  }
+  .contact_h2 {
+    line-height: 3rem;
+    width: min-content;
+  }
+  .photos {
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .img_container {
+    width: 100%;
+    border: 1px solid white;
+    
+  }
+  .header {
+    font-size: 1.15rem;
+    margin: 0.5rem;
+  }
+  .first_letter {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .container {
+    padding: 7rem 1rem;
+  }
+  .prices_wrapper {
+    width: 95%;
+    padding: 0.5rem;
+  }
+  .info {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .room_info {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+  }
+  .room_number {
+    font-size: 0.75rem;
+  }
+  .key_icon {
+    font-size: 0.9rem;
+  }
+  .first_letter {
+    font-size: 1.4rem;
+  }
+  .header {
+    font-size: 1.15rem;
+    margin: 0.4rem;
+  }
+  .wrapper {
+    height: auto;
+  }
 }

@@ -19,11 +19,7 @@ const imageAnimate = {
   },
 };
 
-
-const Awards: React.FC<AwardsType> = ({
-  awardsList,
-  images,
-}) => {
+const Awards: React.FC<AwardsType> = ({ awardsList, images }) => {
   return (
     <>
       <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
@@ -32,10 +28,10 @@ const Awards: React.FC<AwardsType> = ({
       <div className={styles.header_wrapper}>
         <div className={styles.flex_wrapper}>
           <h1 className={styles.header}>
-          <div className={styles.line_link} />
-            <span className={styles.first_letter}>N</span>agrody i 
-            <span className={styles.first_letter}>W</span> yróżnienia
-          <div className={styles.line_link} />
+            <div className={styles.line_link} />
+            <span className={styles.first_letter}>N</span>agrody i
+            <span className={styles.first_letter}>  W</span> yróżnienia
+            <div className={styles.line_link} />
           </h1>
         </div>
       </div>
@@ -63,7 +59,8 @@ const Awards: React.FC<AwardsType> = ({
                 >
                   <Image
                     src={`/images/nagrody/${img.url}`}
-                    objectFit="contain"
+                    objectFit="fill"
+                    className={styles.image}
                     layout="fill"
                     alt=""
                   />
