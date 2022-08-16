@@ -17,10 +17,11 @@ const infoAnimate = {
 const ProductInfo: React.FC<CategoryType> = ({ category }) => {
   return (
     <motion.div
+    id="info"
       transition={{ staggerChildren: 0.1 }}
       initial={"offscreen"}
       whileInView={"onscreen"}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={infoAnimate}
       className={styles.info}
     >

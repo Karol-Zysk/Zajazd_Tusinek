@@ -29,7 +29,7 @@ const AccomodationsInfo: React.FC<AwardsType> = ({ awardsList }) => {
       transition={{ staggerChildren: 0.1 }}
       initial={"offscreen"}
       whileInView={"onscreen"}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.01}}
       variants={infoAnimate}
       className={styles.info}
     >
@@ -46,12 +46,11 @@ const AccomodationsInfo: React.FC<AwardsType> = ({ awardsList }) => {
             onMouseLeave={() => handleSetRotate(index)}
             key={list.id}
           >
-            <p className={styles.list_item}>
+            
               
               <span className={styles.room_number}>{list.rok}</span>
               <span className={styles.room_info}> {list.nagroda}</span>
-              <span> </span>
-            </p>
+            
           </div>
         );
       })}

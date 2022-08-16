@@ -2,13 +2,14 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { AllProdusts } from "../../type";
-import Circle from "../Circle/Circle";
+import { Link } from "react-scroll";
 import styles from "./Products.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import ProductInfo from "./ProductInfo";
 import ProductsContact from "./ProductsContact";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
+import { useWindowSize } from "../Hooks/DimensionHook";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -22,6 +23,9 @@ const imageAnimate = {
 };
 
 const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
+  //@ts-ignore
+  const size = useWindowSize();
+
   const [show, setShow] = useState(false);
   const [number, setNumber] = useState(1);
 
@@ -29,25 +33,29 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
     setShow(!show);
     setNumber(index + 1);
   };
+  console.log(size);
 
   const productName = buyProducts.map((category, index) => {
     return (
-      <h1
+      <Link
+        disabled={true}
         key={index}
-        className={styles.header}
-        style={{
-          filter: number === index + 1 ? "brightness(1.2)" : undefined,
-          transform: number === index + 1 ? "scale(1.2)" : undefined,
-        }}
-        onClick={() => showProducts(index)}
+        duration={700}
+        to="info"
+        smooth
+        delay={1000}
       >
-        {
-          <>
-            <span className={styles.first_letter}>{category.name[0]}</span>{" "}
-            {category.name.slice(1, category.name.length)}
-          </>
-        }
-      </h1>
+        <h1
+          className={styles.header}
+          style={{
+            filter: number === index + 1 ? "brightness(1.2)" : undefined,
+            transform: number === index + 1 ? "scale(1.2)" : undefined,
+          }}
+          onClick={() => showProducts(index)}
+        >
+          {category.name}
+        </h1>
+      </Link>
     );
   });
 
@@ -67,7 +75,7 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
                     transition={{ staggerChildren: 0.1 }}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
-                    viewport={{ once: true, amount: 0.4 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className={styles.photos}
                   >
                     {category.images.map((img) => {

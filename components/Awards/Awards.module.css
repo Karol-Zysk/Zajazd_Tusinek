@@ -9,18 +9,6 @@
   position: relative;
 }
 
-.background_image {
-  height: 100vh;
-  width: 100%;
-  /* background-image: url("heroImage.jpg"); */
-  opacity: 0.25;
-  z-index: -100;
-  background-size: cover;
-  left: 0;
-  top: 0;
-  position: fixed;
-}
-
 .welcome_content {
   margin-top: 2rem;
   width: 100%;
@@ -37,48 +25,39 @@
   box-shadow: 4px 4px 8px black;
   border-radius: 20px;
   background-color: darkgreen;
-  /* padding: 0.3rem; */
   justify-content: center;
 }
 
-.first_letter {
-  margin-right: -3px;
-  margin-bottom: 3px;
-  padding: 0;
-  color: rgb(0, 220, 0);
-  z-index: -1;
+.header::first-letter {
+  color: rgb(26, 255, 0);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  font-size: 2.5rem;
+  font-size: 130%;
 }
 
 .photos {
   height: max-content;
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.553);
-  border-radius: 30px;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.55);
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   gap: 1rem;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-top: 3rem;
 }
 
 .img_container {
   position: relative;
   width: 100%;
-  aspect-ratio:1.2 ;
+  padding: 40%;
 }
 
 .img_container:hover {
   cursor: pointer;
-}
-
-.image {
-  filter: drop-shadow(1px 2px 3px GREY);
-  height: 90%;
 }
 
 .header {
@@ -91,8 +70,8 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.537);
   transition: 300ms;
   filter: brightness(0.95);
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
 }
 
 .header:hover {
@@ -157,6 +136,13 @@
   max-height: 5rem;
   align-items: center;
 }
+.flex_wrapper_opinions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-height: 5rem;
+  align-items: center;
+}
 .flex_wrapper_info {
   width: 100%;
   display: flex;
@@ -176,6 +162,9 @@
   font-size: 1rem;
   line-height: 1.8rem;
   font-weight: 500;
+  display: flex;
+  text-align: left;
+  width: 100%;
 }
 
 .list_item {
@@ -195,11 +184,15 @@
 }
 
 .list_item_wrapper {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-items: space-between;
+  grid-template-columns: min-content auto;
   filter: brightness(1);
   transition: 300ms;
+  gap: 0.9rem;
+  padding: 0.6rem 0.4rem;
+  box-shadow: 1px 3px 4px grey;
+  border-radius: 10px;
 }
 
 .list_item_wrapper:hover {
@@ -268,15 +261,23 @@
 
 .room_number {
   background: green;
-  padding: 0.2rem 0.4rem;
+  padding: 0.3rem 0.4rem;
   border: 2px solid rgba(107, 10, 10, 0.578);
   border-radius: 8px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   margin-left: 0.5rem;
   box-shadow: 2px 4px 4px rgba(158, 157, 157, 0.548);
-  width: 2rem;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: min-content;
 }
+
+
+
 .note {
   font-size: 1.2rem;
   background: green;
@@ -377,7 +378,7 @@
     font-size: 1.7rem;
   }
   .room_info {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.7rem;
     font-weight: 500;
   }
@@ -406,29 +407,22 @@
   }
   .prices_wrapper {
     margin-top: 0;
+    padding: 0;
+    width: 100%;
   }
   .contact_text {
     font-size: 1rem;
   }
   .contact_subtitle {
-    margin-top: 1.5rem;
-    margin-bottom: 1.2rem;
-    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    font-size: 1.2rem;
   }
   .title {
     font-size: 1.5rem;
   }
-  .room_info {
-    font-size: 1rem;
-    line-height: 1.7rem;
-    font-weight: 500;
-  }
-  .room_number {
-    font-size: 0.8rem;
-  }
-  .key_icon {
-    font-size: 1rem;
-  }
+
   .info {
     width: 90%;
     padding: 1rem;
@@ -443,12 +437,11 @@
   .photos {
     width: 100%;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
   }
   .img_container {
     width: 100%;
     border: 1px solid white;
-    
   }
   .header {
     font-size: 1.15rem;
@@ -456,6 +449,36 @@
   }
   .first_letter {
     font-size: 1.4rem;
+  }
+  .note {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    display: flex;
+  }
+  .room_info {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    display: flex;
+    text-align: left;
+    width: 100%;
+  }
+  .room_number {
+    font-size: 0.9rem;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .list_item_wrapper {
+    display: grid;
+    grid-template-columns: min-content auto;
+  }
+  .info {
+    padding: 0;
+    border: none;
+    box-shadow: none;
   }
 }
 
@@ -472,18 +495,14 @@
   }
   .title {
     font-size: 1.4rem;
+    text-align: center;
   }
-  .room_info {
-    font-size: 0.9rem;
-    line-height: 1.7rem;
-    font-weight: 500;
+  .list_item_wrapper{
+    box-shadow: none;
+    padding: 0.4rem 0.3rem;
   }
-  .room_number {
-    font-size: 0.75rem;
-  }
-  .key_icon {
-    font-size: 0.9rem;
-  }
+  
+
   .first_letter {
     font-size: 1.4rem;
   }
@@ -493,5 +512,54 @@
   }
   .wrapper {
     height: auto;
+  }
+  .room_info {
+    font-size: 0.75rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+  }
+  .room_number {
+    font-size: 0.7rem;
+  }
+  .photos{
+    box-shadow: none;
+  }
+  .contact_h1{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+.flex_wrapper_info{
+  display: flex;
+  margin-top: 0;
+}
+
+  .contact_h1::first-letter{
+    font-size: 120%;
+    color: green;
+  }
+  .flex_wrapper_opinions{
+    transform: translateY(-0.5rem);
+    margin-bottom: 0;
+  }
+  .welcome_content{
+    margin-top: 0;
+    width: 100%;
+  }
+  .contact_subtitle{
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .contact_h2{
+    margin: 0;
+  }
+  .contact_h2_wrapper{
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    transform: translateY(2rem);
+  }
+  .flex_text{
+    width: 60%;
   }
 }

@@ -32,11 +32,11 @@ const Accomodations: React.FC<AccomodationsType> = ({
       <CircleCut2 width="45vw" height="45vw" bottom="0%" left="52%" />
       <div className={styles.header_wrapper}>
         <div className={styles.flex_wrapper}>
+            <div className={styles.line_link} />
           <h1 className={styles.header}>
-            <div className={styles.line_link} />
-            <span className={styles.first_letter}>N</span> oclegi
-            <div className={styles.line_link} />
+            Noclegi
           </h1>
+            <div className={styles.line_link} />
         </div>
       </div>
       <div className={styles.wrapper}>

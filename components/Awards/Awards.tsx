@@ -27,12 +27,9 @@ const Awards: React.FC<AwardsType> = ({ awardsList, images }) => {
       <CircleCut2 width="45vw" height="45vw" bottom="0%" left="52%" />
       <div className={styles.header_wrapper}>
         <div className={styles.flex_wrapper}>
-          <h1 className={styles.header}>
-            <div className={styles.line_link} />
-            <span className={styles.first_letter}>N</span>agrody i
-            <span className={styles.first_letter}>  W</span> yróżnienia
-            <div className={styles.line_link} />
-          </h1>
+          <div className={styles.line_link} />
+          <h1 className={styles.header}>Nagrody i Wyróżnienia</h1>
+          <div className={styles.line_link} />
         </div>
       </div>
       <div className={styles.wrapper}>
@@ -41,7 +38,7 @@ const Awards: React.FC<AwardsType> = ({ awardsList, images }) => {
             transition={{ staggerChildren: 0.1 }}
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true, amount: 0.1 }}
             className={styles.photos}
           >
             {images.map((img) => {
@@ -59,7 +56,7 @@ const Awards: React.FC<AwardsType> = ({ awardsList, images }) => {
                 >
                   <Image
                     src={`/images/nagrody/${img.url}`}
-                    objectFit="fill"
+                    objectFit="contain"
                     className={styles.image}
                     layout="fill"
                     alt=""

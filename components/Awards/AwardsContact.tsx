@@ -31,10 +31,10 @@ const itemAnimate = {
 const AccomodationsContact = () => {
   return (
     <div className={styles.welcome_content}>
-      <div className={styles.flex_wrapper} style={{ marginBottom: "2rem" }}>
+      <div className={styles.flex_wrapper_opinions} style={{ marginBottom: "2rem" }}>
         <div className={styles.line} style={{ border: " 1px solid green" }} />
         <h1 className={styles.contact_h1}>
-          <span style={{ color: "green", fontSize: "2.3rem" }}>O</span>pinie{" "}
+          Opinie
         </h1>{" "}
         <div className={styles.line} />
       </div>
@@ -46,22 +46,21 @@ const AccomodationsContact = () => {
           viewport={{ once: true, amount: 0.45 }}
         >
           <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
-            Bardzo nas cieszą nagrody i wyróżnienia jednak najbardziej cieszą
-            nas wasze pozytywne oceny.
+            Cieszą nas nagrody i wyróżnienia jednak najważniejsze są wasze pozytywne oceny.
           </motion.p>
         </motion.div>
         <motion.div
           transition={{ staggerChildren: 0.2 }}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.45 }}
+          viewport={{ once: true, amount: 0.3 }}
           className={styles.flex_text}
         >
           <Image
             src={`/images/full_logo/facebook.png`}
             alt="logo"
-            width="145"
-            height="40"
+            width="130"
+            height="35"
             objectFit="contain"
           />{" "}
           <motion.span className={styles.note} variants={titleAnimate} >
@@ -110,6 +109,7 @@ const AccomodationsContact = () => {
           initial={"offscreen"}
           whileInView={"onscreen"}
           viewport={{ once: true, amount: 0.45 }}
+          className={styles.contact_h2_wrapper}
         >
           <motion.h2 variants={titleAnimate} className={styles.contact_h2}>
             Sprawdź nas i Ty!
