@@ -8,6 +8,7 @@ import RestaurantInfo from "./RestaurantInfo";
 import RestaurantContact from "./RestaurantContact";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
+import { Link } from "react-scroll";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -45,12 +46,7 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
         onClick={() => showProducts(index)}
         key={menuCategory.id}
       >
-        <>
-          <span className={index === 0 ? undefined : `${styles.first_letter}`}>
-            {menuCategory.name[0]}
-          </span>{" "}
-          {menuCategory.name.slice(1, menuCategory.name.length)}
-        </>
+        {menuCategory.name}
       </motion.h1>
     );
   });
@@ -73,13 +69,13 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
           return (
             <React.Fragment key={index}>
               {number === menuCategory.id ? (
-                <>
+                <Link to="dish" offset={-200} smooth>
                   {" "}
-                  <motion.div
+                  <motion.div 
                     transition={{ staggerChildren: 0.1 }}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
-                    viewport={{ once: true, amount: 0.4 }}
+                    viewport={{ once: true, amount: 0.1 }}
                     className={styles.photos}
                   >
                     {menuCategory.photos.map((img, index) => {
@@ -112,7 +108,7 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
                     menuIndex={index}
                     restaurantData={restaurantData}
                   />
-                </>
+                </Link>
               ) : null}
             </React.Fragment>
           );

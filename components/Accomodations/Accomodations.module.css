@@ -56,7 +56,9 @@
   border: 3px solid rgb(255, 255, 255);
   border-radius: 10px;
   touch-action: none;
-  cursor: pointer;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .img_container:nth-child(3) {

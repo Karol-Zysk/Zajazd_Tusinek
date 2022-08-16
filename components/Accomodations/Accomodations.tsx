@@ -57,6 +57,7 @@ const Accomodations: React.FC<AccomodationsType> = ({
                   whileTap={{
                     scale: 1.8,
                     zIndex: 15,
+                    pointerEvents: "none",
                     transition: {
                       duration: 0.5,
                     },

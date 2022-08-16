@@ -50,7 +50,7 @@ const RestaurantInfo: React.FC<RestaurantDataType> = ({
     >
       {restaurantData.map((restaurantCategory, index) => {
         return (
-          <div key={restaurantCategory.id}>
+          <div id="dish"  key={restaurantCategory.id}>
             {menuIndex === index && (
               <div>
                 {restaurantCategory.photos.map((dish, index) => {
@@ -70,7 +70,7 @@ const RestaurantInfo: React.FC<RestaurantDataType> = ({
                             variants={dishAnimate}
                             initial={"offscreen"}
                             whileInView={"onscreen"}
-                            viewport={{ once: true, amount: 0.4 }} className={styles.title}>{dish.title}</motion.h1>
+                            viewport={{ once: true, amount: 0.01 }} className={styles.title}>{dish.title}</motion.h1>
                             <div className={styles.line_restaurant} />
                           </motion.div>
 

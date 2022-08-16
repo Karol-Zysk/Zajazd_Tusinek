@@ -5,11 +5,10 @@ import styles from "./Products.module.css";
 const ProductsContact = () => {
   return (
     <div className={styles.welcome_content}>
-      <div className={styles.flex_wrapper} style={{marginBottom: "2rem"}}>
+      <div className={styles.flex_wrapper_contact} style={{marginBottom: "2rem"}}>
         <div className={styles.line} style={{border: " 1px solid green"}} />
         <h1 className={styles.contact_h1}>
-          <span style={{ color: "green", fontSize: "2.3rem" }}>S</span>zanowni{" "}
-          <span style={{ color: "green", fontSize: "2.3rem" }}>P</span>aństwo
+          Szanowni Państwo
         </h1>{" "}
         <div className={styles.line} />
       </div>
@@ -24,7 +23,7 @@ const ProductsContact = () => {
       <p className={styles.contact_text}>
         {" "}
         Za zakupy można zapłacić przy odbiorze lub przelewem na konto. Na
-        zamówienia czekamy codziennie w godzinach 9 - 17:00.
+        zamówienia czekamy codziennie w godzinach 9:00 - 17:00.
       </p>
       <p className={styles.contact_contact}>
         <b>E-mail:</b>{" "}

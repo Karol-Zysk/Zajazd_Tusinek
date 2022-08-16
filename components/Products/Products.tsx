@@ -23,7 +23,6 @@ const imageAnimate = {
 };
 
 const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
-  //@ts-ignore
   const size = useWindowSize();
 
   const [show, setShow] = useState(false);
@@ -33,29 +32,20 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
     setShow(!show);
     setNumber(index + 1);
   };
-  console.log(size);
 
   const productName = buyProducts.map((category, index) => {
     return (
-      <Link
-        disabled={true}
+      <h1
         key={index}
-        duration={700}
-        to="info"
-        smooth
-        delay={1000}
+        className={styles.header}
+        style={{
+          filter: number === index + 1 ? "brightness(1.2)" : undefined,
+          transform: number === index + 1 ? "scale(1.2)" : undefined,
+        }}
+        onClick={() => showProducts(index)}
       >
-        <h1
-          className={styles.header}
-          style={{
-            filter: number === index + 1 ? "brightness(1.2)" : undefined,
-            transform: number === index + 1 ? "scale(1.2)" : undefined,
-          }}
-          onClick={() => showProducts(index)}
-        >
-          {category.name}
-        </h1>
-      </Link>
+        {category.name}
+      </h1>
     );
   });
 
@@ -84,10 +74,19 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
                           key={img.id}
                           variants={imageAnimate}
                           className={styles.img_container}
-                          whileHover={{
-                            scale: 1.1,
+                          whileTap={{
+                            scale: 1.8,
+                            zIndex: 15,
+                            pointerEvents: "none",
                             transition: {
                               duration: 0.5,
+                            },
+                          }}
+                          whileHover={{
+                            scale: 1.1,
+                            zIndex: 15,
+                            transition: {
+                              duration: 0.2,
                             },
                           }}
                         >

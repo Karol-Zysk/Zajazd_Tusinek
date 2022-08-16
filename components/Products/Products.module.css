@@ -50,7 +50,9 @@
   box-shadow: 3px 4px 6px #000000;
   border: 3px solid rgb(255, 255, 255);
   border-radius: 10px;
-  /* transition: all 500ms; */
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .img_container:nth-child(3) {
@@ -58,9 +60,7 @@
   overflow: hidden;
 }
 
-.img_container:hover {
-  cursor: pointer;
-}
+
 
 .header {
   margin: 0.5rem 0;
@@ -123,19 +123,26 @@
   max-height: 5rem;
   justify-content: center;
 }
+.flex_wrapper_contact {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+}
 
 .product_name {
-  font-size: 1.1rem;
-  font-weight: 500;
+  color: darkgreen;
 }
 
 .list_item {
+  font-size: 1.1rem;
+  font-weight: 500;
   margin: 0;
   margin-bottom: 0.7rem;
 }
 
 .price {
-  font-weight: 500;
+  color: #212121;
 }
 
 .list_item_wrapper {
@@ -148,6 +155,7 @@
 
 .title {
   margin: 0;
+  text-align: center;
 }
 
 .page_title {
@@ -160,7 +168,13 @@
 .contact_h1 {
   margin: 3rem 0;
   padding-bottom: 0.5rem;
+  text-align: center;
 }
+
+.contact_h1::first-letter {
+  color: green;
+}
+
 .contact_h2 {
   width: 100%;
   text-align: center;
@@ -238,6 +252,14 @@
     width: 80%;
   }
   .contact_text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact_contact {
+    font-size: 1rem;
+  }
+  .contact_link {
     font-size: 1rem;
   }
   .contact_subtitle {
@@ -266,8 +288,10 @@
   .header {
     font-size: 1.2rem;
   }
+  .welcome_content {
+    margin: 0;
+  }
 }
-
 
 @media screen and (max-width: 768px) {
   .prices_wrapper {
@@ -311,6 +335,34 @@
     font-size: 1.4rem;
     margin: 0.5rem;
   }
+  .list_item {
+    font-size: 1.1rem;
+  }
+  .long_desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header_wrapper {
+    width: 90%;
+    padding: 0.3rem 0.7rem;
+    justify-content: center;
+  }
+  .header {
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+  }
+  .contact_h1 {
+    font-size: 1.7rem;
+    margin: 0.5rem;
+  }
+  .list_item {
+    font-size: 0.95rem;
+  }
+  .long_desc {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 486px) {
@@ -327,17 +379,17 @@
   .title {
     font-size: 1.4rem;
   }
+  .long_desc {
+    font-size: 1rem;
+  }
 }
 
-
-@media screen and (max-width: 550px) {
-  .header_wrapper {
-    width: 90%;
-
-    padding: 0.3rem 0.7rem;
-  }
+@media screen and (max-width: 380px) {
   .header {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     margin-top: 0.2rem;
+  }
+  .contact_text {
+    font-size: 0.95rem;
   }
 }

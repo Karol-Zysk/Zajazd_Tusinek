@@ -42,7 +42,6 @@ const Services: React.FC<dataType> = ({ services }) => {
       </div>
       <motion.div
         className={styles.content_wrapper}
-        transition={{ staggerChildren: 0.2 }}
         initial={"offscreen"}
         whileInView={"onscreen"}
         viewport={{ once: true, amount: 0.2 }}
@@ -51,7 +50,7 @@ const Services: React.FC<dataType> = ({ services }) => {
           {" "}
           <div className={styles.info}>
             <motion.div className={styles.services}>
-              {services.map((service, index) => {
+              {services.map((service) => {
                 return (
                   <Link key={service.id} href={`/products${service.name}`}>
                     <motion.div
@@ -65,21 +64,9 @@ const Services: React.FC<dataType> = ({ services }) => {
                             videoStyle={{
                               objectFit: "cover",
                               width: "120%",
-                              // height: "100%",
                             }}
                             videoSrc={`/video/${service.video}`}
-                            // pausedOverlay={
-                            //   <Image
-                            //     src={logo}
-                            //     alt="miniaturka"
-                            //     style={{
-                            //       width: "100%",
-                            //       height: "100%",
-                            //       objectFit: "cover",
-
-                            //     }}
-                            //   />
-                            // }
+                          
                             loadingOverlay={
                               <div className="loading-overlay">
                                 <div className="loading-spinner" />
