@@ -71,3 +71,10 @@ a {
   background-color: white;
   border: 3px solid green;
 }
+
+.map-container {
+  width: 90%;
+  height: 60vh;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.746);
+  border-radius: 15px;
+}

@@ -1,29 +1,19 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
-import hero_image from "../../public/images/heroImage.jpg";
-import hero_image2 from "../../public/images/mobile-image.jpg";
-import hero_image3 from "../../public/images/mobile-image2.jpg";
+import hero_image from "../../public/images/heroImage3.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "../Hooks/DimensionHook";
 
 const Hero = () => {
-  const size = useWindowSize();
-  const [mobile, setMobile] = useState(false);
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {
-    if (size) {//@ts-ignore
-      if (size.width > 512) {
-        setMobile(true);
-      } else {
-        setMobile(false);
-      }
-    } else {
-      setMobile(false);
-    }
-  }, [size]);
+    window.addEventListener("scroll", handleScroll);
 
-  const width = size.width as number;
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [offsetY]);
 
   return (
     <AnimatePresence>
@@ -34,11 +24,13 @@ const Hero = () => {
         className={styles.container}
       >
         <div className={styles.image_wrapper}>
+          {/* <div className={styles.cover}></div> */}
           <Image
-            src={mobile ? hero_image : hero_image3}
+            src={hero_image}
             layout="fill"
             objectFit="cover"
             alt="hero"
+            style={{ transform: `translateY(${offsetY * 0.3}px)` }}
           />
         </div>
 

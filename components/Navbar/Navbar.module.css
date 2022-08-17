@@ -53,7 +53,6 @@
 
 .logo_link {
   font-size: 1.5rem;
-  justify-self: flex-start;
   cursor: pointer;
   display: flex;
   text-align: center;
@@ -63,7 +62,7 @@
   text-shadow: 2px 0px 2px black;
   transition: all 700ms ease-in-out;
   width: 35%;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 .active {

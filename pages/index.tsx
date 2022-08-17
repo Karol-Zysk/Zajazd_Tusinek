@@ -9,6 +9,7 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Hero from "../components/Hero/Hero";
 import styles from "../components/Hero/Hero.module.css";
 import { AnimatePresence, motion } from "framer-motion";
+import Map from "../components/Map/Map";
 
 const Home: NextPage<dataType> = ({ services, animation }) => {
   return (
@@ -28,6 +29,7 @@ const Home: NextPage<dataType> = ({ services, animation }) => {
             {/* <Slider />*/}
             <Intro />
             <Services services={services} />
+            <Map/>
             <Testimonials />
           </motion.div>
         )}

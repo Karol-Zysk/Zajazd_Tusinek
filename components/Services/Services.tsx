@@ -29,8 +29,7 @@ const imageAnimate = {
 
 const Services: React.FC<dataType> = ({ services }) => {
   return (
-    <div className={styles.container}>
-      <CircleCut1 width="40vw" height="40vw" top="20%" left="10%" />
+    <div id="services"  className={styles.container}>
       <div className={styles.flex_wrapper}>
         <div className={styles.line} />
         <h1 className={styles.title}>
@@ -66,7 +65,6 @@ const Services: React.FC<dataType> = ({ services }) => {
                               width: "120%",
                             }}
                             videoSrc={`/video/${service.video}`}
-                          
                             loadingOverlay={
                               <div className="loading-overlay">
                                 <div className="loading-spinner" />

@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import { IntroData } from "../../data";
 import Circle from "../Circle/Circle";
+import { Link } from "react-scroll";
 
 const imageAnimate = {
   offscreen: { x: 0, y: 150, opacity: 0 },
@@ -31,7 +32,7 @@ const Intro = () => {
           <b>regionalne potrawy</b>. W głębi <i>Alei Lipowej</i>, za restauracją
           znajduje się część hotelowa oraz <b>gospodarstwo</b>.
         </p>
-        <button className={styles.button}>Sprawdź Ofertę</button>
+        <Link to="services" smooth offset={-50} className={styles.button}>Sprawdź Ofertę</Link>
       </div>
       <motion.div
         className={styles.images_card}

@@ -45,7 +45,7 @@ export const data = [
   {
     id: 2,
     name: "smaki",
-    title: "Tusinkowe Smaki",
+    title: "Restauracja",
     desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
 
     video: "smaki.mp4",
@@ -81,7 +81,7 @@ export const data = [
   {
     id: 3,
     name: "produkcja",
-    title: "Produkcja Serów",
+    title: "swojskie produkty",
     desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
 
     video: "sery.mp4",
@@ -117,7 +117,7 @@ export const data = [
   {
     id: 4,
     name: "położenie",
-    title: "Położenie",
+    title: "Aktualne Promocje",
     desc: "Zajazd Tusinek  położony przy wjeździe na Mazury . W głębi alei lipowej, za restauracją znajduje się część hotelowa oraz gospodarstwo.",
     video: "place.mp4",
     longDesc:
