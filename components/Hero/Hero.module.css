@@ -1,11 +1,11 @@
 .container {
   width: 100%;
-  min-height: 100vh;
+  margin-top: -5rem;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   overflow: hidden;
 }
-
 
 .image_wrapper {
   height: 100vh;
