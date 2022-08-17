@@ -40,7 +40,7 @@ const RestaurantContact = () => {
           transition={{ staggerChildren: 0.2 }}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.45 }}
+          viewport={{ once: true, amount: 0.15 }}
         >
           <motion.p variants={titleAnimate} className={styles.contact_subtitle}>
             Informacje

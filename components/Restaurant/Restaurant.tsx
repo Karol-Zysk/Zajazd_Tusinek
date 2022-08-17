@@ -8,7 +8,7 @@ import RestaurantInfo from "./RestaurantInfo";
 import RestaurantContact from "./RestaurantContact";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
-import { Link } from "react-scroll";
+import { useWindowSize } from "../Hooks/DimensionHook";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -25,6 +25,7 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
   const [show, setShow] = useState(false);
   const [number, setNumber] = useState(1);
   const [imgIndex, setImgIndex] = useState(1);
+  const size = useWindowSize();
 
   const showProducts = (index: number) => {
     setShow(!show);
@@ -69,9 +70,9 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
           return (
             <React.Fragment key={index}>
               {number === menuCategory.id ? (
-                <Link to="dish" offset={-200} smooth>
+                <>
                   {" "}
-                  <motion.div 
+                  <motion.div
                     transition={{ staggerChildren: 0.1 }}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
@@ -108,7 +109,7 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
                     menuIndex={index}
                     restaurantData={restaurantData}
                   />
-                </Link>
+                </>
               ) : null}
             </React.Fragment>
           );

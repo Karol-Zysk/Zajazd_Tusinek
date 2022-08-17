@@ -42,18 +42,13 @@ const Testimonials = () => {
                   <div className={styles.header}>
                     <div className={styles.header_user}>
                       {" "}
-                      <Image
-                        alt="avatar"
-                        width="45"
-                        height="45"
-                        objectFit="cover"
-                        src={`/images/users/${user.avatar}`}
-                      />
+                      
                       <div className={styles.info}>
                         <span className={styles.username}>{user.name}</span>
                         <span className={styles.date}>{user.date}</span>
                       </div>{" "}
                       <Image
+                      
                         src={`/images/logos/${user.logo}`}
                         alt="logo"
                         width="25"
