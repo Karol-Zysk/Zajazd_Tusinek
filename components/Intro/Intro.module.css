@@ -78,6 +78,8 @@
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
+    margin-bottom: 3rem;
+    height: auto;
   }
 }
 @media screen and (max-width: 1024px) {

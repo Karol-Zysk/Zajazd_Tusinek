@@ -87,7 +87,7 @@ const Services: React.FC<dataType> = ({ services }) => {
                           </motion.div>
                         )}
                       </div>
-                      <button className="btnLink">Więcej</button>
+                      <button className={styles.button}>Więcej</button>
                     </motion.div>
                   </Link>
                 );

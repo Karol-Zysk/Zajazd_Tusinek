@@ -93,7 +93,7 @@
   text-align: center;
   width: 100%;
   top: 0.7rem;
-  z-index: 999;
+  z-index: 4;
   text-transform: uppercase;
   color: green;
   letter-spacing: 1px;
@@ -104,7 +104,7 @@
   position: absolute;
   top: 10rem;
   height: auto;
-  z-index: 999;
+  z-index: 4;
   bottom: 10%;
   transition: all 400ms ease;
 }
@@ -164,6 +164,29 @@
   object-fit: cover;
 }
 
+
+.button {
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: green;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid green;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  color: green;
+  box-shadow: 1px 2px 5px black;
+  background-color: white;
+  border: 2px solid white;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     padding: 2rem;
@@ -197,6 +220,15 @@
     font-size: 2rem;
     color: rgb(0, 126, 0);
   }
+  .button {
+    border-radius: 20px;
+    white-space: nowrap;
+    padding: 8px 18px;
+    color: green;
+    font-size: 0.9rem;
+    
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -210,6 +242,9 @@
 
   .services {
     width: 100%;
+  }
+  .service{
+    border: none;
   }
 }
 @media screen and (max-width: 550px) {
