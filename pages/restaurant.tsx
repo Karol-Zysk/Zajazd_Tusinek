@@ -13,7 +13,7 @@ const products: NextPage<RestaurantDataType> = ({ restaurantData }) => {
         <title>Tusinkowe Smaki</title>
         <meta
           name="description"
-          content="Tusinkowe Smaki Wędliny Sery Miody i inne"
+          content="Restauracja Tusinek Świeże, Regionalne potrawy"
         />
       </Head>
       <Restaurant restaurantData={restaurantData} />

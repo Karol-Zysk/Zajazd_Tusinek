@@ -39,17 +39,27 @@
 }
 
 .button {
-  border: none;
-  background-color: green;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 1.2rem;
-  border-radius: 15px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  white-space: nowrap;
+  padding: 1rem 2rem;
+  color: green;
+  font-size: 16px;
+  outline: none;
+  border: 3px solid green;
   cursor: pointer;
-  width: max-content;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+  width: min-content;
 }
-
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  color: green;
+  box-shadow: 1px 2px 5px black;
+  background-color: white;
+  border: 3px solid white;
+}
 
 .image_wrapper {
   box-shadow: 7px 7px 10px black;
@@ -75,13 +85,14 @@
   transform: scale(1.1);
   transition: 300ms ease-in-out;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    margin-bottom: 3rem;
-    height: auto;
+
+@media screen and (max-width: 1150px) {
+  .description {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .card {
     width: 100%;
@@ -90,36 +101,13 @@
   .container {
     align-items: center;
   }
-}
-@media screen and (max-width: 768px) {
-  .card {
-    width: 100%;
-    margin: 5rem 0rem 0rem 0rem;
-    padding: 2rem 1.5rem;
+  .title {
+    font-size: 2.7rem;
   }
-}
-
-@media screen and (max-width: 1024px) {
   .images_card {
     width: 100%;
     height: 55vh;
   }
-}
-@media screen and (max-width: 768px) {
-  .images_card {
-    width: 100%;
-    height: 60vh;
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 512px) {
-  .images_card {
-    width: 100%;
-    height: 40vh;
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 1024px) {
   .image_wrapper {
     width: 50%;
     border: none;
@@ -127,76 +115,61 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    margin: 5rem 0rem 0rem 0rem;
+    padding: 2rem 1.5rem;
+  }
   .image_wrapper {
     width: 45%;
     border: none;
     padding: 0rem;
   }
-}
-@media screen and (max-width: 1150px) {
-  .description {
-    font-size: 1.2rem;
-    line-height: 2.2rem;
-  }
-}
-@media screen and (max-width: 768px) {
   .description {
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
-}
-@media screen and (max-width: 512px) {
-  .description {
-    font-size: 1rem;
-    line-height: 1.7rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .title {
-    font-size: 2.7rem;
-  }
-}
-@media screen and (max-width: 768px) {
   .title {
     font-size: 2.5rem;
   }
-}
-@media screen and (max-width: 512px) {
-  .title {
-    font-size: 1.8rem;
-  }
-}
-
-.bold_text{
-  font-size: 1.6rem;
-  color: darkgreen;
-}
-
-@media screen and (max-width: 768px) {
-  .bold_text {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 512px) {
-  .bold_text {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .button {
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
-}
-@media screen and (max-width: 768px) {
   .button {
     font-size: 0.8rem;
     padding: 1rem;
   }
+  .images_card {
+    width: 100%;
+    height: 60vh;
+    margin-right: 0;
+  }
+  .bold_text {
+    font-size: 1.4rem;
+  }
 }
+
 @media screen and (max-width: 512px) {
+  .images_card {
+    width: 100%;
+    height: 40vh;
+    margin-right: 0;
+  }
+  .description {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .bold_text {
+    font-size: 1.2rem;
+  }
   .button {
+    margin: 0.8rem 0;
     font-size: 0.7rem;
-    padding: 0.8rem;
+    padding: 0.8rem 0.6rem;
   }
 }
