@@ -24,7 +24,7 @@
 
 .iframe {
   border: 1px solid rgba(0, 0, 0, 0.747);
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.746);
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.839);
   height: 80vh;
   width: 100%;
   border-radius: 15px;

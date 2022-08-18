@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
-import hero_image from "../../public/images/heroImage3.jpg";
+import hero_image from "../../public/images/heroImage3.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "../Hooks/DimensionHook";
 
@@ -9,6 +9,8 @@ const Hero = () => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
+  console.log(offsetY);
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -30,20 +32,13 @@ const Hero = () => {
             layout="fill"
             objectFit="cover"
             alt="hero"
-            style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+            style={{ transform: `translateY(${offsetY * 0.2}px)`, zIndex: "7" }}
           />
         </div>
-
-        <motion.div
-          initial={{ x: 300, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -300, opacity: 0 }}
-          transition={{
-            delay: 1,
-            x: { type: "spring", stiffness: 100 },
-            default: { duration: 1 },
-          }}
+        <div
+          
           className={styles.wrapper}
+          style={{ transform: `translateY(${offsetY * 0.4}px)`, zIndex: "6" }}
         >
           <div className={styles.flex_wrapper}>
             <div className={styles.line} />
@@ -51,7 +46,7 @@ const Hero = () => {
             <div className={styles.line} />
           </div>
           <p className={styles.big_text}>W drodze na Mazury</p>
-        </motion.div>
+        </div>
       </motion.div>
     </AnimatePresence>
   );

@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   overflow: hidden;
+
 }
 
 
@@ -11,21 +12,22 @@
   height: 100vh;
   display: flex;
   overflow: hidden;
+  background-color: rgb(89, 168, 234);
+  z-index: 5;
 }
 
 .wrapper {
+  z-index: 6;
   position: absolute;
-  left: 45%;
-  top: 60%;
-  bottom: 0;
+  left: 55%;
+  top: 30%;
+  /* bottom: 0; */
   right: 0;
-  background: rgba(0, 0, 0, 0.468);
+  background: none;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  font-weight: 700;
-  font-size: 2rem;
   text-shadow: 3px 7px 5px black;
   color: white;
   height: fit-content;
@@ -36,12 +38,14 @@
 
 .small_text {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .big_text {
+  
+  font-weight: 700;
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .line {

@@ -31,9 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
       <div
         className={styles.navbar}
         style={{
-          backgroundColor: scrollNav
-            ? "darkgreen"
-            : "rgba(255, 255, 255, 0.664)",
+          backgroundColor: "transparent",
         }}
       >
         <div className={styles.container}>
@@ -45,11 +43,8 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <Link href="/">
             <a
               style={{
-                transform: scrollNav ? "scale(1)" : "scale(1.2)",
-                color: scrollNav ? "white" : "green ",
-                textShadow: scrollNav
-                  ? "2px 4px 4px black"
-                  : "2px 2px 3px black",
+                transform: "scale(1.2)",
+                color: "green ",
               }}
               className={styles.logo_link}
             >
@@ -66,11 +61,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                 <a
                   className={styles.link}
                   style={{
-                    color: scrollNav ? "white" : "green",
-                    textShadow: scrollNav
-                      ? "2px 0px 2px black"
-                      : "1px 1px 0.5px black",
-                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
+                    color: "green",
+                    textShadow: "1px 1px 1px black",
+                    fontSize: "1.4rem",
                   }}
                 >
                   Noclegi
@@ -82,11 +75,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               <Link href="awards">
                 <a
                   style={{
-                    color: scrollNav ? "white" : "green",
-                    textShadow: scrollNav
-                      ? "2px 0px 2px black"
-                      : "1px 1px 0.5px black",
-                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
+                    color: "green",
+                    textShadow: "1px 1px 1px black",
+                    fontSize: "1.4rem",
                   }}
                   className={styles.link}
                 >
@@ -98,11 +89,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               <Link href="restaurant">
                 <a
                   style={{
-                    color: scrollNav ? "white" : "green",
-                    textShadow: scrollNav
-                      ? "2px 0px 2px black"
-                      : "1px 1px 0.5px black",
-                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
+                    color: "green",
+                    textShadow: "1px 1px 1px black",
+                    fontSize: "1.4rem",
                   }}
                   className={styles.link}
                 >
@@ -114,11 +103,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
               <Link href="/products">
                 <a
                   style={{
-                    color: scrollNav ? "white" : "green",
-                    textShadow: scrollNav
-                      ? "2px 0px 2px black"
-                      : "1px 1px 0.5px black",
-                    fontSize: scrollNav ? "1.1rem" : "1.4rem",
+                    color: "green",
+                    textShadow: "1px 1px 1px black",
+                    fontSize: "1.4rem",
                   }}
                   className={styles.link}
                 >
@@ -128,11 +115,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             </li>
           </ul>
           <nav className={styles.navBtn}>
-            {scrollNav && (
-              <Link href="contact">
-                <a className={styles.btnLink}>Kontakt</a>
-              </Link>
-            )}
+            <Link href="contact">
+              <a className={styles.btnLink}>Kontakt</a>
+            </Link>
           </nav>
         </div>
       </div>
