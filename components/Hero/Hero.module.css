@@ -4,9 +4,7 @@
   overflow: hidden;
   position: relative;
   overflow: hidden;
-
 }
-
 
 .image_wrapper {
   height: 100vh;
@@ -19,33 +17,33 @@
 .wrapper {
   z-index: 6;
   position: absolute;
-  left: 55%;
-  top: 30%;
+  left: 0;
+  top: 25%;
   /* bottom: 0; */
   right: 0;
-  background: none;
+  background: rgba(0, 0, 0, 0.303);
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  text-shadow: 3px 7px 5px black;
+  text-shadow: 5px 10px 5px black;
   color: white;
   height: fit-content;
   width: fit-content;
   box-shadow: -4px 5px 8px black;
-  padding: 1.5rem;
+  padding: 1.7rem;
 }
 
 .small_text {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 .big_text {
-  
   font-weight: 700;
   margin: 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .line {
@@ -72,8 +70,8 @@
 }
 @media screen and (max-width: 768px) {
   .wrapper {
-    left: 10%;
-    top: 50%;
+    /* left: 10%; */
+    top: 35%;
     padding: 1rem;
   }
   .big_text {
@@ -89,18 +87,18 @@
   }
 }
 @media screen and (max-width: 512px) {
-  .image_wrapper{
+  .image_wrapper {
     margin-top: -5rem;
   }
   .big_text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .small_text {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .wrapper {
-    left: 25%;
-    top: 75%;
+    /* left: 25%;
+    top: 75%; */
     padding: 1rem;
   }
 }
