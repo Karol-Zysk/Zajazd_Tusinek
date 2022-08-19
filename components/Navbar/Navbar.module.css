@@ -8,6 +8,8 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  width: 100%;
+  background-color: aliceblue;
   transition: all 400ms ease-in-out;
 }
 

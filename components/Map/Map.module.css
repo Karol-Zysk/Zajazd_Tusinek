@@ -16,7 +16,6 @@
   padding: 3rem;
 }
 .iframe_wrapper {
-   
   height: 100%;
   width: 45%;
   padding: 3rem;
@@ -34,4 +33,18 @@
   text-align: center;
   margin-bottom: 2rem 0;
   font-size: 3rem;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none;
+  height: 500px;
+  width: 600px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
 }

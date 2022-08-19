@@ -3,21 +3,38 @@ import styles from "./Navbar.module.css";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 import LogoSvg from "./LogoSvg";
+import { useWindowSize, WindowType } from "../Hooks/DimensionHook";
 
 type NavbarProps = {
   toggle: () => void;
 };
 
 const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [prevScrollpos, setPrevScrollpos] = useState(0);
+  const handleScroll = () => setPrevScrollpos(window.pageYOffset);
+
+  const [scrollNav, setScrollNav] = useState(true);
   const [color, setColor] = useState("green");
+
+  useEffect(() => {
+    let currentScrollPos = window.pageYOffset;
+    window.onscroll = function () {
+      //@ts-ignore
+      if (prevScrollpos > currentScrollPos) {
+        setScrollNav(false);
+        console.log(currentScrollPos, "and", prevScrollpos);
+      } else {
+        setScrollNav(true);
+      }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      setPrevScrollpos(currentScrollPos);
+    };
+  }, [prevScrollpos]);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true);
       setColor("white");
     } else {
-      setScrollNav(false);
       setColor("green");
     }
   };
@@ -31,10 +48,11 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
       <div
         className={styles.navbar}
         style={{
-          backgroundColor: "transparent",
+          position: "fixed",
+          top: scrollNav ? "0" : "5rem",
         }}
       >
-        <div className={styles.container}>
+        <div className={styles.container} style={{}}>
           <Link href="/">
             <a>
               <LogoSvg color={color} />

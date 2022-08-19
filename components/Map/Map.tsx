@@ -15,7 +15,7 @@ const Map = () => {
       <Circle backgroundColor="#01c686" top="-35vh" left="-35vh" />
       <div className={styles.wrapper}>
         <h1 className={styles.title}>
-          <b style={{color: "green"}}>Jesteśmy</b> Tutaj
+          <b style={{ color: "green" }}>Jesteśmy</b> Tutaj
         </h1>
         <MapComponent />
       </div>
@@ -23,7 +23,7 @@ const Map = () => {
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1660773963784!6m8!1m7!1sCAoSLEFGMVFpcE9jd0pxSUlrXzl5R2pUVy1CUmU2Nnl6R0c4MDhwWUhOa1NwRjNf!2m2!1d53.471598!2d21.3676609!3f152.64!4f-2.7900000000000063!5f1.2099795838956164"
-            loading="lazy" 
+            loading="lazy"
             className={styles.iframe}
           ></iframe>
         </div>
@@ -38,11 +38,20 @@ function MapComponent() {
   const center = useMemo(() => ({ lat: 53.47155, lng: 21.3675 }), []);
 
   return (
-    <GoogleMap zoom={7} center={center} mapContainerClassName="map-container">
-      <Marker
-        icon={"https://maps.google.com/mapfiles/ms/icons/green-dot.png"}
-        position={center}
-      />
-    </GoogleMap>
+    <div className={styles.mapouter}>
+      <div className={styles.gmap_canvas}>
+        <iframe className={styles.map_frame}
+          width="600"
+          height="500"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=tusinek&t=k&z=7&ie=UTF8&iwloc=&output=embed"
+          frameBorder="2"
+          allowFullScreen
+          scrolling="no"
+          marginHeight={0}
+          marginWidth={0}
+        ></iframe>
+      </div>
+    </div>
   );
 }

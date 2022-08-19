@@ -1,15 +1,13 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
-import hero_image from "../../public/images/heroImage4.png";
+import hero_image from "../../public/images/heroImage5.png";
 import { AnimatePresence, motion } from "framer-motion";
-import { useWindowSize } from "../Hooks/DimensionHook";
 
 const Hero = () => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
-  console.log(offsetY);
   
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -38,7 +36,7 @@ const Hero = () => {
         <div
           
           className={styles.wrapper}
-          style={{ transform: `translateY(${offsetY * 0.45}px)`, zIndex: "6" }}
+          style={{ transform: `translateY(${offsetY * 0.5}px)`, zIndex: "6" }}
         >
           <div className={styles.flex_wrapper}>
             <div className={styles.line} />
