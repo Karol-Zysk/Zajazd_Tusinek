@@ -2,54 +2,58 @@ import React, { useMemo } from "react";
 import styles from "./Map.module.css";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import Circle from "../Circle/Circle";
+import HoverVideoPlayer from "react-hover-video-player";
 
 const Map = () => {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDqRcN_cWjTfqXSD2pke_QaCwg5PJmKQPA",
-  });
-  console.log(process.env.REACT_APP_GOOGLE_MAP_API_KEY);
-
-  if (!isLoaded) return <div>Loading...</div>;
   return (
-    <div className={styles.container}>
-      <Circle backgroundColor="#01c686" top="-35vh" left="-35vh" />
-      <div className={styles.wrapper}>
-        <h1 className={styles.title}>
-          <b style={{ color: "green" }}>Jesteśmy</b> Tutaj
-        </h1>
-        <MapComponent />
-      </div>
-      <div className={styles.iframe_wrapper}>
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!4v1660773963784!6m8!1m7!1sCAoSLEFGMVFpcE9jd0pxSUlrXzl5R2pUVy1CUmU2Nnl6R0c4MDhwWUhOa1NwRjNf!2m2!1d53.471598!2d21.3676609!3f152.64!4f-2.7900000000000063!5f1.2099795838956164"
-            loading="lazy"
-            className={styles.iframe}
-          ></iframe>
+    <>
+      <div className={styles.container}>
+        <Circle backgroundColor="#01c686" top="-35vh" left="-35vh" />
+        <div className={styles.content_container}>
+          <div className={styles.wrapper}>
+            <h1 className={styles.title}>
+              <b style={{ color: "green" }}>Jesteśmy</b> Tutaj
+            </h1>
+            <MapComponent />
+          </div>
+          <div className={styles.iframe_wrapper}>
+            <h1 className={styles.video_title}>Widok z lotu ptaka</h1>
+            <HoverVideoPlayer
+              videoStyle={{
+                objectFit: "cover",
+                width: "100%",
+                borderRadius: "25px",
+                boxShadow: "10px 10px 7px rgba(0, 0, 0, 0.8)",
+                cursor: "pointer"
+
+              }}
+              videoSrc={`/video/place.mp4`}
+              
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
 export default Map;
 
 function MapComponent() {
-  const center = useMemo(() => ({ lat: 53.47155, lng: 21.3675 }), []);
-
   return (
     <div className={styles.mapouter}>
       <div className={styles.gmap_canvas}>
-        <iframe className={styles.map_frame}
-          width="600"
-          height="500"
+        <iframe
+          className={styles.map_frame}
+          
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=tusinek&t=k&z=7&ie=UTF8&iwloc=&output=embed"
-          frameBorder="2"
+          frameBorder="0"
           allowFullScreen
           scrolling="no"
           marginHeight={0}
           marginWidth={0}
+          
         ></iframe>
       </div>
     </div>

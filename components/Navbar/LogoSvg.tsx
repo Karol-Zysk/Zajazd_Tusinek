@@ -2,13 +2,11 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import styles from "./Navbar.module.css";
 
-type Props = {
-  color: string;
-};
 
 
 
-const LogoSvg: React.FC<Props> = ({ color }) => {
+
+const LogoSvg = () => {
   return (
     <div className={styles.svg_wrapper}>
       <svg
@@ -21,7 +19,7 @@ const LogoSvg: React.FC<Props> = ({ color }) => {
       >
         <g
           transform="translate(0.000000,1048.000000) scale(0.100000,-0.100000)"
-          fill={color}
+          fill="darkgreen"
           stroke="none"
         >
           <path 

@@ -3,7 +3,6 @@ import styles from "./Navbar.module.css";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 import LogoSvg from "./LogoSvg";
-import { useWindowSize, WindowType } from "../Hooks/DimensionHook";
 
 type NavbarProps = {
   toggle: () => void;
@@ -11,37 +10,21 @@ type NavbarProps = {
 
 const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   const [prevScrollpos, setPrevScrollpos] = useState(0);
-  const handleScroll = () => setPrevScrollpos(window.pageYOffset);
 
   const [scrollNav, setScrollNav] = useState(true);
-  const [color, setColor] = useState("green");
 
   useEffect(() => {
     let currentScrollPos = window.pageYOffset;
     window.onscroll = function () {
-      //@ts-ignore
       if (prevScrollpos > currentScrollPos) {
-        setScrollNav(false);
-        console.log(currentScrollPos, "and", prevScrollpos);
-      } else {
         setScrollNav(true);
+      } else {
+        setScrollNav(false);
       }
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       setPrevScrollpos(currentScrollPos);
     };
-  }, [prevScrollpos]);
+  });
 
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setColor("white");
-    } else {
-      setColor("green");
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
 
   return (
     <>
@@ -49,13 +32,13 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         className={styles.navbar}
         style={{
           position: "fixed",
-          top: scrollNav ? "0" : "5rem",
+          top: scrollNav ? "5rem" : "-5rem",
         }}
       >
         <div className={styles.container} style={{}}>
           <Link href="/">
             <a>
-              <LogoSvg color={color} />
+              <LogoSvg  />
             </a>
           </Link>
           <Link href="/">
@@ -71,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           </Link>
 
           <div className={styles.mobile_icon} onClick={toggle}>
-            <FaBars color={color} />
+            <FaBars color="darkgreen" />
           </div>
           <ul className={styles.menu}>
             <li className={styles.item}>

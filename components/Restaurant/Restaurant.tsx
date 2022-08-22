@@ -8,7 +8,6 @@ import RestaurantInfo from "./RestaurantInfo";
 import RestaurantContact from "./RestaurantContact";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
-import { useWindowSize } from "../Hooks/DimensionHook";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -25,7 +24,6 @@ const Restaurant: React.FC<RestaurantDataType> = ({ restaurantData }) => {
   const [show, setShow] = useState(false);
   const [number, setNumber] = useState(1);
   const [imgIndex, setImgIndex] = useState(1);
-  const size = useWindowSize();
 
   const showProducts = (index: number) => {
     setShow(!show);

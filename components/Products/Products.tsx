@@ -2,14 +2,12 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { AllProdusts } from "../../type";
-import { Link } from "react-scroll";
 import styles from "./Products.module.css";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import ProductInfo from "./ProductInfo";
 import ProductsContact from "./ProductsContact";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
-import { useWindowSize } from "../Hooks/DimensionHook";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -23,7 +21,6 @@ const imageAnimate = {
 };
 
 const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
-  const size = useWindowSize();
 
   const [show, setShow] = useState(false);
   const [number, setNumber] = useState(1);

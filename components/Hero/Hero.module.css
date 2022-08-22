@@ -70,7 +70,6 @@
 }
 @media screen and (max-width: 768px) {
   .wrapper {
-    /* left: 10%; */
     top: 35%;
     padding: 1rem;
   }
