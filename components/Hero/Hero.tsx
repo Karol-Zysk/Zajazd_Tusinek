@@ -16,23 +16,24 @@ const Hero = () => {
   }, [offsetY]);
 
   return (
-    <AnimatePresence>
+    <div className={styles.container_one}>
+
+    
       <motion.div
         initial={{ opacity: 0.5 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className={styles.container}
       >
-        <div className={styles.image_wrapper}>
           {/* <div className={styles.cover}></div> */}
           <Image
             src={hero_image}
             layout="fill"
             objectFit="cover"
             alt="hero"
+            className={styles.image}
             style={{ transform: `translateY(${offsetY * 0.2}px)`, zIndex: "7" }}
           />
-        </div>
         <div
           
           className={styles.wrapper}
@@ -46,7 +47,7 @@ const Hero = () => {
           <p className={styles.big_text}>W drodze na Mazury</p>
         </div>
       </motion.div>
-    </AnimatePresence>
+    </div>
   );
 };
 
