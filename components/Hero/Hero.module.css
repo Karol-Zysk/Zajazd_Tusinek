@@ -24,9 +24,7 @@
 }
 
 
-.image{
-  
-}
+
 
 .wrapper {
   z-index: 6;
@@ -103,9 +101,12 @@
 @media screen and (max-width: 512px) {
   .container_one{
     height: 100vh;
+    margin-bottom: -5rem;
+    
   }
   .container {
     height: 65vh;
+
   }
   .big_text {
     font-size: 1.5rem;
@@ -113,11 +114,9 @@
   .small_text {
     font-size: 1.2rem;
   }
-  .image{
-
-  }
+  
   .wrapper {
-    top: 15%;
+    top: 19%;
     padding: 1rem;
   }
 }
