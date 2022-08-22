@@ -25,6 +25,7 @@ const Footer = () => {
             </span>
           </div>
         </div>
+
         <div className={styles.card_small}>
           <div className={styles.card_item}>
             <p className={styles.card_item_title}>Informacje:</p>
@@ -91,7 +92,7 @@ const Footer = () => {
         </div>
         <div className={styles.card_small}>
           <div className={styles.card_item}>
-            <Image src={logo} width="290" height="95" alt="logo" />
+            <Image src={logo} width="290"  height="95" alt="logo" />
           </div>
           <div className={styles.card_item}>
             <p className={styles.card_item_info}>© 2022 TUSINEK,</p>

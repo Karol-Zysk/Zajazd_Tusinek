@@ -152,6 +152,9 @@
 }
 
 @media screen and (max-width: 512px) {
+  .container{
+    margin-top: 4rem;
+  }
   .images_card {
     width: 100%;
     height: 40vh;

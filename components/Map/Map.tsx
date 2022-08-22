@@ -12,7 +12,7 @@ const Map = () => {
         <div className={styles.content_container}>
           <div className={styles.wrapper}>
             <h1 className={styles.title}>
-              <b style={{ color: "green" }}>Jesteśmy</b> Tutaj
+              Jesteśmy <b style={{ color: "darkgreen" }}>Tutaj</b>
             </h1>
             <MapComponent />
           </div>
@@ -24,11 +24,9 @@ const Map = () => {
                 width: "100%",
                 borderRadius: "25px",
                 boxShadow: "10px 10px 7px rgba(0, 0, 0, 0.8)",
-                cursor: "pointer"
-
+                cursor: "pointer",
               }}
               videoSrc={`/video/place.mp4`}
-              
             />
           </div>
         </div>
@@ -45,7 +43,6 @@ function MapComponent() {
       <div className={styles.gmap_canvas}>
         <iframe
           className={styles.map_frame}
-          
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=tusinek&t=k&z=7&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
@@ -53,7 +50,6 @@ function MapComponent() {
           scrolling="no"
           marginHeight={0}
           marginWidth={0}
-          
         ></iframe>
       </div>
     </div>

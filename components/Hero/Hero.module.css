@@ -24,7 +24,8 @@
 }
 
 
-
+.image{
+}
 
 .wrapper {
   z-index: 6;
@@ -106,7 +107,7 @@
   }
   .container {
     height: 65vh;
-
+margin-top: -15rem;
   }
   .big_text {
     font-size: 1.5rem;
@@ -116,7 +117,7 @@
   }
   
   .wrapper {
-    top: 19%;
+    top: 12%;
     padding: 1rem;
   }
 }

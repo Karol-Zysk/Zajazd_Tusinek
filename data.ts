@@ -9,10 +9,10 @@ import { IoRestaurantSharp } from "react-icons/io5";
 export const data = [
   {
     id: 1,
-    name: "noclegi",
+    name: "accomodation",
     title: "Noclegi",
     desc: "Kameralną i domową atmosferę tworzy oryginalna stylizacja zajazdu oraz 17 pokoi .  Pokoje znajdują się na poddaszu budynku hotelowego. W dolnej części znajdują się trzy duże sale w których można organizować  imprezy okolicznościowe czy szkolenia.",
-    video: "nocleg.mp4",
+    photo: "nocleg.jpg",
 
     longDesc: "Zajazd w malowniczym miejscu i regionalnym klimacie",
     images: [
@@ -44,7 +44,7 @@ export const data = [
   },
   {
     id: 2,
-    name: "smaki",
+    name: "restaurant",
     title: "Restauracja",
     desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
 
@@ -80,7 +80,7 @@ export const data = [
   },
   {
     id: 3,
-    name: "produkcja",
+    name: "products",
     title: "swojskie produkty",
     desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
 
@@ -116,10 +116,10 @@ export const data = [
   },
   {
     id: 4,
-    name: "położenie",
+    name: "awards",
     title: "Aktualne Promocje",
     desc: "Zajazd Tusinek  położony przy wjeździe na Mazury . W głębi alei lipowej, za restauracją znajduje się część hotelowa oraz gospodarstwo.",
-    video: "place.mp4",
+    photo: "promo.jpg",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
     images: [
@@ -1013,24 +1013,7 @@ export const restauracja = [
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "15zł",
       },
-      {
-        id: 5,
-        img: "krupnik.png",
-        title: "Krupnik",
-        subtitle: "Pyszny Krupnik",
-        comment:
-          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
-        cena: "20zł",
-      },
-      {
-        id: 6,
-        img: "pomidorowa.png",
-        title: "Pomidorowa",
-        subtitle: "Pomidorowa to nasza specjalność.",
-        comment:
-          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
-        cena: "20zł",
-      },
+     
     ],
   },
   {
@@ -1076,15 +1059,7 @@ export const restauracja = [
         cena: "20zł",
       },
 
-      {
-        id: 5,
-        img: "pyzy.jpg",
-        title: "Pyzy z mięsem",
-        subtitle: "Rolada super pyszna.",
-        comment:
-          "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
-        cena: "20zł",
-      },
+      
     ],
   },
   {

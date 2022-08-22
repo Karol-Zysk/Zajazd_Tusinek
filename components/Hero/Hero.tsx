@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
-import hero_image from "../../public/images/heroImage5.png";
-import { AnimatePresence, motion } from "framer-motion";
+import hero_image from "../../public/images/heroImage4.png";
+import {  motion } from "framer-motion";
 
 const Hero = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -37,7 +37,7 @@ const Hero = () => {
         <div
           
           className={styles.wrapper}
-          style={{ transform: `translateY(${offsetY * 0.5}px)`, zIndex: "6" }}
+          style={{ transform: `translateY(${offsetY * 0.3}px)`, zIndex: "6" }}
         >
           <div className={styles.flex_wrapper}>
             <div className={styles.line} />

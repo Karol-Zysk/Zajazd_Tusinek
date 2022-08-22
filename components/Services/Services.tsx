@@ -6,7 +6,6 @@ import { dataType } from "../../type";
 import { motion } from "framer-motion";
 import styles from "./Services.module.css";
 import tusinek from "../../public/images/tusinek.jpg";
-import CircleCut1 from "../Circle/CircleCut1";
 
 const serviceAnimate = {
   offscreen: { x: 0, y: 90, opacity: 0 },
@@ -28,6 +27,9 @@ const imageAnimate = {
 };
 
 const Services: React.FC<dataType> = ({ services }) => {
+
+
+
   return (
     <div id="services"  className={styles.container}>
       <div className={styles.flex_wrapper}>
@@ -51,7 +53,7 @@ const Services: React.FC<dataType> = ({ services }) => {
             <motion.div className={styles.services}>
               {services.map((service) => {
                 return (
-                  <Link key={service.id} href={`/products${service.name}`}>
+                  <Link key={service.id} href={`/${service.name}`}>
                     <motion.div
                       className={styles.service}
                       variants={serviceAnimate}
@@ -78,9 +80,9 @@ const Services: React.FC<dataType> = ({ services }) => {
                           >
                             <Image
                               alt={service.name}
-                              src={`/images/${service.photo}`}
-                              width={100}
-                              height={100}
+                              src={`/images/services/${service.photo}`}
+                              objectFit="cover"
+                              layout="fill"
                             />
                           </motion.div>
                         )}

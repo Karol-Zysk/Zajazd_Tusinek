@@ -25,7 +25,7 @@ const accomodation: NextPage<AccomodationsType> = ({ accomodations, images }) =>
 
 export default accomodation;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const accomodations = noclegi;
   const images = accomodationImages;
 
