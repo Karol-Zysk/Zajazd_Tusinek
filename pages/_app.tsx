@@ -11,11 +11,10 @@ import LogoSvgAnim2 from "../components/Navbar/LogoSvgAnim2";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
-  const [animation, setAnimation] = useState(false);
+  const [animation, setAnimation] = useState(true);
 
   useEffect(() => {
     if (router.pathname === "/") {
-      setAnimation(true);
       setTimeout(() => {
         setAnimation(false);
       }, 7000);

@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         opacity: scrollNav ? "1" : "0",
       }}
     >
-      <div className={styles.container} style={{}}>
+      <div className={styles.container} >
         <Link href="/">
           <a>
             <LogoSvg />
@@ -59,11 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             <Link href="/accomodation">
               <a
                 className={styles.link}
-                style={{
-                  color: "green",
-                  textShadow: "1px 1px 1px black",
-                  fontSize: "1.4rem",
-                }}
+                
               >
                 Noclegi
               </a>
@@ -73,11 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <li className={styles.item}>
             <Link href="awards">
               <a
-                style={{
-                  color: "green",
-                  textShadow: "1px 1px 1px black",
-                  fontSize: "1.4rem",
-                }}
+                
                 className={styles.link}
               >
                 Nagrody
@@ -87,11 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <li className={styles.item}>
             <Link href="restaurant">
               <a
-                style={{
-                  color: "green",
-                  textShadow: "1px 1px 1px black",
-                  fontSize: "1.4rem",
-                }}
+               
                 className={styles.link}
               >
                 Restauracja
@@ -101,11 +89,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <li className={styles.item}>
             <Link href="/products">
               <a
-                style={{
-                  color: "green",
-                  textShadow: "1px 1px 1px black",
-                  fontSize: "1.4rem",
-                }}
+                
                 className={styles.link}
               >
                 Produkty

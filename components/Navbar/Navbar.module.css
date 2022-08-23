@@ -7,7 +7,7 @@
   top: 0;
   z-index: 9;
   width: 100%;
-  background-color:aliceblue;
+  background-color: aliceblue;
   transition: all 600ms ease-in-out;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .logo_link {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
   display: flex;
   text-align: center;
@@ -74,7 +74,7 @@
 }
 
 .menu {
-  text-shadow: 2px 0px 1px black;
+  text-shadow: 1px 0px 1px black;
   color: white;
   display: flex;
   align-items: center;
@@ -83,26 +83,10 @@
   list-style: none;
   text-align: center;
 }
-@media (max-width: 1480px) {
-  .menu {
-    justify-content: space-around;
-    padding-right: 20%;
-    width: 70%;
-  }
-}
-
-.item {
-  height: 80px;
-  margin-right: 3vw;
-}
-
-@media screen and (max-width: 1480px) {
-  .item {
-    margin-right: 1vw;
-  }
-}
 
 .link {
+  font-size: 1.1rem;
+color: green;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -123,11 +107,7 @@
   transform: scale(1.05);
   transition: all 200ms ease-in-out;
 }
-@media (max-width: 1480px) {
-  .link {
-    font-size: 1rem;
-  }
-}
+
 
 .navBtn {
   display: flex;
@@ -140,7 +120,7 @@
   white-space: nowrap;
   padding: 10px 22px;
   color: green;
-  font-size: 16px;
+  font-size: 1rem;
   outline: none;
   border: 3px solid white;
   cursor: pointer;
@@ -154,6 +134,24 @@
   box-shadow: 1px 2px 5px black;
   background-color: white;
   border: 3px solid green;
+}
+.item {
+  margin-right: 1vw;
+  height: 80px;
+  margin-right: 3vw;
+}
+
+
+
+@media screen and (max-width: 1480px) {
+ 
+  .menu {
+    padding-right: 20%;
+    width: 70%;
+  }
+  .link {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -170,8 +168,7 @@
   }
   .svg_nav_logo {
     display: flex;
-    padding: 0 0 0 0.5rem;
-    width: auto;
+    height: 90%;
   }
   .svg_logo_anim {
     background: white;
@@ -183,7 +180,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
     height: 100%;
     padding: 0 0.5rem;
   }
@@ -206,5 +202,15 @@
   }
   .navBtn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .svg_nav_logo {
+    height: 80%;
+  }
+  .svg_wrapper {
+    
+    padding: 0 ;
   }
 }

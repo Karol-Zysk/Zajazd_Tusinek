@@ -18,6 +18,7 @@ const Home: NextPage<dataType> = ({ services, animation }) => {
         <title>Tusinek Strona Główna</title>
         <meta name="description" content="Strona Główna Restauracji Tusinek" />
       </Head>
+      <Hero />
       <div style={{ minHeight: "100vh" }}>
         {!animation && (
           <motion.div
@@ -25,11 +26,9 @@ const Home: NextPage<dataType> = ({ services, animation }) => {
             animate={{ opacity: 1, transition: { duration: 1 } }}
             exit={{ opacity: 0 }}
           >
-            <Hero />
-            {/* <Slider />*/}
             <Intro />
             <Services services={services} />
-            <Map/>
+            <Map />
             <Testimonials />
           </motion.div>
         )}

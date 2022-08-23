@@ -31,7 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       {children}
       <Footer  toggleModal={toggleModal}/>
-      <Modal isOpenModal={isOpenModal}  />
+      <Modal isOpenModal={isOpenModal} toggleModal={toggleModal}  />
     </div>
   );
 };

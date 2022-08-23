@@ -60,7 +60,7 @@ const Footer: React.FC<ModalProps> = ({ toggleModal }) => {
 
             <p
               onClick={() => {
-                window.open("http://facebook.com/tusinek");
+                window.open("http://facebook.com/zajazdtusinek");
               }}
               className={styles.card_item_content}
             >
