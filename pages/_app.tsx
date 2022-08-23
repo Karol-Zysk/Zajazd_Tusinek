@@ -9,26 +9,11 @@ import { useRouter } from "next/router";
 import LogoSvgAnim2 from "../components/Navbar/LogoSvgAnim2";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
-  const [animation, setAnimation] = useState(true);
-
-  useEffect(() => {
-    if (router.pathname === "/") {
-      setTimeout(() => {
-        setAnimation(false);
-      }, 7000);
-    }
-  }, [router, setAnimation]);
-
   return (
     <>
-      <LogoSvgAnim2 animation={animation} />
-      <AnimatePresence>
-        <Layout>
-          <Component {...pageProps} animation={animation} />
-        </Layout>
-      </AnimatePresence>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

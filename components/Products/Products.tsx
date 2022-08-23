@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React, { useState } from "react";
 import { AllProdusts } from "../../type";
@@ -21,7 +20,6 @@ const imageAnimate = {
 };
 
 const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
-
   const [show, setShow] = useState(false);
   const [number, setNumber] = useState(1);
 
@@ -98,7 +96,7 @@ const Products: React.FC<AllProdusts> = ({ buyProducts }) => {
                       );
                     })}
                   </motion.div>
-                  <ProductInfo category={category} key={category.name} />
+                  <ProductInfo category={category}  />
                 </>
               ) : null}
             </React.Fragment>

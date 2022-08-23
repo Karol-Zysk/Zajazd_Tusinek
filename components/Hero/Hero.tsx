@@ -33,7 +33,7 @@ const Hero = () => {
             objectFit="cover"
             alt="hero"
             className={styles.image}
-            style={{ transform: `translateY(${offsetY * 0.1}px)`, zIndex: "7" }}
+            style={{ transform: `translateY(${offsetY * 0.2}px)`, zIndex: "7" }}
           />
         <div
           

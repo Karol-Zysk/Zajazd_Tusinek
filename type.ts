@@ -113,7 +113,7 @@ export type SidebarProps = {
 };
 export type ModalProps = {
   isOpenModal?: boolean;
-  toggleModal?: () => void;
+  toggleModal: () => void;
 };
 export type NavbarProps = {
   toggle: () => void;
@@ -150,5 +150,21 @@ export type MenuCategoryType = {
       text?: string | undefined;
       cena?: string | undefined;
     }[];
+  };
+};
+export type PromoType = {
+  promoInfo: {
+    id: number;
+    name: string;
+    title: string;
+    text: string;
+  }[];
+};
+export type PromoCategoryType = {
+  category: {
+    id: number;
+    name: string;
+    title: string;
+    text: string;
   };
 };

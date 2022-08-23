@@ -14,9 +14,14 @@ const Modal: React.FC<ModalProps> = ({ isOpenModal, toggleModal }) => {
         className={styles.container}
         onClick={toggleModal}
       >
-        <div className={styles.modal}>
+        <div
+          className={styles.modal}
+          onClick={(event) => event.stopPropagation()}
+        >
           <FaTimes className={styles.icon} onClick={toggleModal} />
-          <h1 className={styles.text}><BiPhoneCall className={styles.phone_icon}/> 89 722 60 39</h1>
+          <h1 className={styles.text}>
+            <BiPhoneCall className={styles.phone_icon} /> 89 722 60 39
+          </h1>
         </div>
       </motion.div>
     </>
