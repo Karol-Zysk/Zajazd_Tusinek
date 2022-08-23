@@ -111,6 +111,10 @@ export type SidebarProps = {
   isOpen: boolean;
   toggle: () => void;
 };
+export type ModalProps = {
+  isOpenModal?: boolean;
+  toggleModal?: () => void;
+};
 export type NavbarProps = {
   toggle: () => void;
 };

@@ -7,7 +7,7 @@ import HoverVideoPlayer from "react-hover-video-player";
 const Map = () => {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id="map">
         <Circle backgroundColor="#01c686" top="-35vh" left="-35vh" />
         <div className={styles.content_container}>
           <div className={styles.wrapper}>

@@ -1,48 +1,74 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import styles from "./Contact.module.css"
-
-
-
+import styles from "./Contact.module.css";
+import { RiMailCheckLine } from "react-icons/ri";
 
 const Contact = () => {
-  const form = useRef(null)  ;
- 
+  const form = useRef(null);
+  const [sent, setSent] = useState<boolean>(false);
 
-  const sendEmail = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
+  const sendEmail = (event: {
+    preventDefault: () => void;
+    currentTarget: { reset: () => void };
+  }) => {
+    event.preventDefault();
 
     emailjs
       .sendForm(
-        
-        "replace with service id",
-        "replace with template id",
-        
-        "replace with user id"
+        "service_1i54s7s",
+        "template_mxuoxtn", //@ts-ignore
+        form.current,
+        "0bxfrdbXfmW1bkKmw"
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("message sent");
+          setSent(true);
         },
         (error) => {
-          console.log(error.text);
+          alert(
+            "sprawdź połączenie internetowe lub skontaktuj się z zysk.karol.pawel@gmail.com"
+          );
         }
       );
+    event.currentTarget.reset();
   };
 
   return (
-    <div className={styles.container}>
-      <form className={styles.form} ref={form} onSubmit={sendEmail}>
-        <label className={styles.label}>Name</label>
-        <input className={styles.input} type="text" name="user_name" />
-        <label className={styles.label}>Email</label>
-        <input className={styles.input} type="email" name="user_email" />
-        <label className={styles.label}>Message</label>
-        <textarea className={styles.textarea} name="message" />
-        <input className={styles.input} type="submit" value="Send" />
-      </form>
-    </div>
+    <>
+      <div className={styles.wrapper}>
+        <h1 className={styles.header}>Napisz do nas</h1>
+        <form className={styles.form} ref={form} onSubmit={sendEmail}>
+          <input
+            className={styles.input}
+            required={true}
+            placeholder="Imię i Nazwisko"
+            type="text"
+            name="user_name"
+          />
+          <input
+            className={styles.input}
+            required={true}
+            placeholder="Email"
+            type="email"
+            name="user_email"
+          />
+          <textarea
+            className={styles.textarea}
+            required={true}
+            placeholder="Treść Wiadomości"
+            name="message"
+          />
+          {!sent ? (
+            <input className={styles.button} type="submit" value="Wyślij" />
+          ) : (
+            <p className={styles.sent_message}>
+              Wysłano
+              <RiMailCheckLine className={styles.icon}/>
+            </p>
+          )}
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -4,25 +4,39 @@ import { BiMailSend, BiMap, BiPhoneCall } from "react-icons/bi";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { GiBriefcase, GiKnifeFork } from "react-icons/gi";
 import logo from "../../public/images/svg/logo.svg";
+import Link from "next/link";
+import { ModalProps } from "../../type";
 
-const Footer = () => {
+const Footer: React.FC<ModalProps> = ({ toggleModal }) => {
   return (
     <div className={styles.container_white}>
       <div className={styles.container}>
         <div className={styles.card_large}>
           <div className={styles.link_container}>
-            <span className={styles.link_text}>
-              Napisz
-              <BiMailSend className={styles.icon} />
-            </span>
-            <span className={styles.link_text}>
+            <Link href="contact">
+              <span className={styles.link_text}>
+                Napisz
+                <BiMailSend className={styles.icon} />
+              </span>
+            </Link>
+
+            <span onClick={toggleModal} className={styles.link_text}>
               Zadzwoń
               <BiPhoneCall className={styles.icon} />
             </span>
-            <span className={styles.link_text}>
-              Sprawdź drogę
-              <BiMap className={styles.icon} />
-            </span>
+            <Link
+              passHref
+              href="https://www.google.com/maps/dir/52.1947276,20.9701873/Zajazd+Tusinek+Grzegorz+Winiarek,+Kolonia,+12-114+Rozogi/@52.8264368,20.1485556,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x471e06b5436e43bf:0xce73f7e7fec63c4f!2m2!1d21.3676609!2d53.471598?hl=pl-PL"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link_text}
+              >
+                Sprawdź drogę
+                <BiMap className={styles.icon} />
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -92,7 +106,7 @@ const Footer = () => {
         </div>
         <div className={styles.card_small}>
           <div className={styles.card_item}>
-            <Image src={logo} width="290"  height="95" alt="logo" />
+            <Image src={logo} width="290" height="95" alt="logo" />
           </div>
           <div className={styles.card_item}>
             <p className={styles.card_item_info}>© 2022 TUSINEK,</p>
