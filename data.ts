@@ -1123,13 +1123,13 @@ export const promoData = [
     name: "Zagroda Edukacyjna",
     title: "Tematy zajęć edukacyjnych",
     images: [
-      { img: "warsztaty1", position: { left: "5%", top: " 5%" } },
+      { img: "warsztaty1", position: { left: "25%", top: " 5%" } },
       {
         img: "warsztaty2",
 
-        position: { left: "50%", top: "10% " },
+        position: { left: "25%", top: "55% " },
       },
-      { img: "warsztaty3", position: { left: "25%", top: " 45%" } },
+      { img: "warsztaty3", position: { left: "25%", top: " 105%" } },
     ],
   },
   {

@@ -38,7 +38,7 @@ const Hero = () => {
         <div
           
           className={styles.wrapper}
-          style={{ transform: `translateY(${offsetY * 0.3}px)`, zIndex: "6" }}
+          style={{ transform: `translateY(${offsetY * 0.4}px)`, zIndex: "6" }}
         >
           <div className={styles.flex_wrapper}>
             <div className={styles.line} />
