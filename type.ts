@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { type } from "os";
 
 export type dataType = {
@@ -157,7 +158,13 @@ export type PromoType = {
     id: number;
     name: string;
     title: string;
-    text: string;
+    images: {
+      img: string;
+      position: {
+        left: string;
+        top: string;
+      };
+    }[];
   }[];
 };
 export type PromoCategoryType = {
@@ -165,6 +172,12 @@ export type PromoCategoryType = {
     id: number;
     name: string;
     title: string;
-    text: string;
+    images: {
+      img: string;
+      position: {
+        left: string;
+        top: string;
+      };
+    }[];
   };
 };

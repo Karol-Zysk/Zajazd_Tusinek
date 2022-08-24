@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 import PromoText from "./PromoText";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
+import Chess from "./Chess";
+import Health from "./Health";
+import Horses from "./Horses";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -27,14 +30,15 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
     setNumber(index + 1);
   };
 
-  const productName = promoInfo.map((category, index) => {
+  const promoName = promoInfo.map((category, index) => {
     return (
       <h1
         key={index}
         className={styles.header}
         style={{
           filter: number === index + 1 ? "brightness(1.2)" : undefined,
-          transform: number === index + 1 ? "scale(1.2)" : undefined,
+          transform:
+            number === index + 1 ? "scale(1.05) translateX(2%)" : undefined,
         }}
         onClick={() => showProducts(index)}
       >
@@ -43,25 +47,70 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
     );
   });
 
+  const imageAnimate = {
+    offscreen: { x: 0, y: 20, opacity: 0 },
+    onscreen: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+
+      transition: { type: "spring", duration: 0.9 },
+    },
+  };
+
   return (
     <>
       <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
       <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
-      <div className={styles.header_wrapper}> {productName}</div>
+      <h1>Aktualności i Promocje</h1>
       <div className={styles.wrapper}>
+        <div className={styles.header_wrapper}> {promoName}</div>
         {promoInfo.map((category, index) => {
           return (
             <React.Fragment key={index}>
               {number === category.id ? (
                 <>
                   {" "}
-                  <motion.div
-                    transition={{ staggerChildren: 0.1 }}
-                    initial={"offscreen"}
-                    whileInView={"onscreen"}
-                    viewport={{ once: true, amount: 0.2 }}
-                    dangerouslySetInnerHTML={{__html: category.text}}
-                  />
+                  <div className={styles.content}>
+                    <div className={styles.content_flex}>
+                      <div className={styles.text_content}>
+                        <h1>{category.title}</h1>
+                        {category.id=== 1 ? <Health/> : category.id === 2 ? <Chess/> : category.id === 3 ? <Horses/> : category.id === 4 ? "Workshops" : "Something Went Wrong" }
+                      </div>
+                      <motion.div
+                        className={styles.images_content}
+                        transition={{ staggerChildren: 0.2 }}
+                        initial={"offscreen"}
+                        whileInView={"onscreen"}
+                        viewport={{ once: true, amount: 0.4 }}
+                      >
+                        {category.images.map((img, index) => {
+                          return (
+                            <motion.div
+                              key={index}
+                              variants={imageAnimate}
+                              className={styles.image_wrapper}
+                              style={img.position}
+                              whileHover={{
+                                scale: 1.1,
+                                transition: {
+                                  duration: 0.5,
+                                },
+                              }}
+                            >
+                              <Image
+                                alt={img.img}
+                                layout="fill"
+                                objectFit="cover"
+                                src={`/images/promo/${img.img}.jpg`}
+                                className={styles.image}
+                              />
+                            </motion.div>
+                          );
+                        })}
+                      </motion.div>
+                    </div>
+                  </div>
                   {/* <PromoText category={category}  /> */}
                 </>
               ) : null}

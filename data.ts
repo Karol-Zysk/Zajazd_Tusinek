@@ -1013,7 +1013,6 @@ export const restauracja = [
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "15zł",
       },
-     
     ],
   },
   {
@@ -1022,7 +1021,7 @@ export const restauracja = [
     photos: [
       {
         id: 1,
-        img: "ziemniaki.png",
+        img: "ziemniaki.jpg",
         title: "Ziemniaki ze zsiadłym mlekiem",
         subtitle: "Zsiadłe Mleko z Ziemniakami wpisane jako produkt tradycyjny",
         comment:
@@ -1058,8 +1057,6 @@ export const restauracja = [
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji",
         cena: "20zł",
       },
-
-      
     ],
   },
   {
@@ -1105,73 +1102,61 @@ export const restauracja = [
   },
 ];
 
-
 export const promoData = [
   {
     id: 1,
     name: "Dla Zdrowia",
     title: "Jesienna Oferta Promocyjna",
-    text: `<h1>Jesienna Oferta Promocyjna</h1>
+    images: [
+      { img: "zdrowie1", position: { left: "5%", top: " 5%" } },
+      {
+        img: "zdrowie2",
 
- 
-
-    <p>Zapraszamy Państwa na sześciodniowe wczasy zdrowotne. Oferujemy dietę sporządzoną na bazie produktów pochodzących z naszego gospodarstwa . Posiadamy własny nabiał, sery, jajka, warzywa oraz mięso z naszej hodowli drobiu.</p>
-    
-    <p>Dodatkowo istnieje możliwość skorzystania z kąpieli w wannie z hydromasażem ( w kozim mleku, w solance oraz w ziołach), sauny, masażu relaksacyjnego oraz leczniczego.</p>
-    
-    <p>Dzienny pobyt w naszym Hotelu kosztuje 250 zł/doba.
-    Sześciodniowy pakiet obejmuje:</p>
-    
-    <p>- 3 posiłki : śniadanie, obiad i kolacja,</p>
-    
-   <p> -  kąpiele w wannie z hydromasażem,</p>
-    
-    <p>- 2 wizyty w saunie,</p>
-    
-    <p> - zajęcia z instruktorem,</p>
-    
-    <p>Zapraszamy do zapisywania się na niżej podane terminy:</p>
-    
-   <p> - 26.09.22 - 01.10.22</p>
-    
-   <p> - 10.10.22 - 15.10.22</p>
-    
-    <p>- 24.10.22- 29.10.22</p>
-    
-    <p>Zapisy możliwe są pod numerem telefonu 666-337-887 oraz poprzez email tusinek@tusinek.com.pl.</p>`
+        position: { left: "50%", top: "10% " },
+      },
+      { img: "zdrowie3", position: { left: "25%", top: " 45%" } },
+    ],
   },
   {
     id: 2,
-    name: "Dla Zdrowia oj",
-    title: "Jesienna Oferta Promocyjna",
-    text: `<h1>Jesienna Oferta Promocyjna</h1>
+    name: "Warsztaty",
+    title: "Warsztaty, które prowadzimy",
+    images: [
+      { img: "warsztaty1", position: { left: "5%", top: " 5%" } },
+      {
+        img: "warsztaty2",
 
- 
-
-    <p>Zapraszamy Państwaaaa na sześciodniowe wczasy zdrowotne. Oferujemy dietę sporządzoną na bazie produktów pochodzących z naszego gospodarstwa . Posiadamy własny nabiał, sery, jajka, warzywa oraz mięso z naszej hodowli drobiu.</p>
-    
-    <p>Dodatkowo istnieje możliwość skorzystania z kąpieli w wannie z hydromasażem ( w kozim mleku, w solance oraz w ziołach), sauny, masażu relaksacyjnego oraz leczniczego.</p>
-    
-    <p>Dzienny pobyt w naszym Hotelu kosztuje 250 zł/doba.
-    Sześciodniowy pakiet obejmuje:</p>
-    
-    <p>- 3 posiłki : śniadanie, obiad i kolacja,</p>
-    
-   <p> -  kąpiele w wannie z hydromasażem,</p>
-    
-    <p>- 2 wizyty w saunie,</p>
-    
-    <p> - zajęcia z instruktorem,</p>
-    
-    <p>Zapraszamy do zapisywania się na niżej podane terminy:</p>
-    
-   <p> - 26.09.22 - 01.10.22</p>
-    
-   <p> - 10.10.22 - 15.10.22</p>
-    
-    <p>- 24.10.22- 29.10.22</p>
-    
-    <p>Zapisy możliwe są pod numerem telefonu 666-337-887 oraz poprzez email tusinek@tusinek.com.pl.</p>`
+        position: { left: "50%", top: "10% " },
+      },
+      { img: "warsztaty3", position: { left: "25%", top: " 45%" } },
+    ],
   },
+  {
+    id: 3,
+    name: "Produkcja Serów",
+    title: "Warsztaty serowarskie",
+    images: [
+      { img: "sery1", position: { left: "5%", top: " 5%" } },
+      {
+        img: "sery2",
 
-]
+        position: { left: "50%", top: "10% " },
+      },
+      { img: "sery3", position: { left: "25%", top: " 45%" } },
+    ],
+  },
+  {
+    id: 4,
+    name: "Konik Polski",
+    title: "Jazda i Terapia z końmi",
+    images: [
+      { img: "konik1", position: { left: "5%", top: " 5%" } },
+      {
+        img: "konik2",
+
+        position: { left: "50%", top: "10% " },
+      },
+      { img: "konik3", position: { left: "25%", top: " 45%" } },
+    ],
+  },
+];
