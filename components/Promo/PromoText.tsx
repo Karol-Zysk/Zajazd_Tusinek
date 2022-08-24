@@ -4,7 +4,7 @@ import { PromoCategoryType } from '../../type'
 const PromoText:React.FC<PromoCategoryType> = ({category}) => {
   return (
     
-    <div>{category.text}</div>
+    <div>"spinner" </div>
   )
 }
 
