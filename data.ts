@@ -1114,13 +1114,14 @@ export const promoData = [
 
         position: { left: "50%", top: "10% " },
       },
-      { img: "zdrowie3", position: { left: "25%", top: " 45%" } },
+      { img: "zdrowie3", position: { left: "45%", top: " 45%" } },
+      { img: "zdrowie4", position: { left: "0%", top: " 55%" } },
     ],
   },
   {
     id: 2,
-    name: "Warsztaty",
-    title: "Warsztaty, które prowadzimy",
+    name: "Zagroda Edukacyjna",
+    title: "Tematy zajęć edukacyjnych",
     images: [
       { img: "warsztaty1", position: { left: "5%", top: " 5%" } },
       {

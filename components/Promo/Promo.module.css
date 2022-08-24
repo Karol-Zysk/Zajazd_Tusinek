@@ -9,31 +9,114 @@
   overflow: hidden;
   position: relative;
 }
+.main_title {
+  width: 100%;
+  text-align: center;
+}
 
+.main_title_text {
+  font-size: 3rem;
+}
 .content {
   height: auto;
-
-  width: 80%;
+  position: relative;
+  width: 78%;
   box-shadow: 0.5rem 1rem 2rem rgb(69, 69, 69);
   padding: 2rem 2rem 4rem 2rem;
   background-color: rgba(255, 255, 255, 0.829);
-  border-radius: 20px;
+  border-radius: 35px;
+}
+.navigation_bar {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1px;
+  width: 100%;
+  z-index: 1200;
+  margin-bottom: 2rem;
 }
 
-.content_flex{
+.nav_element {
+  margin: 0;
+  color: green;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  box-shadow: 1px 1px 3px black;
+  padding: 0.7rem 0.2rem;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: ease 100ms;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav_element:hover {
+  cursor: pointer;
+  transition: ease 100ms;
+  transform: scale(1.01);
+}
+
+.content_flex {
   display: flex;
   height: 100%;
   justify-content: space-between;
   border-radius: 20px;
 }
 
-.text_content{
-  width: 55%;
+.text_content {
+  width: 65%;
   padding: 0 1rem;
 }
-.images_content{
-  border: 2px solid red;
-  margin: 2rem 0;
+
+.medium_text{
+  font-weight: 500;
+  font-size: 1.0rem;
+  margin: 0.5rem;
+  line-height: 1.7rem;
+}
+.larger{
+  font-size: 1.4rem;
+}
+.larger_color{
+  color: green;
+  font-size: 110%;
+}
+
+.small_text{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.price{
+  font-size: 1.1rem;
+}
+
+.secondary_text{
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: rgb(48, 48, 48);
+
+}
+
+.text_margin_bottom{
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.workshop_wrapper{
+  margin-bottom: 3rem;
+}
+
+
+.images_content {
+  margin: 4rem 0 2rem 0;
   width: 40%;
   height: 45vh;
   position: relative;
@@ -46,7 +129,7 @@
   border: 2px solid white;
   overflow: hidden;
   position: absolute;
- 
+
   aspect-ratio: 1.3 /1;
   width: 50%;
 }

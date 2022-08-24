@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { PromoType } from "../../type";
 import styles from "./Promo.module.css";
 import { motion } from "framer-motion";
-import PromoText from "./PromoText";
 import CircleCut1 from "../Circle/CircleCut1";
 import CircleCut2 from "../Circle/CircleCut2";
-import Chess from "./Chess";
 import Health from "./Health";
 import Horses from "./Horses";
+import EducationalFarm from "./EducationalFarm";
+import Cheese from "./Cheese";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -62,7 +62,9 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
     <>
       <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
       <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
-      <h1>Aktualności i Promocje</h1>
+      <header className={styles.main_title}>
+        <h1 className={styles.main_title_text}>Aktualności i Promocje</h1>
+      </header>
       <div className={styles.wrapper}>
         <div className={styles.header_wrapper}> {promoName}</div>
         {promoInfo.map((category, index) => {
@@ -75,7 +77,17 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
                     <div className={styles.content_flex}>
                       <div className={styles.text_content}>
                         <h1>{category.title}</h1>
-                        {category.id=== 1 ? <Health/> : category.id === 2 ? <Chess/> : category.id === 3 ? <Horses/> : category.id === 4 ? "Workshops" : "Something Went Wrong" }
+                        {category.id === 1 ? (
+                          <Health />
+                        ) : category.id === 2 ? (
+                          <EducationalFarm />
+                        ) : category.id === 3 ? (
+                          <Cheese />
+                        ) : category.id === 4 ? (
+                          <Horses />
+                        ) : (
+                          "Something Went Wrong"
+                        )}
                       </div>
                       <motion.div
                         className={styles.images_content}
