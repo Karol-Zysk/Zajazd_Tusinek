@@ -38,7 +38,7 @@ const Testimonials = () => {
           >
             {users.map((user, index) => {
               return (
-                <div key={user.id} className={styles.card}>
+                <div key={user.name} className={styles.card}>
                   <div className={styles.header}>
                     <div className={styles.header_user}>
                       {" "}

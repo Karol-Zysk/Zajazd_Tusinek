@@ -87,6 +87,16 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             </Link>
           </li>
           <li className={styles.item}>
+            <Link href="promo">
+              <a
+               
+                className={styles.link}
+              >
+                Okazje
+              </a>
+            </Link>
+          </li>
+          <li className={styles.item}>
             <Link href="/products">
               <a
                 

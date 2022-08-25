@@ -21,6 +21,7 @@
 }
 .svg_nav_logo {
   display: none;
+  margin-right: auto;
 }
 
 .svg_logo_anim {

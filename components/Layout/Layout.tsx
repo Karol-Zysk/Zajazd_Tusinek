@@ -1,5 +1,5 @@
-import { NextComponentType, NextPageContext } from "next";
-import React, { Component, useState } from "react";
+
+import React, {  useState } from "react";
 import Footer from "../Footer/Footer";
 import Modal from "../Modal/Modal";
 import Navbar from "../Navbar/Navbar";

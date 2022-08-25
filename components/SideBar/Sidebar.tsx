@@ -41,6 +41,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
               Produkty
             </a>
           </Link>
+          <Link href="/promo">
+            <a className={styles.sidebar_link} onClick={toggle}>
+              Okazje
+            </a>
+          </Link>
         </div>
         <div className={styles.btn_wrapper}>
           <Link href="/contact">

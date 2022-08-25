@@ -26,7 +26,7 @@ const imageAnimate = {
   },
 };
 
-const Services: React.FC<dataType> = ({ services }) => {
+const Services:React.FC<dataType> = ({ services }) => {
 
 
 

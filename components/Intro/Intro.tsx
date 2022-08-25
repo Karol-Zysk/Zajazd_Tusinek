@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IntroData } from "../../data";
 import Circle from "../Circle/Circle";
 import { Link } from "react-scroll";
+import { IntroType } from "../../type";
 
 const imageAnimate = {
   offscreen: { x: 0, y: 150, opacity: 0 },
@@ -17,7 +18,7 @@ const imageAnimate = {
   },
 };
 
-const Intro = () => {
+const Intro:React.FC<IntroType> = ({introData}) => {
   return (
     <div className={styles.container}>
       <Circle backgroundColor="#01c686" top="-45vh" left="-35vh" />
@@ -41,10 +42,10 @@ const Intro = () => {
         whileInView={"onscreen"}
         viewport={{ once: true, amount: 0.4 }}
       >
-        {IntroData.map((intro, index) => {
+        {introData.map((intro, index) => {
           return (
             <motion.div
-              key={index}
+              key={intro.id}
               variants={imageAnimate}
               className={styles.image_wrapper}
               style={intro.position}

@@ -1,33 +1,39 @@
 import { StaticImageData } from "next/image";
-import { type } from "os";
+
+export type IntroType = {
+  introData: {
+    id: number;
+    img: StaticImageData;
+    position: {
+      left: string;
+      top: string;
+    };
+  }[];
+};
 
 export type dataType = {
-  animation?: boolean;
-  services: (
-    | {
-        id: number;
-        name: string;
-        title: string;
-        desc: string;
-        video: string;
-        photo: string;
-        longDesc: string;
-        images: {
-          id: number;
-          url: string;
-        }[];
-      }
-    | {
-        id: number;
-        name: string;
-        title: string;
-        desc: string;
-        photo: string;
-        longDesc: string;
-        images: {}[];
-        video?: undefined;
-      }
-  )[];
+  services: {
+    id: number;
+    name: string;
+    title: string;
+    desc: string;
+    video?: string;
+    photo: string;
+    longDesc: string;
+    images: {
+      id?: number;
+      url?: string;
+    }[];
+  }[];
+  
+  introData: {
+    id: number;
+    img: StaticImageData;
+    position: {
+      left: string;
+      top: string;
+    };
+  }[];
 };
 
 export type productType = {

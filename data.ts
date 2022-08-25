@@ -660,13 +660,13 @@ export const users = [
 ];
 
 export const IntroData = [
-  { img: introImage1, position: { left: "5%", top: " 5%" } },
-  {
+  {id:1, img: introImage1, position: { left: "5%", top: " 5%" } },
+  {id:2,
     img: introImage2,
 
     position: { left: "50%", top: "10% " },
   },
-  { img: introImage3, position: { left: "25%", top: " 45%" } },
+  {id:3, img: introImage3, position: { left: "25%", top: " 45%" } },
 ];
 
 export const noclegi = [
