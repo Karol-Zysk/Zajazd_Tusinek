@@ -63,7 +63,9 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
       <CircleCut1 width="30vw" height="30vw" top="-1rem" right="-3rem" />
       <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
       <header className={styles.main_title}>
-        <h1 className={styles.main_title_text}>Aktualności i Promocje</h1>
+        <h1 className={styles.main_title_text}>
+          Aktualności i <b className={styles.color}>Promocje</b>
+        </h1>
       </header>
       <div className={styles.wrapper}>
         <div className={styles.header_wrapper}> {promoName}</div>
@@ -76,7 +78,7 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
                   <div className={styles.content}>
                     <div className={styles.content_flex}>
                       <div className={styles.text_content}>
-                        <h1>{category.title}</h1>
+                        <h1 className={styles.content_title}>{category.title}</h1>
                         {category.id === 1 ? (
                           <Health />
                         ) : category.id === 2 ? (
@@ -102,7 +104,6 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
                               key={index}
                               variants={imageAnimate}
                               className={styles.image_wrapper}
-                              style={img.position}
                               whileHover={{
                                 scale: 1.1,
                                 transition: {
@@ -113,7 +114,7 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
                               <Image
                                 alt={img.img}
                                 layout="fill"
-                                objectFit="cover"
+                                objectFit="fill"
                                 src={`/images/promo/${img.img}.jpg`}
                                 className={styles.image}
                               />
@@ -123,7 +124,6 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
                       </motion.div>
                     </div>
                   </div>
-                  {/* <PromoText category={category}  /> */}
                 </>
               ) : null}
             </React.Fragment>

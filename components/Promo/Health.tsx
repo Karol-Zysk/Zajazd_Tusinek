@@ -1,10 +1,11 @@
 import React from "react";
+import styles from './Promo.module.css'
 
 const Health = () => {
   return (
     <div>
-      <p>
-        <strong>Zapraszamy Państwa na sześciodniowe wczasy zdrowotne.</strong>
+      <p className={styles.medium_text}>
+        Zapraszamy Państwa na sześciodniowe wczasy zdrowotne.
       </p>
       <p>
         Oferujemy dietę sporządzoną na bazie produktów pochodzących z naszego

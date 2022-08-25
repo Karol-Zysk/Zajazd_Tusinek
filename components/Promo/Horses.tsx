@@ -1,11 +1,13 @@
 import React from "react";
+import styles from './Promo.module.css'
+
 
 const Horses = () => {
   return (
     <div>
-      <p>
+      <p className={styles.medium_text}>
         W naszym gospodarstwie mamy Koniki Polskie (mylnie nazywanymi
-        Tarpanami). <p></p>
+        Tarpanami).
         Konie te służą u nas do rekreacji w sezonie letnim.
       </p>
 

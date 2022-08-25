@@ -85,7 +85,7 @@ wiklin"
         </p>
       </div>
 
-      <h2>Poniżej przykładowe programy.</h2>
+      <h2 className="">Poniżej przykładowe programy:</h2>
       <div className={styles.workshop_wrapper} id="milk">
         <p className={styles.larger}>
           Temat / tytuł zajęć:{" "}

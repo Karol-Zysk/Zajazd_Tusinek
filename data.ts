@@ -2,9 +2,7 @@ import introImage1 from "/public/images/intro/introImage1.jpg";
 import introImage2 from "/public/images/intro/introImage2.jpg";
 import introImage3 from "/public/images/intro/introImage3.jpg";
 import introImage4 from "/public/images/intro/introImage4.jpg";
-import { TbSoup } from "react-icons/tb";
-import { GiHotMeal } from "react-icons/gi";
-import { IoRestaurantSharp } from "react-icons/io5";
+
 
 export const data = [
   {

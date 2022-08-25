@@ -1,23 +1,26 @@
 import React from "react";
+import styles from "./Promo.module.css";
 
 const Cheese = () => {
   return (
     <div>
-      <p>
+      <p className={styles.medium_text}>
         Zapraszamy Państwa do udziału w warsztatach serowarskich organizowanych
         wspólnie ze Stowarzyszeniem Serowarów Farmerskich i Zagrodowych.
       </p>
 
-      <p>
-        Miejsce organizacji - Przetwórnia Mleka Krowiego i Koziego oraz Zajazd
-        Tusinek w Rozogach.
+      <p className={styles.medium_text}>
+        <b className={styles.color}>Miejsce organizacji</b> - Przetwórnia Mleka
+        Krowiego i Koziego oraz Zajazd Tusinek w Rozogach.
       </p>
 
-      <p>Celem warsztatów jest przedstawienie całego procesuprodukcji serów:</p>
-      <p>- kwasowo-podpuszczkowych,</p>
-      <p>- podpuszczkowo-dojrzewających,</p>
-      <p>- serów pleśniowych,</p>
-      <p>- produkcji jogurtu.</p>
+      <p className={styles.medium_text}>
+        Celem warsztatów jest przedstawienie całego procesuprodukcji serów:
+      </p>
+      <p className={styles.small_text}>- kwasowo-podpuszczkowych,</p>
+      <p className={styles.small_text}>- podpuszczkowo-dojrzewających,</p>
+      <p className={styles.small_text}>- serów pleśniowych,</p>
+      <p className={styles.small_text}>- produkcji jogurtu.</p>
 
       <p>Posiadamy:</p>
       <p>
