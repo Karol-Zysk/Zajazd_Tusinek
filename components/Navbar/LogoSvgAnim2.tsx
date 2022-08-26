@@ -7,8 +7,8 @@ const shapeColor = "black";
 
 const mainPathVariant: AnimationProps = {
   transition: {
-    delay: 1,
-    duration: 3.5,
+    delay: 0,
+    duration: 2.5,
     ease: "linear",
   },
   variants: {
@@ -25,8 +25,8 @@ const mainPathVariant: AnimationProps = {
 };
 const cookPathVariant: AnimationProps = {
   transition: {
-    delay: 1,
-    duration: 5,
+    delay: 0,
+    duration: 3.5,
     ease: "easeInOut",
   },
   variants: {

@@ -2,13 +2,12 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
 import hero_image from "../../public/images/heroImage4.png";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
-  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -17,25 +16,22 @@ const Hero = () => {
 
   return (
     <div className={styles.container_one}>
-
-    
       <motion.div
         initial={{ opacity: 0.5 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className={styles.container}
       >
-          {/* <div className={styles.cover}></div> */}
-          <Image
-            src={hero_image}
-            layout="fill"
-            objectFit="cover"
-            alt="hero"
-            className={styles.image}
-            style={{ transform: `translateY(${offsetY * 0.2}px)`, zIndex: "7" }}
-          />
+        {/* <div className={styles.cover}></div> */}
+        <Image
+          src={hero_image}
+          layout="fill"
+          objectFit="cover"
+          alt="hero"
+          className={styles.image}
+          style={{ transform: `translateY(${offsetY * 0.2}px)`, zIndex: "7" }}
+        />
         <div
-          
           className={styles.wrapper}
           style={{ transform: `translateY(${offsetY * 0.4}px)`, zIndex: "6" }}
         >
