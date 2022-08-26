@@ -33,32 +33,17 @@ const EducationalFarm = () => {
           </Link>
         </p>
         <p className={styles.nav_element}>
-          <Link
-            smooth
-            offset={-50}
-            to="
-beekeeper"
-          >
+          <Link smooth offset={-50} to="beekeeper">
             Ginące zawody – pszczelarz
           </Link>
         </p>
         <p className={styles.nav_element}>
-          <Link
-            smooth
-            offset={-50}
-            to="
-cook"
-          >
+          <Link smooth offset={-50} to="cook">
             Warsztaty Kulinarne
           </Link>
         </p>
         <p className={styles.nav_element}>
-          <Link
-            smooth
-            offset={-50}
-            to="
-wiklin"
-          >
+          <Link smooth offset={-50} to="wiklin">
             Warsztaty Wikliniarskie
           </Link>
         </p>
