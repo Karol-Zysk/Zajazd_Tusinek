@@ -164,7 +164,8 @@ color: green;
   }
   .svg_logo {
     width: 100%;
-    border-radius: 0;
+    height: 60vh;
+    border-radius: 25px;
     box-shadow: none;
   }
   .svg_nav_logo {
@@ -173,8 +174,18 @@ color: green;
   }
   .svg_logo_anim {
     background: rgba(255, 255, 255, 0.75);
+    border-radius: 30px;
     margin: 0;
-    height: 100vh;
+    height: min-content;
+    width: 80%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 0;
   }
   .svg_wrapper {
