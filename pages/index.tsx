@@ -23,7 +23,7 @@ const Home: NextPage<dataType> = ({ introData, services }) => {
       setAnimation(true);
       setTimeout(() => {
         setAnimation(false);
-      }, 7000);
+      }, 1000);
     }
   }, [router, setAnimation]);
 

@@ -28,7 +28,6 @@ const Hero = () => {
           {/* <div className={styles.cover}></div> */}
           <Image
             src={hero_image}
-            priority={true}
             layout="fill"
             objectFit="cover"
             alt="hero"
