@@ -64,7 +64,7 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
       <CircleCut2 width="30vw" height="30vw" bottom="0" left="72%" />
       <header className={styles.main_title}>
         <h1 className={styles.main_title_text}>
-          Aktualności i <b className={styles.color}>Promocje</b>
+          Aktualności i <span className={styles.main_title_color}>Promocje</span>
         </h1>
       </header>
       <div className={styles.wrapper}>
@@ -96,7 +96,7 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
                         transition={{ staggerChildren: 0.2 }}
                         initial={"offscreen"}
                         whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.4 }}
+                        viewport={{ once: true, amount: 0.1 }}
                       >
                         {category.images.map((img, index) => {
                           return (
@@ -114,7 +114,7 @@ const Promo: React.FC<PromoType> = ({ promoInfo }) => {
                               <Image
                                 alt={img.img}
                                 layout="fill"
-                                objectFit="fill"
+                                objectFit="cover"
                                 src={`/images/promo/${img.img}.jpg`}
                                 className={styles.image}
                               />

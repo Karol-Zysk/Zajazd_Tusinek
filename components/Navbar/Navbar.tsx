@@ -14,6 +14,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(true);
 
   useEffect(() => {
+    
+    
+
     let currentScrollPos = window.pageYOffset;
     window.onscroll = function () {
       if (prevScrollpos > currentScrollPos) {
@@ -25,15 +28,16 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
     };
   });
 
+  
+
   return (
     <nav
       className={styles.navbar}
       style={{
-        top: scrollNav ? "0rem" : "-5rem",
-        opacity: scrollNav ? "1" : "0",
+        top: !scrollNav ? "-5rem" : "0rem",
       }}
     >
-      <div className={styles.container} >
+      <div className={styles.container}>
         <Link href="/">
           <a>
             <LogoSvg />
@@ -57,53 +61,28 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         <ul className={styles.menu}>
           <li className={styles.item}>
             <Link href="/accomodation">
-              <a
-                className={styles.link}
-                
-              >
-                Noclegi
-              </a>
+              <a className={styles.link}>Noclegi</a>
             </Link>
           </li>
 
           <li className={styles.item}>
             <Link href="awards">
-              <a
-                
-                className={styles.link}
-              >
-                Nagrody
-              </a>
+              <a className={styles.link}>Nagrody</a>
             </Link>
           </li>
           <li className={styles.item}>
             <Link href="restaurant">
-              <a
-               
-                className={styles.link}
-              >
-                Restauracja
-              </a>
+              <a className={styles.link}>Restauracja</a>
             </Link>
           </li>
           <li className={styles.item}>
             <Link href="promo">
-              <a
-               
-                className={styles.link}
-              >
-                Okazje
-              </a>
+              <a className={styles.link}>Okazje</a>
             </Link>
           </li>
           <li className={styles.item}>
             <Link href="/products">
-              <a
-                
-                className={styles.link}
-              >
-                Produkty
-              </a>
+              <a className={styles.link}>Produkty</a>
             </Link>
           </li>
         </ul>

@@ -3,7 +3,6 @@ import introImage2 from "/public/images/intro/introImage2.jpg";
 import introImage3 from "/public/images/intro/introImage3.jpg";
 import introImage4 from "/public/images/intro/introImage4.jpg";
 
-
 export const data = [
   {
     id: 1,
@@ -658,13 +657,14 @@ export const users = [
 ];
 
 export const IntroData = [
-  {id:1, img: introImage1, position: { left: "5%", top: " 5%" } },
-  {id:2,
+  { id: 1, img: introImage1, position: { left: "5%", top: " 5%" } },
+  {
+    id: 2,
     img: introImage2,
 
     position: { left: "50%", top: "10% " },
   },
-  {id:3, img: introImage3, position: { left: "25%", top: " 45%" } },
+  { id: 3, img: introImage3, position: { left: "25%", top: " 45%" } },
 ];
 
 export const noclegi = [
@@ -1128,6 +1128,8 @@ export const promoData = [
         position: { left: "25%", top: "55% " },
       },
       { img: "warsztaty3", position: { left: "25%", top: " 105%" } },
+      { img: "warsztaty4", position: { left: "25%", top: " 105%" } },
+      { img: "warsztaty5", position: { left: "25%", top: " 105%" } },
     ],
   },
   {
@@ -1142,6 +1144,7 @@ export const promoData = [
         position: { left: "50%", top: "10% " },
       },
       { img: "sery3", position: { left: "25%", top: " 45%" } },
+      { img: "sery4", position: { left: "25%", top: " 45%" } },
     ],
   },
   {

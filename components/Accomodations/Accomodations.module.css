@@ -424,6 +424,7 @@
 @media screen and (max-width: 486px) {
   .container {
     padding: 7rem 1rem;
+    justify-content: center;
   }
   .prices_wrapper {
     width: 95%;
@@ -431,12 +432,16 @@
   }
   .info {
     width: 100%;
+    box-shadow: none;
+    transform: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .title {
     font-size: 1.4rem;
   }
   .room_info {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.7rem;
     font-weight: 500;
   }
@@ -452,6 +457,10 @@
   .header {
     font-size: 1.3rem;
     margin: 0.4rem;
+  }
+  .welcome_content{
+    margin-top: 0rem;
+    padding-top: 0;
   }
 
 }

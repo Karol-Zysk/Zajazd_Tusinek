@@ -8,7 +8,6 @@ import styles from "./Accomodations.module.css";
 import { motion } from "framer-motion";
 import AccomodationsContact from "./AccomodationsContact";
 import AccomodationsInfo from "./AccomodationsInfo";
-import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 const imageAnimate = {
   offscreen: { x: -15, y: 15, opacity: 0 },
@@ -23,7 +22,6 @@ const imageAnimate = {
 
 const Accomodations: React.FC<AccomodationsType> = ({
   accomodations,
-  images,
 }) => {
   return (
     <>

@@ -4,9 +4,9 @@ import React from "react";
 import { AccomodationsType } from "../type";
 import styles from "../components/Accomodations/Accomodations.module.css";
 import Accomodations from "../components/Accomodations/Accomodations";
-import { accomodationImages, noclegi } from "../data";
+import {  noclegi } from "../data";
 
-const accomodation: NextPage<AccomodationsType> = ({ accomodations, images }) => {
+const accomodation: NextPage<AccomodationsType> = ({ accomodations }) => {
   return (
     <div className={styles.container}>
       
@@ -18,7 +18,7 @@ const accomodation: NextPage<AccomodationsType> = ({ accomodations, images }) =>
         />
       </Head>
 
-      <Accomodations accomodations={accomodations} images={images} />
+      <Accomodations accomodations={accomodations} />
     </div>
   );
 };
@@ -27,9 +27,8 @@ export default accomodation;
 
 export const getStaticProps = async () => {
   const accomodations = noclegi;
-  const images = accomodationImages;
 
   return {
-    props: { accomodations, images },
+    props: { accomodations },
   };
 };
