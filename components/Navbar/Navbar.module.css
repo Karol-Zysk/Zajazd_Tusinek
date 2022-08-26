@@ -4,7 +4,7 @@
   align-items: center;
   font-size: 1rem;
   position: fixed;
-  z-index: 9;
+  z-index: 99;
   width: 100%;
   box-shadow: 4px 4px 4px rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 400;
+  z-index: 95;
   padding: 2rem;
 
   background: rgba(255, 255, 255, 0.916);
@@ -172,7 +172,7 @@ color: green;
     height: 90%;
   }
   .svg_logo_anim {
-    background: white;
+    background: rgba(255, 255, 255, 0.75);
     margin: 0;
     height: 100vh;
     padding: 0;
