@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           <LogoSvg />
         </Link>
         <Link href="/">
-          <a
+          <span
             style={{
               transform: "scale(1.2)",
               color: "green ",
@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             className={styles.logo_link}
           >
             Zajazd Tusinek
-          </a>
+          </span>
         </Link>
 
         <div className={styles.mobile_icon} onClick={toggle}>
@@ -56,34 +56,34 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         <ul className={styles.menu}>
           <li className={styles.item}>
             <Link href="/accomodation">
-              <a className={styles.link}>Noclegi</a>
+              <span className={styles.link}>Noclegi</span>
             </Link>
           </li>
 
           <li className={styles.item}>
             <Link href="/awards">
-              <a className={styles.link}>Nagrody</a>
+              <span className={styles.link}>Nagrody</span>
             </Link>
           </li>
           <li className={styles.item}>
             <Link href="/restaurant">
-              <a className={styles.link}>Restauracja</a>
+              <span className={styles.link}>Restauracja</span>
             </Link>
           </li>
           <li className={styles.item}>
             <Link href="/promo">
-              <a className={styles.link}>Okazje</a>
+              <span className={styles.link}>Okazje</span>
             </Link>
           </li>
           <li className={styles.item}>
             <Link href="/products">
-              <a className={styles.link}>Produkty</a>
+              <span className={styles.link}>Produkty</span>
             </Link>
           </li>
         </ul>
         <nav className={styles.navBtn}>
           <Link href="/contact">
-            <a className={styles.btnLink}>Kontakt</a>
+            <span className={styles.btnLink}>Kontakt</span>
           </Link>
         </nav>
       </div>

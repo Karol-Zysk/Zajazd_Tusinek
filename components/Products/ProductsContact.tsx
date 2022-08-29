@@ -5,11 +5,12 @@ import styles from "./Products.module.css";
 const ProductsContact = () => {
   return (
     <div className={styles.welcome_content}>
-      <div className={styles.flex_wrapper_contact} style={{marginBottom: "2rem"}}>
-        <div className={styles.line} style={{border: " 1px solid green"}} />
-        <h1 className={styles.contact_h1}>
-          Szanowni Państwo
-        </h1>{" "}
+      <div
+        className={styles.flex_wrapper_contact}
+        style={{ marginBottom: "2rem" }}
+      >
+        <div className={styles.line} style={{ border: " 1px solid green" }} />
+        <h1 className={styles.contact_h1}>Szanowni Państwo</h1>{" "}
         <div className={styles.line} />
       </div>
       <p className={styles.contact_text}>
@@ -27,14 +28,17 @@ const ProductsContact = () => {
       </p>
       <p className={styles.contact_contact}>
         <b>E-mail:</b>{" "}
-        <a className={styles.contact_link} href="mailto:tusinek@tusinek.com.pl">
+        <span
+          className={styles.contact_link}
+          href="mailto:tusinek@tusinek.com.pl"
+        >
           tusinek@tusinek.com.pl
-        </a>{" "}
+        </span>{" "}
         lub
-        <a className={styles.contact_link} href="mailto:tobiasz552@wp.pl">
+        <span className={styles.contact_link} href="mailto:tobiasz552@wp.pl">
           {" "}
           biuro
-        </a>
+        </span>
       </p>
       <p className={styles.contact_contact}>
         <b>Tel:</b> (89) 722 60 39 <i>lub</i> 666 337 887

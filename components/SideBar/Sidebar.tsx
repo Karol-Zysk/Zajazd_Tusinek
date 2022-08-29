@@ -15,43 +15,43 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
       }}
     >
       <div className={styles.icon} onClick={toggle}>
-        <FaTimes  />
+        <FaTimes />
       </div>
       <div className={styles.wrapper}>
         <div className={styles.menu}>
           <Link href="/restaurant">
-            <a className={styles.sidebar_link} onClick={toggle}>
+            <span className={styles.sidebar_link} onClick={toggle}>
               Restauracja
-            </a>
+            </span>
           </Link>
 
           <Link href="/accomodation">
-            <a className={styles.sidebar_link} onClick={toggle}>
+            <span className={styles.sidebar_link} onClick={toggle}>
               Noclegi
-            </a>
+            </span>
           </Link>
 
           <Link href="/awards">
-            <a className={styles.sidebar_link} onClick={toggle}>
+            <span className={styles.sidebar_link} onClick={toggle}>
               Nagrody
-            </a>
+            </span>
           </Link>
           <Link href="/products">
-            <a className={styles.sidebar_link} onClick={toggle}>
+            <span className={styles.sidebar_link} onClick={toggle}>
               Produkty
-            </a>
+            </span>
           </Link>
           <Link href="/promo">
-            <a className={styles.sidebar_link} onClick={toggle}>
+            <span className={styles.sidebar_link} onClick={toggle}>
               Okazje
-            </a>
+            </span>
           </Link>
         </div>
         <div className={styles.btn_wrapper}>
           <Link href="/contact">
-            <a className={styles.btn_link} onClick={toggle}>
+            <span className={styles.btn_link} onClick={toggle}>
               Kontakt
-            </a>
+            </span>
           </Link>
         </div>
       </div>
