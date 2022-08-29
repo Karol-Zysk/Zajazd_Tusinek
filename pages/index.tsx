@@ -36,20 +36,16 @@ const Home: NextPage<dataType> = ({ introData, services }) => {
       <LogoSvgAnim2 animation={animation} />
       <Hero />
       <div style={{ minHeight: "100vh" }}>
-        {!animation && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1 } }}
-            exit={{ opacity: 0 }}
-          >
-            <AnimatePresence>
-              <Intro introData={introData} />
-              <Services services={services} introData={[]} />
-              <Map />
-              <Testimonials />
-            </AnimatePresence>
-          </motion.div>
-        )}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 1 } }}
+          exit={{ opacity: 0 }}
+        >
+          <Intro introData={introData} />
+          <Services services={services} introData={[]} />
+          <Map />
+          <Testimonials />
+        </motion.div>
       </div>
     </>
   );
