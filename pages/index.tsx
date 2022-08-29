@@ -23,7 +23,7 @@ const Home: NextPage<dataType> = ({ introData, services }) => {
       setAnimation(true);
       setTimeout(() => {
         setAnimation(false);
-      }, 4500);
+      }, 3900);
     }
   }, [router, setAnimation]);
 
@@ -34,19 +34,22 @@ const Home: NextPage<dataType> = ({ introData, services }) => {
         <meta name="description" content="Strona Główna Restauracji Tusinek" />
       </Head>
       <LogoSvgAnim2 animation={animation} />
+      <Hero />
       <div style={{ minHeight: "100vh" }}>
-        <Hero />
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1 } }}
-          exit={{ opacity: 0 }}
-        >
-          <Intro introData={introData} />
-          <Services services={services} introData={[]} />
-          <Map />
-          <Testimonials />
-        </motion.div>
+        {!animation && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 1 } }}
+            exit={{ opacity: 0 }}
+          >
+            <AnimatePresence>
+              <Intro introData={introData} />
+              <Services services={services} introData={[]} />
+              <Map />
+              <Testimonials />
+            </AnimatePresence>
+          </motion.div>
+        )}
       </div>
     </>
   );

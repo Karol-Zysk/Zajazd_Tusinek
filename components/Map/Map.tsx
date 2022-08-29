@@ -41,7 +41,7 @@ function MapComponent() {
   return (
     <div className={styles.mapouter}>
       <div className={styles.gmap_canvas}>
-        <iframe
+        <iframe title="mapa tusinek"
           className={styles.map_frame}
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=tusinek&t=k&z=7&ie=UTF8&iwloc=&output=embed"

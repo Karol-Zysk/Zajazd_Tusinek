@@ -14,11 +14,8 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(true);
 
   useEffect(() => {
-    
-    
-
     let currentScrollPos = window.pageYOffset;
-    window.onscroll = function () {
+    const handleNavScroll = function () {
       if (prevScrollpos > currentScrollPos) {
         setScrollNav(true);
       } else {
@@ -26,9 +23,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
       }
       setPrevScrollpos(currentScrollPos);
     };
+    window.addEventListener("scroll", handleNavScroll);
+    return () => window.removeEventListener("scroll", handleNavScroll);
   });
-
-  
 
   return (
     <nav
@@ -39,9 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
     >
       <div className={styles.container}>
         <Link href="/">
-          <a>
-            <LogoSvg />
-          </a>
+          <LogoSvg />
         </Link>
         <Link href="/">
           <a

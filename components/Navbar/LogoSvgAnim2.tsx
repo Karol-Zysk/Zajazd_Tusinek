@@ -8,17 +8,17 @@ const shapeColor = "black";
 const mainPathVariant: AnimationProps = {
   transition: {
     delay: 0,
-    duration: 2.5,
+    duration: 2.9,
     ease: "linear",
   },
   variants: {
     visible: {
       pathLength: 1,
-      fillOpacity: [0, 0, 0, 1],
+      fillOpacity: [0, 0, 1],
       fill: "green",
     },
     hidden: {
-      pathLength: 0,
+      pathLength: 0.2,
       fillOpacity: 0,
     },
   },
@@ -26,7 +26,7 @@ const mainPathVariant: AnimationProps = {
 const cookPathVariant: AnimationProps = {
   transition: {
     delay: 0,
-    duration: 3.5,
+    duration: 3.7,
     ease: "easeInOut",
   },
   variants: {
@@ -37,14 +37,14 @@ const cookPathVariant: AnimationProps = {
       rotateY: ["0", "0", "720deg"],
     },
     hidden: {
-      pathLength: 0,
+      pathLength: 0.2,
       fillOpacity: 0,
     },
   },
 };
 const secondPathVariant: AnimationProps = {
   transition: {
-    duration: 2,
+    duration: 2.5,
     ease: "linear",
   },
   variants: {
@@ -54,7 +54,7 @@ const secondPathVariant: AnimationProps = {
       fill: "#4b4b4b",
     },
     hidden: {
-      pathLength: 0,
+      pathLength: 0.2,
       fillOpacity: 0,
     },
   },
