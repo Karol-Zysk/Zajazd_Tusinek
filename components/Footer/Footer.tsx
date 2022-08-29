@@ -13,7 +13,7 @@ const Footer: React.FC<ModalProps> = ({ toggleModal }) => {
       <div className={styles.container}>
         <div className={styles.card_large}>
           <div className={styles.link_container}>
-            <Link href="contact">
+            <Link href="/contact">
               <span className={styles.link_text}>
                 Napisz
                 <BiMailSend className={styles.icon} />

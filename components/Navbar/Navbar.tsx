@@ -61,17 +61,17 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           </li>
 
           <li className={styles.item}>
-            <Link href="awards">
+            <Link href="/awards">
               <a className={styles.link}>Nagrody</a>
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="restaurant">
+            <Link href="/restaurant">
               <a className={styles.link}>Restauracja</a>
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="promo">
+            <Link href="/promo">
               <a className={styles.link}>Okazje</a>
             </Link>
           </li>
@@ -82,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
           </li>
         </ul>
         <nav className={styles.navBtn}>
-          <Link href="contact">
+          <Link href="/contact">
             <a className={styles.btnLink}>Kontakt</a>
           </Link>
         </nav>
