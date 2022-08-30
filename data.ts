@@ -493,7 +493,7 @@ export const users = [
   {
     id: 1,
     logo: "booking.jpg",
-    avatar: "user1.jpeg",
+   
     note: "9.5",
     comment:
       "Bardzo ładnie urządzony teren. Mnóstwo kwiatów. Zadbana trawa. Duży plac zabaw dla dzieci. Fajne miejsca na gotowanie pod dachem w piecu i na ogniska (chociaż nie korzystaliśmy). Nawet dosyć kiepsko udokumentowane zdjęciami na Booking - a jest co fotografować.",
@@ -503,7 +503,7 @@ export const users = [
   {
     id: 2,
     logo: "booking.jpg",
-    avatar: "user2.jpeg",
+   
     note: "8.5",
     comment:
       "Dziękujemy  za cudowny  pobyt,   bardzo pomocny  i mily właściciel,  polecamy serdecznie,  bardzo smaczna  kuchnia, na pewno wrócimy. Dziękujemy 😍",
@@ -513,7 +513,6 @@ export const users = [
   {
     id: 3,
     logo: "booking.jpg",
-    avatar: "user3.jpeg",
     note: "9.0",
     comment:
       "Pyszne jedzenie, fajni gospodarze, wspaniałe zwierzęta, cudownie można odpocząć od zgiełku wielkiego mista",
@@ -523,7 +522,6 @@ export const users = [
   {
     id: 4,
     logo: "booking.jpg",
-    avatar: "user3.jpeg",
     note: "9.0",
     comment:
       "Wyjątkowe miejsce, gdzie można odpocząć, uciec myślami od pędzącego świata. Przepyszne jedzenie (śniadanie i obiad w restauracji obok)! Bardzo miły Pan Właściciel. Czystość i przestrzeń. Miejsce, w którym wyczuwalna jest przyjazna atmosfera i sielski spokój.",
@@ -533,7 +531,6 @@ export const users = [
   {
     id: 5,
     logo: "booking.jpg",
-    avatar: "user2.jpeg",
     note: "9.0",
     comment:
       "Bardzo ładnie urządzony teren. Mnóstwo kwiatów. Zadbana trawa. Duży plac zabaw dla dzieci. Fajne miejsca na gotowanie pod dachem w piecu i na ogniska (chociaż nie korzystaliśmy). Nawet dosyć kiepsko udokumentowane zdjęciami na Booking - a jest co fotografować.W pokoju porządnie szerokie łóżko 2+1 bez kłopotu.",
@@ -543,7 +540,6 @@ export const users = [
   {
     id: 6,
     logo: "booking.jpg",
-    avatar: "user1.jpeg",
     note: "9.0",
     comment:
       "„Piękne malownicze miejsce z klimatem. Wyjatkowe śniadanie na świeżych produktach. Można było najejść się do syta.”",

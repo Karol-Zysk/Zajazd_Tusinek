@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Intro.module.css";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Circle from "../Circle/Circle";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { IntroType } from "../../type";
 
 const imageAnimate = {
@@ -17,7 +17,7 @@ const imageAnimate = {
   },
 };
 
-const Intro:React.FC<IntroType> = ({introData}) => {
+const Intro: React.FC<IntroType> = ({ introData }) => {
   return (
     <div className={styles.container}>
       <Circle backgroundColor="#01c686" top="-45vh" left="-35vh" />
@@ -32,7 +32,15 @@ const Intro:React.FC<IntroType> = ({introData}) => {
           <b>regionalne potrawy</b>. W głębi <i>Alei Lipowej</i>, za restauracją
           znajduje się część hotelowa oraz <b>gospodarstwo</b>.
         </p>
-        <Link to="services" smooth offset={-50} className={styles.button}>Sprawdź Ofertę</Link>
+        <ScrollLink
+          href="https://zajazd-tusinek.vercel.app/"
+          to="services"
+          smooth
+          offset={-50}
+          className={styles.button}
+        >
+          Sprawdź Ofertę
+        </ScrollLink>
       </div>
       <motion.div
         className={styles.images_card}
