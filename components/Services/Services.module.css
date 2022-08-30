@@ -135,8 +135,6 @@
   transition: 400ms ease;
 }
 
-
-
 .service:hover .cat {
   font-weight: bold;
   transform: scale(1.05);
@@ -167,7 +165,6 @@
   height: 100%;
   object-fit: cover;
 }
-
 
 .button {
   border-radius: 50px;
@@ -203,7 +200,6 @@
     font-size: 2.5rem;
     color: rgb(0, 126, 0);
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -230,10 +226,10 @@
     padding: 8px 18px;
     color: green;
     font-size: 0.9rem;
-    
+
     font-weight: bold;
   }
-  .cat{
+  .cat {
     font-size: 1.1rem;
   }
 }
@@ -250,11 +246,11 @@
   .services {
     width: 100%;
   }
-  .service{
+  .service {
     border: none;
     box-shadow: 1px 0px 3px green;
   }
-  .cat{
+  .cat {
     font-size: 1rem;
   }
 }
@@ -265,7 +261,7 @@
     width: 10rem;
     height: 10rem;
   }
-  .flex_wrapper{
+  .flex_wrapper {
     margin-bottom: 2rem;
   }
 }
@@ -274,6 +270,6 @@
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     width: 8rem;
-    height: 8rem
+    height: 8rem;
   }
 }

@@ -12,32 +12,6 @@ export const data = [
     photo: "nocleg.jpg",
 
     longDesc: "Zajazd w malowniczym miejscu i regionalnym klimacie",
-    images: [
-      {
-        id: 1,
-        url: "introImage1.jpg",
-      },
-      {
-        id: 2,
-        url: "introImage1.jpg",
-      },
-      {
-        id: 3,
-        url: "introImage2.jpg",
-      },
-      {
-        id: 4,
-        url: "introImage3.jpg",
-      },
-      {
-        id: 5,
-        url: "introImage4.jpg",
-      },
-      {
-        id: 6,
-        url: "introImage1.jpg",
-      },
-    ],
   },
   {
     id: 2,
@@ -48,32 +22,6 @@ export const data = [
     video: "smaki.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: introImage1,
-      },
-      {
-        id: 2,
-        url: introImage1,
-      },
-      {
-        id: 3,
-        url: introImage2,
-      },
-      {
-        id: 4,
-        url: introImage3,
-      },
-      {
-        id: 5,
-        url: introImage4,
-      },
-      {
-        id: 6,
-        url: introImage1,
-      },
-    ],
   },
   {
     id: 3,
@@ -84,32 +32,6 @@ export const data = [
     video: "sery.mp4",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: introImage1,
-      },
-      {
-        id: 2,
-        url: introImage1,
-      },
-      {
-        id: 3,
-        url: introImage2,
-      },
-      {
-        id: 4,
-        url: introImage3,
-      },
-      {
-        id: 5,
-        url: introImage4,
-      },
-      {
-        id: 6,
-        url: introImage1,
-      },
-    ],
   },
   {
     id: 4,
@@ -119,32 +41,6 @@ export const data = [
     photo: "promo.jpg",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    images: [
-      {
-        id: 1,
-        url: introImage1,
-      },
-      {
-        id: 2,
-        url: introImage1,
-      },
-      {
-        id: 3,
-        url: introImage2,
-      },
-      {
-        id: 4,
-        url: introImage3,
-      },
-      {
-        id: 5,
-        url: introImage4,
-      },
-      {
-        id: 6,
-        url: introImage1,
-      },
-    ],
   },
 ];
 
@@ -606,7 +502,7 @@ export const users = [
   },
   {
     id: 2,
-    logo: "google.png",
+    logo: "booking.jpg",
     avatar: "user2.jpeg",
     note: "8.5",
     comment:
@@ -904,7 +800,7 @@ export const restauracja = [
         id: 3,
         img: "bankiety.jpg",
         title: "Sala Bankietowa",
-        subtitle: "Może tu być 70 osób",
+        subtitle: "Nazwa Sali",
         comment:
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
         text: "Zapraszamy",
@@ -913,7 +809,7 @@ export const restauracja = [
         id: 4,
         img: "piec.jpg",
         title: "Sala Bankietowa",
-        subtitle: "Może tu być 70 osób",
+        subtitle: "Wstępny opis",
         comment:
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
         text: "Zapraszamy",
@@ -922,7 +818,7 @@ export const restauracja = [
         id: 5,
         img: "widok.jpg",
         title: "Sala Bankietowa",
-        subtitle: "Może tu być 70 osób",
+        subtitle: "Ciekawy opis",
         comment:
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji bankiet",
         text: "Zapraszamy",
@@ -931,7 +827,7 @@ export const restauracja = [
         id: 6,
         img: "piec2.jpg",
         title: "Sala Bankietowa",
-        subtitle: "Może tu być 70 osób",
+        subtitle: "Ciekawy opis",
         comment:
           "Tutaj jakiś ciekawy tekst o danym produkcie, z czego się składa i dlaczego mamy go w swojej restauracji, coś o historii lub o produkcji ",
         text: "Zapraszamy",

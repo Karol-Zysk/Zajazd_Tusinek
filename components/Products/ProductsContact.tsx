@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+
 import React from "react";
 import styles from "./Products.module.css";
 
@@ -28,17 +29,17 @@ const ProductsContact = () => {
       </p>
       <p className={styles.contact_contact}>
         <b>E-mail:</b>{" "}
-        <span
+        <a
           className={styles.contact_link}
           href="mailto:tusinek@tusinek.com.pl"
         >
           tusinek@tusinek.com.pl
-        </span>{" "}
+        </a>{" "}
         lub
-        <span className={styles.contact_link} href="mailto:tobiasz552@wp.pl">
+        <a className={styles.contact_link} href="mailto:tobiasz552@wp.pl">
           {" "}
           biuro
-        </span>
+        </a>
       </p>
       <p className={styles.contact_contact}>
         <b>Tel:</b> (89) 722 60 39 <i>lub</i> 666 337 887

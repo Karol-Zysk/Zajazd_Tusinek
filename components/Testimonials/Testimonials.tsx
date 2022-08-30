@@ -4,7 +4,7 @@ import styles from "./Testimonials.module.css";
 import { users } from "../../data";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel, Thumbs } from "react-responsive-carousel";
+import { Carousel } from "react-responsive-carousel";
 import CircleCut2 from "../Circle/CircleCut2";
 
 const Testimonials = () => {
@@ -42,13 +42,11 @@ const Testimonials = () => {
                   <div className={styles.header}>
                     <div className={styles.header_user}>
                       {" "}
-                      
                       <div className={styles.info}>
                         <span className={styles.username}>{user.name}</span>
                         <span className={styles.date}>{user.date}</span>
                       </div>{" "}
                       <Image
-                      
                         src={`/images/logos/${user.logo}`}
                         alt="logo"
                         width="25"

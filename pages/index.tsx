@@ -7,7 +7,6 @@ import { data } from "../data";
 import { dataType } from "../type";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Hero from "../components/Hero/Hero";
-import { AnimatePresence, motion } from "framer-motion";
 import Map from "../components/Map/Map";
 import { useRouter } from "next/router";
 import LogoSvgAnim2 from "../components/Navbar/LogoSvgAnim2";
@@ -16,16 +15,20 @@ import { IntroData } from "../data";
 const Home: NextPage<dataType> = ({ introData, services }) => {
   const router = useRouter();
 
-  const [animation, setAnimation] = useState(true);
+  const [animation, setAnimation] = useState(false);
 
   useEffect(() => {
-    if (router.pathname === "/") {
+    if (
+      router.pathname === "/" &&
+      localStorage.getItem("tusinek") !== "page-visited"
+    ) {
+      localStorage.setItem("tusinek", "page-visited");
       setAnimation(true);
       setTimeout(() => {
         setAnimation(false);
-      }, 3900);
+      }, 4700);
     }
-  }, [router, setAnimation]);
+  }, [router]);
 
   return (
     <>
@@ -35,18 +38,11 @@ const Home: NextPage<dataType> = ({ introData, services }) => {
       </Head>
       <LogoSvgAnim2 animation={animation} />
       <Hero />
-      <div style={{ minHeight: "100vh" }}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1 } }}
-          exit={{ opacity: 0 }}
-        >
-          <Intro introData={introData} />
-          <Services services={services} introData={[]} />
-          <Map />
-          <Testimonials />
-        </motion.div>
-      </div>
+
+      <Intro introData={introData} />
+      <Services services={services} introData={[]} />
+      <Map />
+      <Testimonials />
     </>
   );
 };

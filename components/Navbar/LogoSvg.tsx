@@ -1,19 +1,13 @@
-import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Navbar.module.css";
-
-
-
-
 
 const LogoSvg = () => {
   return (
     <div className={styles.svg_wrapper}>
       <svg
-      className={styles.svg_nav_logo}
+        className={styles.svg_nav_logo}
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        
         viewBox="0 0 3428.000000 1048.000000"
         preserveAspectRatio="xMidYMid meet"
       >
@@ -22,7 +16,7 @@ const LogoSvg = () => {
           fill="darkgreen"
           stroke="none"
         >
-          <path 
+          <path
             d="M8985 9616 c-60 -20 -128 -51 -176 -81 l-42 -27 39 -24 c21 -14 47
 -23 57 -20 9 2 15 0 12 -4 -3 -5 5 -14 17 -21 38 -20 83 -74 111 -133 15 -31
 27 -59 27 -62 0 -3 6 -20 14 -37 8 -18 24 -88 36 -157 47 -277 103 -498 165

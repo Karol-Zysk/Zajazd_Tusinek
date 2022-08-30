@@ -1,6 +1,5 @@
 import { AnimatePresence, AnimationProps, motion } from "framer-motion";
-import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Navbar.module.css";
 
 const shapeColor = "black";
@@ -8,7 +7,7 @@ const shapeColor = "black";
 const mainPathVariant: AnimationProps = {
   transition: {
     delay: 0,
-    duration: 2.9,
+    duration: 3.6,
     ease: "linear",
   },
   variants: {
@@ -18,7 +17,7 @@ const mainPathVariant: AnimationProps = {
       fill: "green",
     },
     hidden: {
-      pathLength: 0.2,
+      pathLength: 0,
       fillOpacity: 0,
     },
   },
@@ -26,8 +25,8 @@ const mainPathVariant: AnimationProps = {
 const cookPathVariant: AnimationProps = {
   transition: {
     delay: 0,
-    duration: 3.7,
-    ease: "easeInOut",
+    duration: 4.2,
+    ease: "linear",
   },
   variants: {
     visible: {
@@ -37,14 +36,14 @@ const cookPathVariant: AnimationProps = {
       rotateY: ["0", "0", "720deg"],
     },
     hidden: {
-      pathLength: 0.2,
+      pathLength: 0,
       fillOpacity: 0,
     },
   },
 };
 const secondPathVariant: AnimationProps = {
   transition: {
-    duration: 2.5,
+    duration: 3.2,
     ease: "linear",
   },
   variants: {
@@ -54,7 +53,7 @@ const secondPathVariant: AnimationProps = {
       fill: "#4b4b4b",
     },
     hidden: {
-      pathLength: 0.2,
+      pathLength: 0,
       fillOpacity: 0,
     },
   },

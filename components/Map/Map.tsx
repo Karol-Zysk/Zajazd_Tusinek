@@ -1,6 +1,5 @@
-import React, { useMemo } from "react";
+import React from "react";
 import styles from "./Map.module.css";
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import Circle from "../Circle/Circle";
 import HoverVideoPlayer from "react-hover-video-player";
 
@@ -41,7 +40,8 @@ function MapComponent() {
   return (
     <div className={styles.mapouter}>
       <div className={styles.gmap_canvas}>
-        <iframe title="mapa tusinek"
+        <iframe
+          title="mapa tusinek"
           className={styles.map_frame}
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=tusinek&t=k&z=7&ie=UTF8&iwloc=&output=embed"

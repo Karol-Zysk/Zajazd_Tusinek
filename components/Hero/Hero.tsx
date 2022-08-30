@@ -18,14 +18,13 @@ const Hero = () => {
     <div className={styles.container_one}>
       <motion.div
         initial={{ opacity: 0.5 }}
-        animate={{ opacity: 1 }}
+        animate={{ opacity: 1  }}
         exit={{ opacity: 0 }}
         className={styles.container}
       >
-        {/* <div className={styles.cover}></div> */}
         <Image
           src={hero_image}
-          
+          priority={true}
           layout="fill"
           objectFit="cover"
           alt="hero"

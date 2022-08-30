@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { BsCalendar2Month } from "react-icons/bs";
 import { FaDog } from "react-icons/fa";
@@ -33,7 +32,8 @@ const AccomodationsContact = () => {
       <div className={styles.flex_wrapper}>
         <div className={styles.line} style={{ border: " 1px solid green" }} />
         <h1 className={styles.contact_h1}>
-          <span style={{ color: "green", fontSize: "2.3rem" }}>C</span>ennik{" "}
+          <span style={{ color: "green", fontSize: "2.3rem" }}>C</span>
+          ennik{" "}
         </h1>{" "}
         <div className={styles.line} />
       </div>

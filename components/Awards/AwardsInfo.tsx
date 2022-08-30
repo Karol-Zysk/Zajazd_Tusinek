@@ -16,11 +16,9 @@ const infoAnimate = {
 };
 
 const AccomodationsInfo: React.FC<AwardsType> = ({ awardsList }) => {
-  const [number, setNumber] = useState(0);
   const [rotate, setRotate] = useState(false);
 
   const handleSetRotate = (index: number) => {
-    setNumber(index + 1);
     setRotate(!rotate);
   };
 

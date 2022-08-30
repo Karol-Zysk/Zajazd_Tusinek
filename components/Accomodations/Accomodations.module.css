@@ -458,20 +458,19 @@
     font-size: 1.3rem;
     margin: 0.4rem;
   }
-  .welcome_content{
+  .welcome_content {
     margin-top: 0rem;
     padding-top: 0;
   }
-
 }
 
 @media screen and (max-width: 330px) {
-.info{
-  padding: 0.3rem;
-  width: 100%;
-}
-.key_icon {
-  font-size: 0.8rem;
-  display: none;
-}
+  .info {
+    padding: 0.3rem;
+    width: 100%;
+  }
+  .key_icon {
+    font-size: 0.8rem;
+    display: none;
+  }
 }

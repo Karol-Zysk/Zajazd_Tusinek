@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./Intro.module.css";
-import { motion, Variants } from "framer-motion";
+import { motion} from "framer-motion";
 import Image from "next/image";
-import { IntroData } from "../../data";
 import Circle from "../Circle/Circle";
 import { Link } from "react-scroll";
 import { IntroType } from "../../type";

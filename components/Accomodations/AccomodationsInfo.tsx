@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AccomodationsType } from "../../type";
 import styles from "./Accomodations.module.css";
 import { motion } from "framer-motion";
-import { GiKey, GiKeyLock } from "react-icons/gi";
+import { GiKey} from "react-icons/gi";
 
 const infoAnimate = {
   offscreen: { x: 0, y: -25, opacity: 0 },

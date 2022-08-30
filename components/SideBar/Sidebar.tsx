@@ -1,7 +1,6 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import styles from "./Sidebar.module.css";
-
 import { SidebarProps } from "../../type";
 import Link from "next/link";
 

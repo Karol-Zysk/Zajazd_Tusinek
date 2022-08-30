@@ -26,7 +26,7 @@ const Footer: React.FC<ModalProps> = ({ toggleModal }) => {
             </span>
             <Link
               passHref
-              href="https://www.google.com/maps/dir/52.1947276,20.9701873/Zajazd+Tusinek+Grzegorz+Winiarek,+Kolonia,+12-114+Rozogi/@52.8264368,20.1485556,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x471e06b5436e43bf:0xce73f7e7fec63c4f!2m2!1d21.3676609!2d53.471598?hl=pl-PL"
+              href="https://www.google.com/maps/place/Zajazd+Tusinek+Grzegorz+Winiarek/@53.471598,20.2470555,8z/data=!4m8!3m7!1s0x471e06b5436e43bf:0xce73f7e7fec63c4f!5m2!4m1!1i2!8m2!3d53.4714961!4d21.3677216"
             >
               <a
                 target="_blank"

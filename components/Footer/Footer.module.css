@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-around;
   font-size: 1rem;
-  padding: 2rem ;
+  padding: 2rem;
   background-color: green;
 }
 
@@ -30,7 +30,7 @@
   transition: all 1s ease;
 }
 
-.box_title{
+.box_title {
   font-weight: 400;
   color: white;
   background-color: rgba(0, 128, 0, 0.774);
@@ -101,7 +101,7 @@
 }
 
 .card_item {
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@
 
 .card_item_title {
   text-shadow: 2px 1px 1px black;
-font-size: 1.1rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 600;
   margin: 0;
@@ -126,7 +126,7 @@ font-size: 1.1rem;
   align-items: center;
   cursor: pointer;
   text-underline-offset: 3px;
-  text-decoration: underline #ffffffd8 2px ;
+  text-decoration: underline #ffffffd8 2px;
 }
 .card_item_info {
   display: flex;
@@ -145,30 +145,30 @@ font-size: 1.1rem;
   .container {
     height: auto;
   }
-  
 
   .title,
   .link_title {
     font-size: 2rem;
   }
-  .card_item_info, .card_item_content{
+  .card_item_info,
+  .card_item_content {
     font-size: 0.8rem;
   }
-  .card_item_title{
+  .card_item_title {
     font-size: 0.9rem;
   }
-  .link_text{
+  .link_text {
     font-size: 0.9rem;
   }
 
   .cardItem {
     text-align: center;
   }
-  .card_large{
-    flex:1.2
+  .card_large {
+    flex: 1.2;
   }
-  .card_small{
-    flex:1
+  .card_small {
+    flex: 1;
   }
 }
 
@@ -177,34 +177,35 @@ font-size: 1.1rem;
     height: auto;
     flex-direction: column;
   }
-  .card_large{
+  .card_large {
     padding: 0;
     margin-bottom: 1rem;
   }
-  .card_small{
+  .card_small {
     padding: 0;
     margin-bottom: 1rem;
   }
-  .link_container{
+  .link_container {
     padding: 0;
   }
   .title,
   .link_title {
     font-size: 2rem;
   }
-  .card_item_info, .card_item_content{
+  .card_item_info,
+  .card_item_content {
     font-size: 0.9rem;
   }
-  .card_item_title{
+  .card_item_title {
     font-size: 1.1rem;
   }
-  .link_text{
+  .link_text {
     font-size: 1.3rem;
   }
-  .card_item_info{
+  .card_item_info {
     line-height: 1.5rem;
   }
-  .card_small{
-    flex:1
+  .card_small {
+    flex: 1;
   }
 }

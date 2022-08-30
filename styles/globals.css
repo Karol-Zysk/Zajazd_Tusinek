@@ -1,3 +1,8 @@
+:root {
+  --main-color: green;
+  --secondary-color: red;
+}
+
 html,
 body {
   padding: 0;
@@ -5,12 +10,10 @@ body {
   font-family: "Montserrat", sans-serif;
   color: rgba(0, 0, 0, 0.895);
   position: relative;
-  
 }
 
 html {
   overflow-y: scroll;
-  
 }
 
 a {
@@ -20,7 +23,6 @@ a {
 
 * {
   box-sizing: border-box;
-  
 }
 
 .circle {

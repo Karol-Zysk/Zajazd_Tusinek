@@ -50,7 +50,7 @@ const RestaurantInfo: React.FC<RestaurantDataType> = ({
     >
       {restaurantData.map((restaurantCategory, index) => {
         return (
-          <div id="dish"  key={restaurantCategory.id}>
+          <div id="dish" key={restaurantCategory.id}>
             {menuIndex === index && (
               <div>
                 {restaurantCategory.photos.map((dish, index) => {
@@ -67,10 +67,14 @@ const RestaurantInfo: React.FC<RestaurantDataType> = ({
                           >
                             <div className={styles.line_restaurant} />
                             <motion.h1
-                            variants={dishAnimate}
-                            initial={"offscreen"}
-                            whileInView={"onscreen"}
-                            viewport={{ once: true, amount: 0.01 }} className={styles.title}>{dish.title}</motion.h1>
+                              variants={dishAnimate}
+                              initial={"offscreen"}
+                              whileInView={"onscreen"}
+                              viewport={{ once: true, amount: 0.01 }}
+                              className={styles.title}
+                            >
+                              {dish.title}
+                            </motion.h1>
                             <div className={styles.line_restaurant} />
                           </motion.div>
 
@@ -86,13 +90,19 @@ const RestaurantInfo: React.FC<RestaurantDataType> = ({
                             variants={dishAnimate}
                             initial={"offscreen"}
                             whileInView={"onscreen"}
-                            viewport={{ once: true, amount: 0.4 }} className={styles.dish_info}>{dish.comment}</motion.p>
+                            viewport={{ once: true, amount: 0.4 }}
+                            className={styles.dish_info}
+                          >
+                            {dish.comment}
+                          </motion.p>
                           {dish.cena && (
                             <motion.p
-                            variants={dishAnimate}
-                            initial={"offscreen"}
-                            whileInView={"onscreen"}
-                            viewport={{ once: true, amount: 0.4 }} className={styles.price}>
+                              variants={dishAnimate}
+                              initial={"offscreen"}
+                              whileInView={"onscreen"}
+                              viewport={{ once: true, amount: 0.4 }}
+                              className={styles.price}
+                            >
                               Cena:{" "}
                               <b style={{ color: "green" }}>{dish.cena}</b>
                             </motion.p>

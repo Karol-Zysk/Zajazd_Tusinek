@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "./Restaurant.module.css";
 import { motion } from "framer-motion";
@@ -30,8 +29,10 @@ const RestaurantContact = () => {
       <div className={styles.flex_wrapper} style={{ marginBottom: "2rem" }}>
         <div className={styles.line} style={{ border: " 1px solid green" }} />
         <h1 className={styles.contact_h1}>
-          <span style={{ color: "green", fontSize: "2.3rem" }}>R</span>estauracja{" "}w  {' '}
-          <span style={{ color: "green", fontSize: "2.3rem" }}>T</span>usinku{" "}
+          <span style={{ color: "green", fontSize: "2.3rem" }}>R</span>
+          estauracja w{" "}
+          <span style={{ color: "green", fontSize: "2.3rem" }}>T</span>
+          usinku{" "}
         </h1>{" "}
         <div className={styles.line} />
       </div>
