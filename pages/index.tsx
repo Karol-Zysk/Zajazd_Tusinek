@@ -19,10 +19,10 @@ const Home: NextPage<dataType> = ({ introData, services }) => {
 
   useEffect(() => {
     if (
-      router.pathname === "/" &&
-      localStorage.getItem("tusinek") !== "page-visited"
+      router.pathname === "/" 
+      // && localStorage.getItem("tusinek") !== "page-visited"
     ) {
-      localStorage.setItem("tusinek", "page-visited");
+      // localStorage.setItem("tusinek", "page-visited");
       setAnimation(true);
       setTimeout(() => {
         setAnimation(false);
