@@ -357,11 +357,7 @@ const EducationalFarm = () => {
         </p>
       </div>
 
-      <div
-        className={styles.workshop_wrapper}
-        id="
-beekeeper"
-      >
+      <div className={styles.workshop_wrapper} id="beekeeper">
         <p className={styles.larger}>
           Temat / tytuł zajęć:
           <strong className={styles.larger_color}>
